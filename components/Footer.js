@@ -1,23 +1,20 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
-import Link from "next/link";
-import React from "react";
-import ApartmentIcon from "@mui/icons-material/Apartment";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
-import EmailIcon from "@mui/icons-material/Email";
-import Image from "next/image";
-import AppleIcon from "@mui/icons-material/Apple";
-import AdbIcon from "@mui/icons-material/Adb";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAppStore,
+  faDiscord,
+  faFacebook,
   faGooglePlay,
   faTwitter,
-  faFacebook,
-  faDiscord,
 } from "@fortawesome/free-brands-svg-icons";
 import { faUserGroup } from "@fortawesome/free-solid-svg-icons";
-import GroupIcon from "@mui/icons-material/Group";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ApartmentIcon from "@mui/icons-material/Apartment";
+import EmailIcon from "@mui/icons-material/Email";
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import { Box, Container, Divider, Grid, Typography } from "@mui/material";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
 export default function Footer() {
   return (
@@ -82,7 +79,7 @@ export default function Footer() {
               }}
             >
               <Typography {...headingProps}>Thể loại truyện</Typography>
-              <Grid container spacing={1}>
+              <Grid container spacing={3}>
                 <Grid item xs={4}>
                   <Typography {...genreProps}>Truyện Huyền Huyễn</Typography>
                   <Typography {...genreProps}>Truyện Tiên Hiệp</Typography>
@@ -152,6 +149,8 @@ export default function Footer() {
           </Grid>
         </Container>
       </Box>
+
+      {/* thông tin về Vietnovel */}
       <Box sx={{ backgroundColor: "secondary.dark", color: "text.main" }}>
         <Container maxWidth="xl" sx={{ pt: 2, pb: 2 }}>
           <Link href="/">
@@ -205,6 +204,11 @@ export default function Footer() {
               </Grid>
             </Grid>
           </Grid>
+          <Divider
+            variant="middle"
+            sx={{ mt: 5, backgroundColor: "text.dark" }}
+          />
+
           <Box sx={{ textAlign: "center" }}>
             <Box
               sx={{
