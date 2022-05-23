@@ -1,0 +1,124 @@
+{
+  "genres": [
+    {
+      "id": 1,
+      "name": "Truyện Huyền Huyễn",
+      "slug": "truyen-huyen-huyen"
+    },
+    {
+      "id": 2,
+      "name": "Truyện Tiên Hiệp",
+      "slug": "truyen-tien-hiep"
+    },
+    {
+      "id": 3,
+      "name": "Truyện Hệ Thống",
+      "slug": "truyen-he-thong"
+    },
+    {
+      "id": 4,
+      "name": "Truyện Ngôn Tình",
+      "slug": "truyen-ngon-tinh"
+    },
+    {
+      "id": 5,
+      "name": "Truyện Xuyên Không",
+      "slug": "truyen-xuyen-khong"
+    },
+    {
+      "id": 6,
+      "name": "Truyện Dị Năng",
+      "slug": "truyen-di-nang"
+    },
+    {
+      "id": 7,
+      "name": "Truyện Đam Mỹ/ Boy Love",
+      "slug": "truyen-dam-my"
+    },
+    {
+      "id": 8,
+      "name": "Truyện Bách Hợp",
+      "slug": "truyen-bach-hop"
+    },
+    {
+      "id": 9,
+      "name": "Truyện Võng Du",
+      "slug": "truyen-vong-du"
+    },
+    {
+      "id": 10,
+      "name": "Truyện Kiếm Hiệp",
+      "slug": "truyen-kiem-hiep"
+    },
+    {
+      "id": 11,
+      "name": "Truyện Đô Thị",
+      "slug": "truyen-do-thi"
+    },
+    {
+      "id": 12,
+      "name": "Truyện LGBT+",
+      "slug": "truyen-lgbt"
+    },
+    {
+      "id": 13,
+      "name": "Truyện FanFic",
+      "slug": "truyen-fanfic"
+    },
+    {
+      "id": 14,
+      "name": "Truyện Nữ Hiệp",
+      "slug": "truyen-nu-hiep"
+    },
+    {
+      "id": 15,
+      "name": "Truyện Sủng",
+      "slug": "truyen-sung"
+    },
+    {
+      "id": 16,
+      "name": "Truyện Thám Hiểm",
+      "slug": "truyen-tham-hiem"
+    },
+    {
+      "id": 17,
+      "name": "Truyện Thương Nghiệp",
+      "slug": "truyen-thuong-nghiep"
+    },
+    {
+      "id": 18,
+      "name": "Truyện Ma Pháp",
+      "slug": "truyen-ma-phap"
+    },
+    {
+      "id": 19,
+      "name": "Truyện Dị Giới",
+      "slug": "truyen-di-gioi"
+    },
+    {
+      "id": 20,
+      "name": "Truyện Nữ Phụ",
+      "slug": "truyen-nu-phu"
+    },
+    {
+      "id": 21,
+      "name": "Truyện Tình Cảm",
+      "slug": "truyen-tinh-cam"
+    },
+    {
+      "id": 22,
+      "name": "Truyện Trinh Thám",
+      "slug": "truyen-trinh-tham"
+    },
+    {
+      "id": 23,
+      "name": "Truyện Nữ Cường",
+      "slug": "truyen-nu-cuong"
+    },
+    {
+      "id": 24,
+      "name": "Truyện Quân Sự",
+      "slug": "truyen-quan-su"
+    }
+  ]
+}
