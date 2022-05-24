@@ -197,7 +197,7 @@
       ],
       "picture": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
       "desc": "",
-      "desc_safe": "<div>lorem50</div>",
+      "desc_safe": "<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste sapiente quis beatae asperiores qui. Aliquam quas aspernatur recusandae. Doloribus ea hic atque pariatur asperiores dolorum tenetur eligendi ipsum consectetur quidem!</div>",
       "chapters": 21,
       "views": 70120,
       "total_chars": 52200,
@@ -449,6 +449,48 @@
       "likes": 203,
       "finished": true,
       "age": "16+"
+    }
+  ],
+  "writers": [
+    {
+      "id": 1,
+      "name": "Thanh Uẩn Tương Ly",
+      "title": "Bút Lông Trung Kỳ",
+      "views": 84500,
+      "total_words": 8062000,
+      "num_works": 7
+    },
+    {
+      "id": 2,
+      "name": "An Nhân Đạo Tiên",
+      "title": "Bút Tre Đỉnh Phong",
+      "views": 667000,
+      "total_words": 6128000,
+      "num_works": 2
+    },
+    {
+      "id": 3,
+      "name": "Thanh Y",
+      "title": "Bút Lông Đỉnh Phong",
+      "views": 47900,
+      "total_words": 645900,
+      "num_works": 5
+    },
+    {
+      "id": 4,
+      "name": "Hắc Long",
+      "title": "Bút Đá Trung Kỳ",
+      "views": 43600,
+      "total_words": 1100000,
+      "num_works": 2
+    },
+    {
+      "id": 5,
+      "name": "Dương gia Đại thiếu",
+      "title": "Bút Lông Trung Kỳ",
+      "views": 41900,
+      "total_words": 299700,
+      "num_works": 5
     }
   ]
 }

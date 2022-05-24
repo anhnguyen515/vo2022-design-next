@@ -1,31 +1,36 @@
 import { Box, Grid } from "@mui/material";
 import HeadPage from "components/common/HeadPage";
-import CreatorStudio from "components/pages/home/CreatorStudio";
-import Featured from "components/pages/home/Featured";
-import Genres from "components/pages/home/Genres";
-import MostRead from "components/pages/home/MostRead";
-import MyCarousel from "components/pages/home/MyCarousel";
-import NewUpdates from "components/pages/home/NewUpdates";
-import RoyalRanking from "components/pages/home/RoyalRanking";
-import TopFinished from "components/pages/home/TopFinished";
+import CreatorStudio from "components/pages/Home/CreatorStudio";
+import Featured from "components/pages/Home/Featured";
+import FinishedWorks from "components/pages/Home/FinishedWorks";
+import Genres from "components/pages/Home/Genres";
+import MostRead from "components/pages/Home/MostRead";
+import MyCarousel from "components/pages/Home/MyCarousel";
+import NewUpdates from "components/pages/Home/NewUpdates";
+import RoyalRanking from "components/pages/Home/RoyalRanking";
+import TopFinished from "components/pages/Home/TopFinished";
+import TopWriters from "components/pages/Home/TopWriters";
 import axiosClient from "utility/axiosConfig";
 
 export async function getServerSideProps() {
+  const genres = await axiosClient.get("genres").then((res) => res.data);
+
   const works = await axiosClient
     .get("works?_sort=views&_order=desc")
     .then((res) => res.data);
 
-  const genres = await axiosClient.get("genres").then((res) => res.data);
+  const writers = await axiosClient.get("writers").then((res) => res.data);
 
   return {
     props: {
       works,
       genres,
+      writers,
     },
   };
 }
 
-export default function Home({ works, genres }) {
+export default function Home({ works, genres, writers }) {
   return (
     <>
       <HeadPage title="Vietnovel Origin - Truyện Sáng Tác Việt" />
@@ -73,8 +78,20 @@ export default function Home({ works, genres }) {
             <Grid item xs={12} md={3}>
               <MostRead works={works} />
             </Grid>
-            <Grid container item xs={12} md={9}>
+            <Grid item xs={12} md={9}>
               <Genres genres={genres} works={works} />
+            </Grid>
+          </Grid>
+        </Box>
+
+        {/* tác giả bảng & truyện hoàn thành */}
+        <Box mt={5}>
+          <Grid container spacing={3}>
+            <Grid item xs={12} md={3}>
+              <TopWriters writers={writers} />
+            </Grid>
+            <Grid item xs={12} md={9}>
+              <FinishedWorks works={works} />
             </Grid>
           </Grid>
         </Box>

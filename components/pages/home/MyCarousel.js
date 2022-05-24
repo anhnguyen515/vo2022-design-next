@@ -16,7 +16,14 @@ export default function MyCarousel({ works }) {
     slidesToScroll: 1,
   };
   return (
-    <>
+    <Box
+      sx={{
+        display: {
+          xs: "none",
+          lg: "block",
+        },
+      }}
+    >
       <Slider {...settings}>
         {works.slice(0, 5).map((work) => (
           <Box key={work.id}>
@@ -31,6 +38,6 @@ export default function MyCarousel({ works }) {
           </Box>
         ))}
       </Slider>
-    </>
+    </Box>
   );
 }

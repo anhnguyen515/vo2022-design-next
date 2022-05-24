@@ -3,6 +3,7 @@ import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
+import CategoryLayout from "components/Layout/CategoryLayout";
 import * as React from "react";
 
 function NewUpdatesCard({ work }) {
@@ -62,13 +63,11 @@ function NewUpdatesCard({ work }) {
 export default function NewUpdates({ works }) {
   return (
     <>
-      <Typography variant="h5" fontWeight={500} gutterBottom>
-        Truyện Mới Cập Nhật
-      </Typography>
-      <Divider sx={{ mt: 2, mb: 2 }} />
-      {works.slice(0, 5).map((work) => (
-        <NewUpdatesCard key={work.id} work={work} />
-      ))}
+      <CategoryLayout title="Truyện Mới Cập Nhật">
+        {works.slice(0, 5).map((work) => (
+          <NewUpdatesCard key={work.id} work={work} />
+        ))}
+      </CategoryLayout>
     </>
   );
 }

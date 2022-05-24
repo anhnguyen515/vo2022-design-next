@@ -2,6 +2,7 @@ import { Divider, Grid, Paper } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
+import CategoryLayout from "components/Layout/CategoryLayout";
 import * as React from "react";
 
 function RoyalRankingCard({ work }) {
@@ -65,17 +66,15 @@ function RoyalRankingCard({ work }) {
 export default function RoyalRanking({ works }) {
   return (
     <>
-      <Typography variant="h5" fontWeight="bold" gutterBottom>
-        Royal Ranking - Bảng Xếp Hạng Truyện Chữ Hay Trong Tháng
-      </Typography>
-      <Divider sx={{ mt: 2, mb: 2 }} />
-      <Grid container spacing={2}>
-        {works.slice(0, 5).map((work) => (
-          <Grid item key={work.id} xs={12} sm={6} md={4} lg={2.4}>
-            <RoyalRankingCard work={work} />
-          </Grid>
-        ))}
-      </Grid>
+      <CategoryLayout title="Royal Ranking - Bảng Xếp Hạng Truyện Chữ Hay Trong Tháng">
+        <Grid container spacing={2}>
+          {works.slice(0, 5).map((work) => (
+            <Grid item key={work.id} xs={12} sm={6} md={4} lg={2.4}>
+              <RoyalRankingCard work={work} />
+            </Grid>
+          ))}
+        </Grid>
+      </CategoryLayout>
     </>
   );
 }

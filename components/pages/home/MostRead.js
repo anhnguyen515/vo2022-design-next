@@ -1,8 +1,8 @@
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
-import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
+import CategoryLayout from "components/Layout/CategoryLayout";
 import * as React from "react";
 import { viewsFormat } from "utility/common";
 
@@ -60,13 +60,11 @@ function MostReadCard({ work }) {
 export default function MostRead({ works }) {
   return (
     <>
-      <Typography variant="h5" fontWeight={500} gutterBottom>
-        Truyện Đọc Nhiều
-      </Typography>
-      <Divider sx={{ mt: 2, mb: 2 }} />
-      {works.slice(0, 10).map((work) => (
-        <MostReadCard key={work.id} work={work} />
-      ))}
+      <CategoryLayout title="Truyện Đọc Nhiều">
+        {works.slice(0, 10).map((work) => (
+          <MostReadCard key={work.id} work={work} />
+        ))}
+      </CategoryLayout>
     </>
   );
 }

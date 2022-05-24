@@ -7,6 +7,7 @@ import {
   Paper,
   Typography,
 } from "@mui/material";
+import CategoryLayout from "components/Layout/CategoryLayout";
 import React from "react";
 
 function FeaturedCard({ work }) {
@@ -39,11 +40,7 @@ function FeaturedCard({ work }) {
 export default function Featured({ works }) {
   return (
     <>
-      <Box>
-        <Typography variant="h5" fontWeight="bold" gutterBottom>
-          Truyện Nổi Bật
-        </Typography>
-        <Divider sx={{ mt: 2, mb: 2 }} />
+      <CategoryLayout title="Truyện Nổi Bật">
         <Grid container spacing={3}>
           <Grid item xs={12} md={4}>
             <Paper
@@ -65,7 +62,7 @@ export default function Featured({ works }) {
             ))}
           </Grid>
         </Grid>
-      </Box>
+      </CategoryLayout>
     </>
   );
 }
