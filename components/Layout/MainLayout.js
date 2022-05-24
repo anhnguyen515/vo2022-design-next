@@ -1,8 +1,7 @@
 import { Box, Container } from "@mui/material";
-import HeadPage from "components/HeadPage";
+import Footer from "components/common/Footer";
+import Navbar from "components/common/Navbar/Navbar";
 import React from "react";
-import Footer from "components/Footer";
-import Navbar from "components/Navbar/Navbar";
 
 export default function MainLayout({ children }) {
   return (

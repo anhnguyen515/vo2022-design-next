@@ -23,9 +23,15 @@ const lightTheme = createTheme({
     // },
 
     secondary: {
-      light: "#212531",
+      light: "#F6F7FC",
       main: "#222731",
       dark: "#1F212D",
+    },
+
+    form: {
+      light: indigo[50],
+      main: indigo[500],
+      dark: indigo[700],
     },
 
     notification: {
@@ -36,7 +42,7 @@ const lightTheme = createTheme({
     },
 
     text: {
-      light: grey[300],
+      light: grey[50],
       main: grey[500],
       dark: grey[600],
     },
@@ -60,8 +66,8 @@ const lightTheme = createTheme({
       xs: 0,
       sm: 480, //default: 600
       md: 600, //default: 960
-      lg: 1000, //default: 1280
-      xl: 1360, //default: 1920
+      lg: 960, //default: 1280
+      xl: 1280, //default: 1920
     },
   },
 });

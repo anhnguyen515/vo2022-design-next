@@ -215,7 +215,7 @@ export default function Footer() {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                gap: 4,
+                gap: 5,
                 mt: 5,
                 mb: 5,
               }}
@@ -238,7 +238,7 @@ export default function Footer() {
                   }}
                 >
                   <FontAwesomeIcon icon={faAppStore} width={16} />
-                  <Typography>Tải App Đọc Truyện Trên iOS</Typography>
+                  <Typography>Tải App Đọc Truyện iOS</Typography>
                 </Box>
               </a>
               <a
@@ -259,7 +259,7 @@ export default function Footer() {
                   }}
                 >
                   <FontAwesomeIcon icon={faGooglePlay} width={16} />
-                  <Typography>Tải App Đọc Truyện Trên Android</Typography>
+                  <Typography>Tải App Đọc Truyện Android</Typography>
                 </Box>
               </a>
             </Box>
@@ -341,7 +341,7 @@ export default function Footer() {
               </a>
             </Box>
             <Typography sx={{ mt: 2, fontWeight: 500 }}>
-              &copy; 2016-2022{" "}
+              &copy; 2016-{new Date().getFullYear()}{" "}
               <a
                 href="https://company.vietnovel.com"
                 style={{ color: "white" }}

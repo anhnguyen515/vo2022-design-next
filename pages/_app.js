@@ -7,6 +7,12 @@ import lightTheme from "styles/theme/lightTheme";
 import "../styles/globals.css";
 import MainLayout from "../components/Layout/MainLayout";
 
+{
+  /* react-slick carousel */
+}
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 const clientSideEmotionCache = createEmotionCache();
 
 const MyApp = (props) => {

@@ -18,7 +18,7 @@ export default function Navbar() {
     <Box>
       <AppBar
         position="static"
-        color="default"
+        color="background"
         elevation={0}
         variant="outlined"
       >

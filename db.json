@@ -2,123 +2,453 @@
   "genres": [
     {
       "id": 1,
-      "name": "Truyện Huyền Huyễn",
-      "slug": "truyen-huyen-huyen"
+      "name": "Huyền Huyễn",
+      "slug": "truyen-huyen-huyen",
+      "num_works": 1234,
+      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
     },
     {
       "id": 2,
-      "name": "Truyện Tiên Hiệp",
-      "slug": "truyen-tien-hiep"
+      "name": "Tiên Hiệp",
+      "slug": "truyen-tien-hiep",
+      "num_works": 1234,
+      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
     },
     {
       "id": 3,
-      "name": "Truyện Hệ Thống",
-      "slug": "truyen-he-thong"
+      "name": "Hệ Thống",
+      "slug": "truyen-he-thong",
+      "num_works": 1234,
+      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
     },
     {
       "id": 4,
-      "name": "Truyện Ngôn Tình",
-      "slug": "truyen-ngon-tinh"
+      "name": "Ngôn Tình",
+      "slug": "truyen-ngon-tinh",
+      "num_works": 1234,
+      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
     },
     {
       "id": 5,
-      "name": "Truyện Xuyên Không",
-      "slug": "truyen-xuyen-khong"
+      "name": "Xuyên Không",
+      "slug": "truyen-xuyen-khong",
+      "num_works": 1234,
+      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
     },
     {
       "id": 6,
-      "name": "Truyện Dị Năng",
-      "slug": "truyen-di-nang"
+      "name": "Dị Năng",
+      "slug": "truyen-di-nang",
+      "num_works": 1234,
+      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
     },
     {
       "id": 7,
-      "name": "Truyện Đam Mỹ/ Boy Love",
-      "slug": "truyen-dam-my"
+      "name": "Đam Mỹ/ Boy Love",
+      "slug": "truyen-dam-my",
+      "num_works": 1234,
+      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
     },
     {
       "id": 8,
-      "name": "Truyện Bách Hợp",
-      "slug": "truyen-bach-hop"
+      "name": "Bách Hợp",
+      "slug": "truyen-bach-hop",
+      "num_works": 1234,
+      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
     },
     {
       "id": 9,
-      "name": "Truyện Võng Du",
-      "slug": "truyen-vong-du"
+      "name": "Võng Du",
+      "slug": "truyen-vong-du",
+      "num_works": 1234,
+      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
     },
     {
       "id": 10,
-      "name": "Truyện Kiếm Hiệp",
-      "slug": "truyen-kiem-hiep"
+      "name": "Kiếm Hiệp",
+      "slug": "truyen-kiem-hiep",
+      "num_works": 1234,
+      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
     },
     {
       "id": 11,
-      "name": "Truyện Đô Thị",
-      "slug": "truyen-do-thi"
+      "name": "Đô Thị",
+      "slug": "truyen-do-thi",
+      "num_works": 1234,
+      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
     },
     {
       "id": 12,
-      "name": "Truyện LGBT+",
-      "slug": "truyen-lgbt"
+      "name": "LGBT+",
+      "slug": "truyen-lgbt",
+      "num_works": 1234,
+      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
     },
     {
       "id": 13,
-      "name": "Truyện FanFic",
-      "slug": "truyen-fanfic"
+      "name": "FanFic",
+      "slug": "truyen-fanfic",
+      "num_works": 1234,
+      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
     },
     {
       "id": 14,
-      "name": "Truyện Nữ Hiệp",
-      "slug": "truyen-nu-hiep"
+      "name": "Nữ Hiệp",
+      "slug": "truyen-nu-hiep",
+      "num_works": 1234,
+      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
     },
     {
       "id": 15,
-      "name": "Truyện Sủng",
-      "slug": "truyen-sung"
+      "name": "Sủng",
+      "slug": "truyen-sung",
+      "num_works": 1234,
+      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
     },
     {
       "id": 16,
-      "name": "Truyện Thám Hiểm",
-      "slug": "truyen-tham-hiem"
+      "name": "Thám Hiểm",
+      "slug": "truyen-tham-hiem",
+      "num_works": 1234,
+      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
     },
     {
       "id": 17,
-      "name": "Truyện Thương Nghiệp",
-      "slug": "truyen-thuong-nghiep"
+      "name": "Thương Nghiệp",
+      "slug": "truyen-thuong-nghiep",
+      "num_works": 1234,
+      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
     },
     {
       "id": 18,
-      "name": "Truyện Ma Pháp",
-      "slug": "truyen-ma-phap"
+      "name": "Ma Pháp",
+      "slug": "truyen-ma-phap",
+      "num_works": 1234,
+      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
     },
     {
       "id": 19,
-      "name": "Truyện Dị Giới",
-      "slug": "truyen-di-gioi"
+      "name": "Dị Giới",
+      "slug": "truyen-di-gioi",
+      "num_works": 1234,
+      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
     },
     {
       "id": 20,
-      "name": "Truyện Nữ Phụ",
-      "slug": "truyen-nu-phu"
+      "name": "Nữ Phụ",
+      "slug": "truyen-nu-phu",
+      "num_works": 1234,
+      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
     },
     {
       "id": 21,
-      "name": "Truyện Tình Cảm",
-      "slug": "truyen-tinh-cam"
+      "name": "Tình Cảm",
+      "slug": "truyen-tinh-cam",
+      "num_works": 1234,
+      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
     },
     {
       "id": 22,
-      "name": "Truyện Trinh Thám",
-      "slug": "truyen-trinh-tham"
+      "name": "Trinh Thám",
+      "slug": "truyen-trinh-tham",
+      "num_works": 1234,
+      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
     },
     {
       "id": 23,
-      "name": "Truyện Nữ Cường",
-      "slug": "truyen-nu-cuong"
+      "name": "Nữ Cường",
+      "slug": "truyen-nu-cuong",
+      "num_works": 1234,
+      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
     },
     {
       "id": 24,
-      "name": "Truyện Quân Sự",
-      "slug": "truyen-quan-su"
+      "name": "Quân Sự",
+      "slug": "truyen-quan-su",
+      "num_works": 1234,
+      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+    }
+  ],
+  "works": [
+    {
+      "id": 1,
+      "name": "Sống Lại Thành Đại Ma Đầu",
+      "slug": "song-lai-thanh-dai-ma-dau-12345678",
+      "writer": {
+        "id": 1,
+        "name": "Tinh Quỷ Zenly",
+        "slug": "tinh-quy-zenly"
+      },
+      "genres": [
+        {
+          "id": 7,
+          "name": "Truyện Đam Mỹ/ Boy Love",
+          "slug": "truyen-dam-my",
+          "num_works": 1234,
+          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+        },
+        {
+          "id": 24,
+          "name": "Truyện Quân Sự",
+          "slug": "truyen-quan-su",
+          "num_works": 1234,
+          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+        }
+      ],
+      "picture": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
+      "desc": "",
+      "desc_safe": "<div>lorem50</div>",
+      "chapters": 21,
+      "views": 70120,
+      "total_chars": 52200,
+      "likes": 507,
+      "finished": false,
+      "age": "16+"
+    },
+    {
+      "id": 2,
+      "name": "Tên Truyện 2",
+      "slug": "ten-truyen-2-12365478",
+      "writer": {
+        "id": 1,
+        "name": "Bất Động Minh Vương",
+        "slug": "bgat-dong-minh-vuong"
+      },
+      "genres": [
+        {
+          "id": 7,
+          "name": "Truyện Đam Mỹ/ Boy Love",
+          "slug": "truyen-dam-my",
+          "num_works": 1234,
+          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+        },
+        {
+          "id": 24,
+          "name": "Truyện Quân Sự",
+          "slug": "truyen-quan-su",
+          "num_works": 1234,
+          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+        }
+      ],
+      "picture": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
+      "desc": "",
+      "desc_safe": "<div>lorem100</div>",
+      "chapters": 101,
+      "views": 7012,
+      "total_chars": 37200,
+      "likes": 203,
+      "finished": true,
+      "age": "16+"
+    },
+    {
+      "id": 3,
+      "name": "SELENA WHITELEY",
+      "slug": "selena-whiteley-12345678",
+      "writer": {
+        "id": 1,
+        "name": "Tinh Quỷ Zenly",
+        "slug": "tinh-quy-zenly"
+      },
+      "genres": [
+        {
+          "id": 7,
+          "name": "Truyện Đam Mỹ/ Boy Love",
+          "slug": "truyen-dam-my",
+          "num_works": 1234,
+          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+        },
+        {
+          "id": 24,
+          "name": "Truyện Quân Sự",
+          "slug": "truyen-quan-su",
+          "num_works": 1234,
+          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+        }
+      ],
+      "picture": "https://i.vnvl.net/vo/20220503/YW8Opd.png.110x165_q85_crop.jpg",
+      "desc": "",
+      "desc_safe": "<div>lorem50</div>",
+      "chapters": 21,
+      "views": 7012000,
+      "total_chars": 52200,
+      "likes": 507,
+      "finished": false,
+      "age": "16+"
+    },
+    {
+      "id": 4,
+      "name": "Long Vương Dị Giới",
+      "slug": "long-vuong-di-gioi-87654321",
+      "writer": {
+        "id": 1,
+        "name": "Tinh Quỷ Zenly",
+        "slug": "tinh-quy-zenly"
+      },
+      "genres": [
+        {
+          "id": 7,
+          "name": "Truyện Đam Mỹ/ Boy Love",
+          "slug": "truyen-dam-my",
+          "num_works": 1234,
+          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+        },
+        {
+          "id": 24,
+          "name": "Truyện Quân Sự",
+          "slug": "truyen-quan-su",
+          "num_works": 1234,
+          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+        }
+      ],
+      "picture": "https://i.vnvl.net/vo/20220412/d66MPd.jpg.110x165_q85_crop.jpg",
+      "desc": "",
+      "desc_safe": "<div>lorem100</div>",
+      "chapters": 101,
+      "views": 512,
+      "total_chars": 37200,
+      "likes": 203,
+      "finished": true,
+      "age": "16+"
+    },
+    {
+      "id": 5,
+      "name": "Sống Lại Thành Đại Ma Đầu thêm vào cho nhiều chữ",
+      "slug": "song-lai-thanh-dai-ma-dau-12345678",
+      "writer": {
+        "id": 1,
+        "name": "Tinh Quỷ Zenly",
+        "slug": "tinh-quy-zenly"
+      },
+      "genres": [
+        {
+          "id": 7,
+          "name": "Truyện Đam Mỹ/ Boy Love",
+          "slug": "truyen-dam-my",
+          "num_works": 1234,
+          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+        },
+        {
+          "id": 24,
+          "name": "Truyện Quân Sự",
+          "slug": "truyen-quan-su",
+          "num_works": 1234,
+          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+        }
+      ],
+      "picture": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
+      "desc": "",
+      "desc_safe": "<div>lorem50</div>",
+      "chapters": 21,
+      "views": 52785,
+      "total_chars": 125000,
+      "likes": 15000,
+      "finished": false,
+      "age": "16+"
+    },
+    {
+      "id": 6,
+      "name": "Tên Truyện 2",
+      "slug": "ten-truyen-2-12365478",
+      "writer": {
+        "id": 1,
+        "name": "Bất Động Minh Vương",
+        "slug": "bgat-dong-minh-vuong"
+      },
+      "genres": [
+        {
+          "id": 7,
+          "name": "Truyện Đam Mỹ/ Boy Love",
+          "slug": "truyen-dam-my",
+          "num_works": 1234,
+          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+        },
+        {
+          "id": 24,
+          "name": "Truyện Quân Sự",
+          "slug": "truyen-quan-su",
+          "num_works": 1234,
+          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+        }
+      ],
+      "picture": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
+      "desc": "",
+      "desc_safe": "<div>lorem100</div>",
+      "chapters": 101,
+      "views": 1505,
+      "total_chars": 37200,
+      "likes": 203,
+      "finished": true,
+      "age": "16+"
+    },
+    {
+      "id": 7,
+      "name": "SELENA WHITELEY",
+      "slug": "selena-whiteley-12345678",
+      "writer": {
+        "id": 1,
+        "name": "Tinh Quỷ Zenly",
+        "slug": "tinh-quy-zenly"
+      },
+      "genres": [
+        {
+          "id": 7,
+          "name": "Truyện Đam Mỹ/ Boy Love",
+          "slug": "truyen-dam-my",
+          "num_works": 1234,
+          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+        },
+        {
+          "id": 24,
+          "name": "Truyện Quân Sự",
+          "slug": "truyen-quan-su",
+          "num_works": 1234,
+          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+        }
+      ],
+      "picture": "https://i.vnvl.net/vo/20220503/YW8Opd.png.110x165_q85_crop.jpg",
+      "desc": "",
+      "desc_safe": "<div>lorem50</div>",
+      "chapters": 21,
+      "views": 15098534,
+      "total_chars": 1234567,
+      "likes": 1042673,
+      "finished": true,
+      "age": "16+"
+    },
+    {
+      "id": 8,
+      "name": "Long Vương Dị Giới",
+      "slug": "long-vuong-di-gioi-87654321",
+      "writer": {
+        "id": 1,
+        "name": "Tinh Quỷ Zenly",
+        "slug": "tinh-quy-zenly"
+      },
+      "genres": [
+        {
+          "id": 7,
+          "name": "Truyện Đam Mỹ/ Boy Love",
+          "slug": "truyen-dam-my",
+          "num_works": 1234,
+          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+        },
+        {
+          "id": 24,
+          "name": "Truyện Quân Sự",
+          "slug": "truyen-quan-su",
+          "num_works": 1234,
+          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+        }
+      ],
+      "picture": "https://i.vnvl.net/vo/20220412/d66MPd.jpg.110x165_q85_crop.jpg",
+      "desc": "",
+      "desc_safe": "<div>lorem100</div>",
+      "chapters": 101,
+      "views": 512,
+      "total_chars": 37200,
+      "likes": 203,
+      "finished": true,
+      "age": "16+"
     }
   ]
 }
