@@ -6,7 +6,16 @@ export default function TopFinished({ works }) {
   return (
     <>
       <Paper sx={{ padding: 2, backgroundColor: "secondary.light" }}>
-        <Typography variant="h6" gutterBottom>
+        <Typography
+          variant="h6"
+          gutterBottom
+          textAlign="center"
+          // sx={{
+          //   overflow: "hidden",
+          //   textOverflow: "ellipsis",
+          //   whiteSpace: "nowrap",
+          // }}
+        >
           Top Truyện Đã Hoàn Thành
         </Typography>
         {works.slice(0, 8).map((work, index) => (

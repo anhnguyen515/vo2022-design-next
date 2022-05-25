@@ -1,15 +1,15 @@
 import { Box, Grid } from "@mui/material";
 import HeadPage from "components/common/HeadPage";
-import CreatorStudio from "components/pages/Home/CreatorStudio";
-import Featured from "components/pages/Home/Featured";
-import FinishedWorks from "components/pages/Home/FinishedWorks";
-import Genres from "components/pages/Home/Genres";
-import MostRead from "components/pages/Home/MostRead";
-import MyCarousel from "components/pages/Home/MyCarousel";
-import NewUpdates from "components/pages/Home/NewUpdates";
-import RoyalRanking from "components/pages/Home/RoyalRanking";
-import TopFinished from "components/pages/Home/TopFinished";
-import TopWriters from "components/pages/Home/TopWriters";
+import CreatorStudio from "components/Home/CreatorStudio";
+import Featured from "components/Home/Featured";
+import FinishedWorks from "components/Home/FinishedWorks";
+import Genres from "components/Home/Genres";
+import MostRead from "components/Home/MostRead";
+import MyCarousel from "components/Home/MyCarousel";
+import NewUpdates from "components/Home/NewUpdates";
+import RoyalRanking from "components/Home/RoyalRanking";
+import TopFinished from "components/Home/TopFinished";
+import TopWriters from "components/Home/TopWriters";
 import axiosClient from "utility/axiosConfig";
 
 export async function getServerSideProps() {
@@ -37,7 +37,7 @@ export default function Home({ works, genres, writers }) {
       <Box sx={{ padding: 3 }}>
         {/* phần carousel */}
         <Box>
-          <Grid container spacing={4}>
+          <Grid container spacing={3}>
             {/* top truyện đã hoàn thành */}
             <Grid item xs={12} lg={3}>
               <TopFinished works={works} />
@@ -56,7 +56,7 @@ export default function Home({ works, genres, writers }) {
         </Box>
 
         {/* phần royal ranking */}
-        <Box mt={5}>
+        <Box mt={10}>
           <Grid container spacing={5}>
             <Grid item xs={12} lg={9}>
               <RoyalRanking works={works} />
@@ -68,29 +68,29 @@ export default function Home({ works, genres, writers }) {
         </Box>
 
         {/* phần truyện nổi bật */}
-        <Box mt={5}>
+        <Box mt={10}>
           <Featured works={works} />
         </Box>
 
         {/* truyện đọc nhiều & thể loại truyện */}
-        <Box mt={5}>
+        <Box mt={10}>
           <Grid container spacing={3}>
-            <Grid item xs={12} md={3}>
+            <Grid item xs={12} lg={3}>
               <MostRead works={works} />
             </Grid>
-            <Grid item xs={12} md={9}>
+            <Grid item xs={12} lg={9}>
               <Genres genres={genres} works={works} />
             </Grid>
           </Grid>
         </Box>
 
         {/* tác giả bảng & truyện hoàn thành */}
-        <Box mt={5}>
+        <Box mt={10}>
           <Grid container spacing={3}>
-            <Grid item xs={12} md={3}>
+            <Grid item xs={12} lg={3}>
               <TopWriters writers={writers} />
             </Grid>
-            <Grid item xs={12} md={9}>
+            <Grid item xs={12} lg={9}>
               <FinishedWorks works={works} />
             </Grid>
           </Grid>

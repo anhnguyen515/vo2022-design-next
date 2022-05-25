@@ -54,7 +54,6 @@ export default function NavLink() {
         alignItems: {
           lg: "center",
         },
-        ml: "auto",
       }}
     >
       <Typography
@@ -99,6 +98,7 @@ export default function NavLink() {
           </span>
         </Typography>
       </NavGenreDropdown>
+
       <Typography
         variant="h6"
         sx={router.asPath.includes("/forum") ? activeStyle : generalStyle}
@@ -109,6 +109,7 @@ export default function NavLink() {
           </Link>
         </StyledBadge>
       </Typography>
+
       <Typography
         variant="h6"
         sx={router.asPath.includes("/support") ? activeStyle : generalStyle}

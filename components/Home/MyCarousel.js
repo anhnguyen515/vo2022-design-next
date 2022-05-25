@@ -1,15 +1,15 @@
-import React from "react";
-import { Box, IconButton, Paper } from "@mui/material";
+import { Box } from "@mui/material";
 import Image from "next/image";
+import React from "react";
 import Slider from "react-slick";
-import NavigateNextIcon from "@mui/icons-material/NavigateNext";
-import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
 
 export default function MyCarousel({ works }) {
   const settings = {
     dots: true,
     infinite: true,
+    fade: true,
     arrows: false,
+    speed: 1000,
     autoplay: true,
     autoplaySpeed: 5000,
     slidesToShow: 1,

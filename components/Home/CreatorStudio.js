@@ -5,7 +5,7 @@ export default function CreatorStudio() {
   return (
     <>
       <Paper sx={{ padding: 2, backgroundColor: "secondary.light" }}>
-        <Typography variant="h6" gutterBottom>
+        <Typography variant="h6" textAlign="center" gutterBottom>
           Bạn Muốn Viết Truyện?
         </Typography>
         <Typography variant="body2">

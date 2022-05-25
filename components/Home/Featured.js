@@ -42,7 +42,7 @@ export default function Featured({ works }) {
     <>
       <CategoryLayout title="Truyện Nổi Bật">
         <Grid container spacing={3}>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} lg={4}>
             <Paper
               elevation={0}
               sx={{
@@ -54,9 +54,9 @@ export default function Featured({ works }) {
               Truyện nổi bật nhất nằm đây
             </Paper>
           </Grid>
-          <Grid container item xs={12} md={8} spacing={2}>
+          <Grid container item xs={12} lg={8} spacing={2}>
             {works.slice(0, 12).map((work) => (
-              <Grid key={work.id} item xs={6} md={3} lg={2}>
+              <Grid key={work.id} item xs={6} sm={4} md={3} lg={2}>
                 <FeaturedCard work={work} />
               </Grid>
             ))}

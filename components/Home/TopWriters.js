@@ -27,8 +27,8 @@ function TopWritersCard({ writer, rank }) {
         <Box
           sx={{
             overflow: "hidden",
-            // textOverflow: "ellipse",
-            // whiteSpace: "nowrap",
+            textOverflow: "ellipse",
+            whiteSpace: "nowrap",
           }}
         >
           <Typography

@@ -1,26 +1,21 @@
-import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
 import { Container } from "@mui/material";
-import Link from "next/link";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
 import Image from "next/image";
-import NavLink from "./NavLink";
-import SearchIcon from "@mui/icons-material/Search";
-import NavMenuDropdown from "./NavMenuDropdown";
+import Link from "next/link";
+import * as React from "react";
+import NavDesktop from "./NavDesktop";
+import NavMobile from "./NavMobile";
 
 export default function Navbar() {
   return (
-    <Box>
+    <>
       <AppBar
-        position="static"
+        position="sticky"
         color="background"
         elevation={0}
         variant="outlined"
+        sx={{ top: 0 }}
       >
         <Container maxWidth="xl">
           <Toolbar sx={{ gap: 1 }}>
@@ -35,19 +30,11 @@ export default function Navbar() {
                 />
               </a>
             </Link>
-            <NavLink />
-            <SearchIcon sx={{ ml: 2, mr: 1 }} />
-            <Button color="primary" variant="contained">
-              Đăng nhập
-            </Button>
-            <NavMenuDropdown>
-              <IconButton>
-                <MenuIcon />
-              </IconButton>
-            </NavMenuDropdown>
+            <NavDesktop />
+            <NavMobile />
           </Toolbar>
         </Container>
       </AppBar>
-    </Box>
+    </>
   );
 }

@@ -1,20 +1,30 @@
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
-import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
 import CategoryLayout from "components/Layout/CategoryLayout";
 import * as React from "react";
+import { viewsFormat } from "utility/common";
 
-function NewUpdatesCard({ work }) {
+function MostReadCard({ work }) {
   return (
     <Card elevation={0} sx={{ display: "flex", borderRadius: 0, mb: 2 }}>
+      <Box>
+        <CardMedia
+          component="img"
+          sx={{
+            width: 50,
+            borderRadius: 1,
+            alignItems: "center",
+            mr: 1,
+          }}
+          image={work.picture}
+          alt={`ảnh bìa của ${work.name}`}
+        />
+      </Box>
       <Box
         sx={{
           overflow: "hidden",
-          textOverflow: "ellipsis",
-          whiteSpace: "nowrap",
-          mr: 1,
         }}
       >
         <Typography
@@ -42,30 +52,19 @@ function NewUpdatesCard({ work }) {
           {work.writer.name}
         </Typography>
         <Typography variant="caption" color="text.dark" fontSize="0.8rem">
-          Chương 1 - 2 giờ trước
+          {viewsFormat(work.views)} lượt xem - 3 năm trước
         </Typography>
       </Box>
-      <CardMedia
-        component="img"
-        sx={{
-          width: 50,
-          borderRadius: 1,
-          ml: "auto",
-          alignItems: "center",
-        }}
-        image={work.picture}
-        alt="Live from space album cover"
-      />
     </Card>
   );
 }
 
-export default function NewUpdates({ works }) {
+export default function MostRead({ works }) {
   return (
     <>
-      <CategoryLayout title="Truyện Mới Cập Nhật">
-        {works.slice(0, 5).map((work) => (
-          <NewUpdatesCard key={work.id} work={work} />
+      <CategoryLayout title="Truyện Đọc Nhiều">
+        {works.slice(0, 10).map((work) => (
+          <MostReadCard key={work.id} work={work} />
         ))}
       </CategoryLayout>
     </>

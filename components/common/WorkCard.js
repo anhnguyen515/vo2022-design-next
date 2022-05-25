@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function WorkCard({ work }) {
   return (
-    <Card elevation={0} sx={{ display: "flex", borderRadius: 0, mb: 2 }}>
+    <Card elevation={0} sx={{ display: "flex", borderRadius: 0 }}>
       <Box>
         <CardMedia
           component="img"
@@ -55,11 +55,13 @@ export default function WorkCard({ work }) {
             color="notification"
             variant="outlined"
             label={`${work.chapters} chương`}
+            sx={{ fontWeight: "bold" }}
           />
           <Chip
             color="notification"
             variant="outlined"
-            label={work.status ? "Hoàn Thành" : "Hoàn Thành"}
+            label={"Hoàn Thành"}
+            sx={{ fontWeight: "bold" }}
           />
         </Box>
       </Box>
