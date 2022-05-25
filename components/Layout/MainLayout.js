@@ -14,7 +14,7 @@ export default function MainLayout({ children }) {
         }}
       >
         <Navbar />
-        <Container sx={{ flex: 1 }} maxWidth="xl">
+        <Container sx={{ flex: 1 }} maxWidth="2xl">
           {children}
         </Container>
         <Footer />

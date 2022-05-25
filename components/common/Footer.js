@@ -20,7 +20,7 @@ export default function Footer() {
   return (
     <>
       <Box sx={{ backgroundColor: "secondary.main", color: "text.main" }}>
-        <Container maxWidth="xl" sx={{ pt: 5, pb: 2 }}>
+        <Container maxWidth="2xl" sx={{ pt: 5, pb: 2 }}>
           <Grid container spacing={2}>
             {/* về vietnovel origin */}
             <Grid
@@ -152,7 +152,7 @@ export default function Footer() {
 
       {/* thông tin về Vietnovel */}
       <Box sx={{ backgroundColor: "secondary.dark", color: "text.main" }}>
-        <Container maxWidth="xl" sx={{ pt: 2, pb: 2 }}>
+        <Container maxWidth="2xl" sx={{ pt: 2, pb: 2 }}>
           <Link href="/">
             <a>
               <Image

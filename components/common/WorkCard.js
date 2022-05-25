@@ -9,7 +9,7 @@ import { Chip } from "@mui/material";
 import { faPenNib } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function WorkCard({ work }) {
+export default function WorkCard({ novel }) {
   return (
     <Card elevation={0} sx={{ display: "flex", borderRadius: 0 }}>
       <Box>
@@ -20,20 +20,20 @@ export default function WorkCard({ work }) {
             borderRadius: 1,
             mr: 2,
           }}
-          image={work.picture}
-          alt={`ảnh bìa của ${work.name}`}
+          image={novel.picture}
+          alt={`ảnh bìa của ${novel.title}`}
         />
       </Box>
       <Box>
         <Typography variant="h6" fontSize="1.6rem" fontWeight={"bold"}>
-          {work.name}
+          {novel.title}
         </Typography>
         <Typography
           variant="body1"
           sx={{ display: "flex", alignItems: "center", gap: 1 }}
         >
           <FontAwesomeIcon icon={faPenNib} width={16} />
-          {work.writer.name}
+          {novel.author.name}
         </Typography>
         <Box
           sx={{
@@ -48,13 +48,13 @@ export default function WorkCard({ work }) {
             mt: 1,
           }}
         >
-          {parse(work.desc_safe)}
+          {parse(novel.summary)}
         </Box>
         <Box sx={{ display: "flex", gap: 1, mt: 1 }}>
           <Chip
             color="notification"
             variant="outlined"
-            label={`${work.chapters} chương`}
+            label={`${novel.num_chapters} chương`}
             sx={{ fontWeight: "bold" }}
           />
           <Chip

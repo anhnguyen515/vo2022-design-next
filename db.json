@@ -4,493 +4,635 @@
       "id": 1,
       "name": "Huyền Huyễn",
       "slug": "truyen-huyen-huyen",
-      "num_works": 1234,
-      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+      "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+      "order": 1,
+      "num_novels": 1234
     },
     {
       "id": 2,
       "name": "Tiên Hiệp",
       "slug": "truyen-tien-hiep",
-      "num_works": 1234,
-      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+      "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+      "order": 2,
+      "num_novels": 1234
     },
     {
       "id": 3,
       "name": "Hệ Thống",
       "slug": "truyen-he-thong",
-      "num_works": 1234,
-      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+      "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+      "order": 3,
+      "num_novels": 1234
     },
     {
       "id": 4,
       "name": "Ngôn Tình",
       "slug": "truyen-ngon-tinh",
-      "num_works": 1234,
-      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+      "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+      "order": 4,
+      "num_novels": 1234
     },
     {
       "id": 5,
       "name": "Xuyên Không",
       "slug": "truyen-xuyen-khong",
-      "num_works": 1234,
-      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+      "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+      "order": 5,
+      "num_novels": 1234
     },
     {
       "id": 6,
       "name": "Dị Năng",
       "slug": "truyen-di-nang",
-      "num_works": 1234,
-      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+      "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+      "order": 6,
+      "num_novels": 1234
     },
     {
       "id": 7,
       "name": "Đam Mỹ/ Boy Love",
       "slug": "truyen-dam-my",
-      "num_works": 1234,
-      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+      "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+      "order": 7,
+      "num_novels": 1234
     },
     {
       "id": 8,
       "name": "Bách Hợp",
       "slug": "truyen-bach-hop",
-      "num_works": 1234,
-      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+      "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+      "order": 8,
+      "num_novels": 1234
     },
     {
       "id": 9,
       "name": "Võng Du",
       "slug": "truyen-vong-du",
-      "num_works": 1234,
-      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+      "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+      "order": 9,
+      "num_novels": 1234
     },
     {
       "id": 10,
       "name": "Kiếm Hiệp",
       "slug": "truyen-kiem-hiep",
-      "num_works": 1234,
-      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+      "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+      "order": 10,
+      "num_novels": 1234
     },
     {
       "id": 11,
       "name": "Đô Thị",
       "slug": "truyen-do-thi",
-      "num_works": 1234,
-      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+      "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+      "order": 11,
+      "num_novels": 1234
     },
     {
       "id": 12,
       "name": "LGBT+",
       "slug": "truyen-lgbt",
-      "num_works": 1234,
-      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+      "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+      "order": 12,
+      "num_novels": 1234
     },
     {
       "id": 13,
       "name": "FanFic",
       "slug": "truyen-fanfic",
-      "num_works": 1234,
-      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+      "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+      "order": 13,
+      "num_novels": 1234
     },
     {
       "id": 14,
       "name": "Nữ Hiệp",
       "slug": "truyen-nu-hiep",
-      "num_works": 1234,
-      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+      "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+      "order": 14,
+      "num_novels": 1234
     },
     {
       "id": 15,
       "name": "Sủng",
       "slug": "truyen-sung",
-      "num_works": 1234,
-      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+      "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+      "order": 15,
+      "num_novels": 1234
     },
     {
       "id": 16,
       "name": "Thám Hiểm",
       "slug": "truyen-tham-hiem",
-      "num_works": 1234,
-      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+      "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+      "order": 16,
+      "num_novels": 1234
     },
     {
       "id": 17,
       "name": "Thương Nghiệp",
       "slug": "truyen-thuong-nghiep",
-      "num_works": 1234,
-      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+      "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+      "order": 17,
+      "num_novels": 1234
     },
     {
       "id": 18,
       "name": "Ma Pháp",
       "slug": "truyen-ma-phap",
-      "num_works": 1234,
-      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+      "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+      "order": 18,
+      "num_novels": 1234
     },
     {
       "id": 19,
       "name": "Dị Giới",
       "slug": "truyen-di-gioi",
-      "num_works": 1234,
-      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+      "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+      "order": 19,
+      "num_novels": 1234
     },
     {
       "id": 20,
       "name": "Nữ Phụ",
       "slug": "truyen-nu-phu",
-      "num_works": 1234,
-      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+      "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+      "order": 20,
+      "num_novels": 1234
     },
     {
       "id": 21,
       "name": "Tình Cảm",
       "slug": "truyen-tinh-cam",
-      "num_works": 1234,
-      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+      "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+      "order": 21,
+      "num_novels": 1234
     },
     {
       "id": 22,
       "name": "Trinh Thám",
       "slug": "truyen-trinh-tham",
-      "num_works": 1234,
-      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+      "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+      "order": 22,
+      "num_novels": 1234
     },
     {
       "id": 23,
       "name": "Nữ Cường",
       "slug": "truyen-nu-cuong",
-      "num_works": 1234,
-      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+      "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+      "order": 23,
+      "num_novels": 1234
     },
     {
       "id": 24,
       "name": "Quân Sự",
       "slug": "truyen-quan-su",
-      "num_works": 1234,
-      "picture": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
+      "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+      "order": 24,
+      "num_novels": 1234
     }
   ],
-  "works": [
+  "novels": [
     {
       "id": 1,
-      "name": "Sống Lại Thành Đại Ma Đầu",
+      "title": "Sống Lại Thành Đại Ma Đầu",
       "slug": "song-lai-thanh-dai-ma-dau-12345678",
-      "writer": {
+      "novel_status": "C",
+      "primary_genre": {
         "id": 1,
-        "name": "Tinh Quỷ Zenly",
-        "slug": "tinh-quy-zenly"
+        "name": "Huyền Huyễn",
+        "slug": "truyen-huyen-huyen",
+        "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+        "order": 1,
+        "num_novels": 1234
       },
-      "genres": [
-        {
-          "id": 7,
-          "name": "Truyện Đam Mỹ/ Boy Love",
-          "slug": "truyen-dam-my",
-          "num_works": 1234,
-          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
-        },
-        {
-          "id": 24,
-          "name": "Truyện Quân Sự",
-          "slug": "truyen-quan-su",
-          "num_works": 1234,
-          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
-        }
-      ],
+      "author": {
+        "id": 1,
+        "name": "Thanh Uẩn Tương Ly",
+        "slug": "thanh-uan-tuong-ly",
+        "birth_year": 2000,
+        "location": "TP. HCM",
+        "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
+        "ranking": "Bút Lông Trung Kỳ",
+        "views": 84500,
+        "total_words": 8062000,
+        "num_novels": 7
+      },
+      "tags": ["Huyền Huyễn", "Tiên Hiệp"],
+      "age_rank": 18,
+      "summary": "<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit numquam illum culpa dolorum consequatur, dicta voluptatum, aperiam ad eum quia enim. Facere provident hic sunt delectus, tenetur atque assumenda molestiae?</p>",
       "picture": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
-      "desc": "",
-      "desc_safe": "<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste sapiente quis beatae asperiores qui. Aliquam quas aspernatur recusandae. Doloribus ea hic atque pariatur asperiores dolorum tenetur eligendi ipsum consectetur quidem!</div>",
-      "chapters": 21,
-      "views": 70120,
-      "total_chars": 52200,
-      "likes": 507,
-      "finished": false,
-      "age": "16+"
+      "status": "P",
+      "is_vip": false,
+      "vip_started_at": "05/25/2022",
+      "withdraw_locked": false,
+      "lock_comments": false,
+      "login_required": false,
+      "no_ads": false,
+      "turnoff_notifications": false,
+      "turnoff_last_update": false,
+      "mobile_app_banned": false,
+      "app_only": false,
+      "app_only_from": 0,
+
+      "team_notes": "",
+
+      "updated_at": "05/25/2022",
+      "created_at": "05/25/2022",
+      "created_by": "",
+      "og_img": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
+      "num_likes": 12345,
+      "num_views": 70120,
+      "num_chapters": 213,
+      "num_words": 515000,
+      "top_stripe": "Khai Bút Đầu Xuân 2021"
     },
     {
       "id": 2,
-      "name": "Tên Truyện 2",
-      "slug": "ten-truyen-2-12365478",
-      "writer": {
+      "title": "Sống Lại Thành Đại Ma Đầu",
+      "slug": "song-lai-thanh-dai-ma-dau-12345678",
+      "novel_status": "C",
+      "primary_genre": {
         "id": 1,
-        "name": "Bất Động Minh Vương",
-        "slug": "bgat-dong-minh-vuong"
+        "name": "Huyền Huyễn",
+        "slug": "truyen-huyen-huyen",
+        "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+        "order": 1,
+        "num_novels": 1234
       },
-      "genres": [
-        {
-          "id": 7,
-          "name": "Truyện Đam Mỹ/ Boy Love",
-          "slug": "truyen-dam-my",
-          "num_works": 1234,
-          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
-        },
-        {
-          "id": 24,
-          "name": "Truyện Quân Sự",
-          "slug": "truyen-quan-su",
-          "num_works": 1234,
-          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
-        }
-      ],
-      "picture": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
-      "desc": "",
-      "desc_safe": "<div>lorem100</div>",
-      "chapters": 101,
-      "views": 7012,
-      "total_chars": 37200,
-      "likes": 203,
-      "finished": true,
-      "age": "16+"
+      "author": {
+        "id": 1,
+        "name": "Thanh Uẩn Tương Ly",
+        "slug": "thanh-uan-tuong-ly",
+        "birth_year": 2000,
+        "location": "TP. HCM",
+        "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
+        "ranking": "Bút Lông Trung Kỳ",
+        "views": 84500,
+        "total_words": 8062000,
+        "num_novels": 7
+      },
+      "tags": ["Huyền Huyễn", "Tiên Hiệp"],
+      "age_rank": 18,
+      "summary": "<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, voluptates corrupti sequi iusto a reiciendis autem eligendi nam aliquid quod odio dicta commodi praesentium aliquam alias fuga, repellendus soluta deserunt cumque! Recusandae perferendis culpa aspernatur neque magni deleniti modi explicabo ipsa. Possimus illo minus iure corporis, perferendis sed itaque provident, sint alias ipsa libero! Unde fugiat corrupti placeat at fugit dolores, repellat ipsam error commodi maxime provident iste quae quos minus. Dolorum temporibus similique facilis explicabo. Aut saepe in veritatis laboriosam odit nulla perferendis doloribus, ad dolor nam maxime quas harum explicabo esse accusamus, provident sed! Quos autem quisquam ut.</div>",
+      "picture": "https://i.vnvl.net/vo/20220508/YW8opd.png.240x360_q85_crop.jpg",
+      "status": "P",
+      "is_vip": false,
+      "vip_started_at": "05/25/2022",
+      "withdraw_locked": false,
+      "lock_comments": false,
+      "login_required": false,
+      "no_ads": false,
+      "turnoff_notifications": false,
+      "turnoff_last_update": false,
+      "mobile_app_banned": false,
+      "app_only": false,
+      "app_only_from": 0,
+
+      "team_notes": "",
+
+      "updated_at": "05/25/2022",
+      "created_at": "05/25/2022",
+      "created_by": "",
+      "og_img": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
+      "num_likes": 12345,
+      "num_views": 70120,
+      "num_chapters": 213,
+      "num_words": 515000,
+      "top_stripe": "Khai Bút Đầu Xuân 2021"
     },
     {
       "id": 3,
-      "name": "SELENA WHITELEY",
-      "slug": "selena-whiteley-12345678",
-      "writer": {
+      "title": "Sống Lại Thành Đại Ma Đầu",
+      "slug": "song-lai-thanh-dai-ma-dau-12345678",
+      "novel_status": "C",
+      "primary_genre": {
         "id": 1,
-        "name": "Tinh Quỷ Zenly",
-        "slug": "tinh-quy-zenly"
+        "name": "Huyền Huyễn",
+        "slug": "truyen-huyen-huyen",
+        "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+        "order": 1,
+        "num_novels": 1234
       },
-      "genres": [
-        {
-          "id": 7,
-          "name": "Truyện Đam Mỹ/ Boy Love",
-          "slug": "truyen-dam-my",
-          "num_works": 1234,
-          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
-        },
-        {
-          "id": 24,
-          "name": "Truyện Quân Sự",
-          "slug": "truyen-quan-su",
-          "num_works": 1234,
-          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
-        }
-      ],
-      "picture": "https://i.vnvl.net/vo/20220503/YW8Opd.png.240x360_q85_crop.jpg",
-      "desc": "",
-      "desc_safe": "<div>lorem50</div>",
-      "chapters": 21,
-      "views": 7012000,
-      "total_chars": 52200,
-      "likes": 507,
-      "finished": false,
-      "age": "16+"
+      "author": {
+        "id": 1,
+        "name": "Thanh Uẩn Tương Ly",
+        "slug": "thanh-uan-tuong-ly",
+        "birth_year": 2000,
+        "location": "TP. HCM",
+        "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
+        "ranking": "Bút Lông Trung Kỳ",
+        "views": 84500,
+        "total_words": 8062000,
+        "num_novels": 7
+      },
+      "tags": ["Huyền Huyễn", "Tiên Hiệp"],
+      "age_rank": 18,
+      "summary": "<h3>dfxhslkd</h3><p>lelximhfkdfh</p><p>sjxhmsdkxjfhfk</p><p>zshjdgnjashgd</p>",
+      "picture": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
+      "status": "P",
+      "is_vip": false,
+      "vip_started_at": "05/25/2022",
+      "withdraw_locked": false,
+      "lock_comments": false,
+      "login_required": false,
+      "no_ads": false,
+      "turnoff_notifications": false,
+      "turnoff_last_update": false,
+      "mobile_app_banned": false,
+      "app_only": false,
+      "app_only_from": 0,
+
+      "team_notes": "",
+
+      "updated_at": "05/25/2022",
+      "created_at": "05/25/2022",
+      "created_by": "",
+      "og_img": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
+      "num_likes": 12345,
+      "num_views": 70120,
+      "num_chapters": 213,
+      "num_words": 515000,
+      "top_stripe": "Khai Bút Đầu Xuân 2021"
     },
     {
       "id": 4,
-      "name": "Long Vương Dị Giới",
-      "slug": "long-vuong-di-gioi-87654321",
-      "writer": {
+      "title": "Sống Lại Thành Đại Ma Đầu",
+      "slug": "song-lai-thanh-dai-ma-dau-12345678",
+      "novel_status": "C",
+      "primary_genre": {
         "id": 1,
-        "name": "Tinh Quỷ Zenly",
-        "slug": "tinh-quy-zenly"
+        "name": "Huyền Huyễn",
+        "slug": "truyen-huyen-huyen",
+        "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+        "order": 1,
+        "num_novels": 1234
       },
-      "genres": [
-        {
-          "id": 7,
-          "name": "Truyện Đam Mỹ/ Boy Love",
-          "slug": "truyen-dam-my",
-          "num_works": 1234,
-          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
-        },
-        {
-          "id": 24,
-          "name": "Truyện Quân Sự",
-          "slug": "truyen-quan-su",
-          "num_works": 1234,
-          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
-        }
-      ],
-      "picture": "https://i.vnvl.net/vo/20220412/d66MPd.jpg.110x165_q85_crop.jpg",
-      "desc": "",
-      "desc_safe": "<div>lorem100</div>",
-      "chapters": 101,
-      "views": 512,
-      "total_chars": 37200,
-      "likes": 203,
-      "finished": true,
-      "age": "16+"
+      "author": {
+        "id": 1,
+        "name": "Thanh Uẩn Tương Ly",
+        "slug": "thanh-uan-tuong-ly",
+        "birth_year": 2000,
+        "location": "TP. HCM",
+        "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
+        "ranking": "Bút Lông Trung Kỳ",
+        "views": 84500,
+        "total_words": 8062000,
+        "num_novels": 7
+      },
+      "tags": ["Huyền Huyễn", "Tiên Hiệp"],
+      "age_rank": 18,
+      "summary": "<h3>dfxhslkd</h3><p>lelximhfkdfh</p><p>sjxhmsdkxjfhfk</p><p>zshjdgnjashgd</p>",
+      "picture": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
+      "status": "P",
+      "is_vip": false,
+      "vip_started_at": "05/25/2022",
+      "withdraw_locked": false,
+      "lock_comments": false,
+      "login_required": false,
+      "no_ads": false,
+      "turnoff_notifications": false,
+      "turnoff_last_update": false,
+      "mobile_app_banned": false,
+      "app_only": false,
+      "app_only_from": 0,
+
+      "team_notes": "",
+
+      "updated_at": "05/25/2022",
+      "created_at": "05/25/2022",
+      "created_by": "",
+      "og_img": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
+      "num_likes": 12345,
+      "num_views": 70120,
+      "num_chapters": 213,
+      "num_words": 515000,
+      "top_stripe": "Khai Bút Đầu Xuân 2021"
     },
     {
       "id": 5,
-      "name": "Sống Lại Thành Đại Ma Đầu thêm vào cho nhiều chữ",
+      "title": "Sống Lại Thành Đại Ma Đầu",
       "slug": "song-lai-thanh-dai-ma-dau-12345678",
-      "writer": {
+      "novel_status": "C",
+      "primary_genre": {
         "id": 1,
-        "name": "Tinh Quỷ Zenly",
-        "slug": "tinh-quy-zenly"
+        "name": "Huyền Huyễn",
+        "slug": "truyen-huyen-huyen",
+        "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+        "order": 1,
+        "num_novels": 1234
       },
-      "genres": [
-        {
-          "id": 7,
-          "name": "Truyện Đam Mỹ/ Boy Love",
-          "slug": "truyen-dam-my",
-          "num_works": 1234,
-          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
-        },
-        {
-          "id": 24,
-          "name": "Truyện Quân Sự",
-          "slug": "truyen-quan-su",
-          "num_works": 1234,
-          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
-        }
-      ],
+      "author": {
+        "id": 1,
+        "name": "Thanh Uẩn Tương Ly",
+        "slug": "thanh-uan-tuong-ly",
+        "birth_year": 2000,
+        "location": "TP. HCM",
+        "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
+        "ranking": "Bút Lông Trung Kỳ",
+        "views": 84500,
+        "total_words": 8062000,
+        "num_novels": 7
+      },
+      "tags": ["Huyền Huyễn", "Tiên Hiệp"],
+      "age_rank": 18,
+      "summary": "<h3>dfxhslkd</h3><p>lelximhfkdfh</p><p>sjxhmsdkxjfhfk</p><p>zshjdgnjashgd</p>",
       "picture": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
-      "desc": "",
-      "desc_safe": "<div>lorem50</div>",
-      "chapters": 21,
-      "views": 52785,
-      "total_chars": 125000,
-      "likes": 15000,
-      "finished": false,
-      "age": "16+"
+      "status": "P",
+      "is_vip": false,
+      "vip_started_at": "05/25/2022",
+      "withdraw_locked": false,
+      "lock_comments": false,
+      "login_required": false,
+      "no_ads": false,
+      "turnoff_notifications": false,
+      "turnoff_last_update": false,
+      "mobile_app_banned": false,
+      "app_only": false,
+      "app_only_from": 0,
+
+      "team_notes": "",
+
+      "updated_at": "05/25/2022",
+      "created_at": "05/25/2022",
+      "created_by": "",
+      "og_img": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
+      "num_likes": 12345,
+      "num_views": 70120,
+      "num_chapters": 213,
+      "num_words": 515000,
+      "top_stripe": "Khai Bút Đầu Xuân 2021"
     },
     {
       "id": 6,
-      "name": "Tên Truyện 2",
-      "slug": "ten-truyen-2-12365478",
-      "writer": {
+      "title": "Sống Lại Thành Đại Ma Đầu",
+      "slug": "song-lai-thanh-dai-ma-dau-12345678",
+      "novel_status": "C",
+      "primary_genre": {
         "id": 1,
-        "name": "Bất Động Minh Vương",
-        "slug": "bgat-dong-minh-vuong"
+        "name": "Huyền Huyễn",
+        "slug": "truyen-huyen-huyen",
+        "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+        "order": 1,
+        "num_novels": 1234
       },
-      "genres": [
-        {
-          "id": 7,
-          "name": "Truyện Đam Mỹ/ Boy Love",
-          "slug": "truyen-dam-my",
-          "num_works": 1234,
-          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
-        },
-        {
-          "id": 24,
-          "name": "Truyện Quân Sự",
-          "slug": "truyen-quan-su",
-          "num_works": 1234,
-          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
-        }
-      ],
+      "author": {
+        "id": 1,
+        "name": "Thanh Uẩn Tương Ly",
+        "slug": "thanh-uan-tuong-ly",
+        "birth_year": 2000,
+        "location": "TP. HCM",
+        "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
+        "ranking": "Bút Lông Trung Kỳ",
+        "views": 84500,
+        "total_words": 8062000,
+        "num_novels": 7
+      },
+      "tags": ["Huyền Huyễn", "Tiên Hiệp"],
+      "age_rank": 18,
+      "summary": "<div>fcds xfg wr gwrfx gw trg wrtgwrtg rt gwrt gw rtg wtr gw rtg t rg wrt gwrt g wtrg wrt gwrt g wrtg wtr g wrtg wr tg wrtg wrt gaxsdf asdxfajfh</div>",
       "picture": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
-      "desc": "",
-      "desc_safe": "<div>lorem100</div>",
-      "chapters": 101,
-      "views": 1505,
-      "total_chars": 37200,
-      "likes": 203,
-      "finished": true,
-      "age": "16+"
+      "status": "P",
+      "is_vip": false,
+      "vip_started_at": "05/25/2022",
+      "withdraw_locked": false,
+      "lock_comments": false,
+      "login_required": false,
+      "no_ads": false,
+      "turnoff_notifications": false,
+      "turnoff_last_update": false,
+      "mobile_app_banned": false,
+      "app_only": false,
+      "app_only_from": 0,
+
+      "team_notes": "",
+
+      "updated_at": "05/25/2022",
+      "created_at": "05/25/2022",
+      "created_by": "",
+      "og_img": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
+      "num_likes": 12345,
+      "num_views": 70120,
+      "num_chapters": 213,
+      "num_words": 515000,
+      "top_stripe": "Khai Bút Đầu Xuân 2021"
     },
     {
       "id": 7,
-      "name": "SELENA WHITELEY",
-      "slug": "selena-whiteley-12345678",
-      "writer": {
+      "title": "Sống Lại Thành Đại Ma Đầu",
+      "slug": "song-lai-thanh-dai-ma-dau-12345678",
+      "novel_status": "C",
+      "primary_genre": {
         "id": 1,
-        "name": "Tinh Quỷ Zenly",
-        "slug": "tinh-quy-zenly"
+        "name": "Huyền Huyễn",
+        "slug": "truyen-huyen-huyen",
+        "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+        "order": 1,
+        "num_novels": 1234
       },
-      "genres": [
-        {
-          "id": 7,
-          "name": "Truyện Đam Mỹ/ Boy Love",
-          "slug": "truyen-dam-my",
-          "num_works": 1234,
-          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
-        },
-        {
-          "id": 24,
-          "name": "Truyện Quân Sự",
-          "slug": "truyen-quan-su",
-          "num_works": 1234,
-          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
-        }
-      ],
-      "picture": "https://i.vnvl.net/vo/20220503/YW8Opd.png.240x360_q85_crop.jpg",
-      "desc": "",
-      "desc_safe": "<div>lorem50</div>",
-      "chapters": 21,
-      "views": 15098534,
-      "total_chars": 1234567,
-      "likes": 1042673,
-      "finished": true,
-      "age": "16+"
-    },
-    {
-      "id": 8,
-      "name": "Long Vương Dị Giới",
-      "slug": "long-vuong-di-gioi-87654321",
-      "writer": {
+      "author": {
         "id": 1,
-        "name": "Tinh Quỷ Zenly",
-        "slug": "tinh-quy-zenly"
+        "name": "Thanh Uẩn Tương Ly",
+        "slug": "thanh-uan-tuong-ly",
+        "birth_year": 2000,
+        "location": "TP. HCM",
+        "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
+        "ranking": "Bút Lông Trung Kỳ",
+        "views": 84500,
+        "total_words": 8062000,
+        "num_novels": 7
       },
-      "genres": [
-        {
-          "id": 7,
-          "name": "Truyện Đam Mỹ/ Boy Love",
-          "slug": "truyen-dam-my",
-          "num_works": 1234,
-          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
-        },
-        {
-          "id": 24,
-          "name": "Truyện Quân Sự",
-          "slug": "truyen-quan-su",
-          "num_works": 1234,
-          "image": "https://media.vietnovel.com/genre-icons/yellowstars.svg"
-        }
-      ],
-      "picture": "https://i.vnvl.net/vo/20220412/d66MPd.jpg.110x165_q85_crop.jpg",
-      "desc": "",
-      "desc_safe": "<div>lorem100</div>",
-      "chapters": 101,
-      "views": 512,
-      "total_chars": 37200,
-      "likes": 203,
-      "finished": true,
-      "age": "16+"
+      "tags": ["Huyền Huyễn", "Tiên Hiệp"],
+      "age_rank": 18,
+      "summary": "<div>fcds xfg wr gwrfx gw trg wrtgwrtg rt gwrt gw rtg wtr gw rtg t rg wrt gwrt g wtrg wrt gwrt g wrtg wtr g wrtg wr tg wrtg wrt gaxsdf asdxfajfh</div>",
+      "picture": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
+      "status": "P",
+      "is_vip": false,
+      "vip_started_at": "05/25/2022",
+      "withdraw_locked": false,
+      "lock_comments": false,
+      "login_required": false,
+      "no_ads": false,
+      "turnoff_notifications": false,
+      "turnoff_last_update": false,
+      "mobile_app_banned": false,
+      "app_only": false,
+      "app_only_from": 0,
+
+      "team_notes": "",
+
+      "updated_at": "05/25/2022",
+      "created_at": "05/25/2022",
+      "created_by": "",
+      "og_img": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
+      "num_likes": 12345,
+      "num_views": 70120,
+      "num_chapters": 213,
+      "num_words": 515000,
+      "top_stripe": "Khai Bút Đầu Xuân 2021"
     }
   ],
-  "writers": [
+  "authors": [
     {
       "id": 1,
       "name": "Thanh Uẩn Tương Ly",
-      "title": "Bút Lông Trung Kỳ",
+      "slug": "thanh-uan-tuong-ly",
+      "birth_year": 2000,
+      "location": "TP. HCM",
+      "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
+      "ranking": "Bút Lông Trung Kỳ",
       "views": 84500,
       "total_words": 8062000,
-      "num_works": 7
+      "num_novels": 7
     },
     {
       "id": 2,
       "name": "An Nhân Đạo Tiên",
-      "title": "Bút Tre Đỉnh Phong",
+      "slug": "an-nhan-dao-tien",
+      "birth_year": 2000,
+      "location": "TP. HCM",
+      "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
+      "ranking": "Bút Tre Đỉnh Phong",
       "views": 667000,
       "total_words": 6128000,
-      "num_works": 2
+      "num_novels": 2
     },
     {
       "id": 3,
       "name": "Thanh Y",
-      "title": "Bút Lông Đỉnh Phong",
+      "slug": "thanh-y",
+      "birth_year": 2000,
+      "location": "TP. HCM",
+      "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
+      "ranking": "Bút Lông Đỉnh Phong",
       "views": 47900,
       "total_words": 645900,
-      "num_works": 5
+      "num_novels": 5
     },
     {
       "id": 4,
       "name": "Hắc Long",
-      "title": "Bút Đá Trung Kỳ",
+      "slug": "hac-long",
+      "birth_year": 2000,
+      "location": "TP. HCM",
+      "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
+      "ranking": "Bút Đá Trung Kỳ",
       "views": 43600,
       "total_words": 1100000,
-      "num_works": 2
+      "num_novels": 2
     },
     {
       "id": 5,
       "name": "Dương gia Đại thiếu",
-      "title": "Bút Lông Trung Kỳ",
+      "slug": "duong-gia-dai-thieu",
+      "birth_year": 2000,
+      "location": "TP. HCM",
+      "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
+      "ranking": "Bút Lông Trung Kỳ",
       "views": 41900,
       "total_words": 299700,
-      "num_works": 5
+      "num_novels": 5
     }
   ]
 }

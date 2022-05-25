@@ -1,11 +1,12 @@
 import { Box, Grid } from "@mui/material";
 import HeadPage from "components/common/HeadPage";
+import SyncCarousel from "components/common/SyncCarousel";
+import MainCarousel from "components/Home/MainCarousel";
 import CreatorStudio from "components/Home/CreatorStudio";
 import Featured from "components/Home/Featured";
-import FinishedWorks from "components/Home/FinishedWorks";
+import FinishedNovels from "components/Home/FinishedNovels";
 import Genres from "components/Home/Genres";
 import MostRead from "components/Home/MostRead";
-import MyCarousel from "components/Home/MyCarousel";
 import NewUpdates from "components/Home/NewUpdates";
 import RoyalRanking from "components/Home/RoyalRanking";
 import TopFinished from "components/Home/TopFinished";
@@ -15,22 +16,22 @@ import axiosClient from "utility/axiosConfig";
 export async function getServerSideProps() {
   const genres = await axiosClient.get("genres").then((res) => res.data);
 
-  const works = await axiosClient
-    .get("works?_sort=views&_order=desc")
+  const novels = await axiosClient
+    .get("novels?_sort=views&_order=desc")
     .then((res) => res.data);
 
-  const writers = await axiosClient.get("writers").then((res) => res.data);
+  const authors = await axiosClient.get("authors").then((res) => res.data);
 
   return {
     props: {
-      works,
+      novels,
       genres,
-      writers,
+      authors,
     },
   };
 }
 
-export default function Home({ works, genres, writers }) {
+export default function Home({ novels, genres, authors }) {
   return (
     <>
       <HeadPage title="Vietnovel Origin - Truyện Sáng Tác Việt" />
@@ -40,12 +41,12 @@ export default function Home({ works, genres, writers }) {
           <Grid container spacing={3}>
             {/* top truyện đã hoàn thành */}
             <Grid item xs={12} lg={3}>
-              <TopFinished works={works} />
+              <TopFinished novels={novels} />
             </Grid>
 
             {/* carousel */}
             <Grid item xs={12} lg={6}>
-              <MyCarousel works={works} />
+              <MainCarousel novels={novels} />
             </Grid>
 
             {/* creator studio */}
@@ -59,27 +60,27 @@ export default function Home({ works, genres, writers }) {
         <Box mt={10}>
           <Grid container spacing={5}>
             <Grid item xs={12} lg={9}>
-              <RoyalRanking works={works} />
+              <RoyalRanking novels={novels} />
             </Grid>
             <Grid item xs={12} lg={3}>
-              <NewUpdates works={works} />
+              <NewUpdates novels={novels} />
             </Grid>
           </Grid>
         </Box>
 
         {/* phần truyện nổi bật */}
         <Box mt={10}>
-          <Featured works={works} />
+          <Featured novels={novels} />
         </Box>
 
         {/* truyện đọc nhiều & thể loại truyện */}
         <Box mt={10}>
           <Grid container spacing={3}>
             <Grid item xs={12} lg={3}>
-              <MostRead works={works} />
+              <MostRead novels={novels} />
             </Grid>
             <Grid item xs={12} lg={9}>
-              <Genres genres={genres} works={works} />
+              <Genres genres={genres} novels={novels} />
             </Grid>
           </Grid>
         </Box>
@@ -88,10 +89,10 @@ export default function Home({ works, genres, writers }) {
         <Box mt={10}>
           <Grid container spacing={3}>
             <Grid item xs={12} lg={3}>
-              <TopWriters writers={writers} />
+              <TopWriters authors={authors} />
             </Grid>
             <Grid item xs={12} lg={9}>
-              <FinishedWorks works={works} />
+              <FinishedNovels novels={novels} />
             </Grid>
           </Grid>
         </Box>

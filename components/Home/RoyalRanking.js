@@ -5,13 +5,13 @@ import Typography from "@mui/material/Typography";
 import CategoryLayout from "components/Layout/CategoryLayout";
 import * as React from "react";
 
-function RoyalRankingCard({ work }) {
+function RoyalRankingCard({ novel }) {
   return (
     <Paper elevation={0} variant="outlined" sx={{ padding: 2 }}>
       <Card elevation={0} sx={{ borderRadius: 0 }}>
         <CardMedia
           component="img"
-          image={work.picture}
+          image={novel.picture}
           alt="green iguana"
           sx={{
             borderRadius: 1,
@@ -37,7 +37,7 @@ function RoyalRankingCard({ work }) {
           fontSize="1rem"
           component="div"
         >
-          {work.name}
+          {novel.title}
         </Typography>
         <Typography
           variant="subtitle1"
@@ -49,28 +49,28 @@ function RoyalRankingCard({ work }) {
           }}
           gutterBottom
         >
-          {work.writer.name}
+          {novel.author.name}
         </Typography>
         <Typography
           variant="subtitle2"
           textAlign="center"
           color="text.secondary"
         >
-          {work.chapters} chương
+          {novel.num_chapters} chương
         </Typography>
       </Card>
     </Paper>
   );
 }
 
-export default function RoyalRanking({ works }) {
+export default function RoyalRanking({ novels }) {
   return (
     <>
       <CategoryLayout title="Royal Ranking - Bảng Xếp Hạng Truyện Chữ Hay Trong Tháng">
         <Grid container spacing={2}>
-          {works.slice(0, 5).map((work) => (
-            <Grid item key={work.id} xs={12} sm={6} md={4} lg={2.4}>
-              <RoyalRankingCard work={work} />
+          {novels.slice(0, 5).map((novel) => (
+            <Grid item key={novel.id} xs={12} sm={6} md={4} lg={2.4}>
+              <RoyalRankingCard novel={novel} />
             </Grid>
           ))}
         </Grid>

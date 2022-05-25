@@ -17,7 +17,7 @@ export default function Navbar() {
         variant="outlined"
         sx={{ top: 0 }}
       >
-        <Container maxWidth="xl">
+        <Container maxWidth="2xl">
           <Toolbar sx={{ gap: 1 }}>
             <Link href="/">
               <a>

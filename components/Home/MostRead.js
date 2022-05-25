@@ -6,7 +6,7 @@ import CategoryLayout from "components/Layout/CategoryLayout";
 import * as React from "react";
 import { viewsFormat } from "utility/common";
 
-function MostReadCard({ work }) {
+function MostReadCard({ novel }) {
   return (
     <Card elevation={0} sx={{ display: "flex", borderRadius: 0, mb: 2 }}>
       <Box>
@@ -18,8 +18,8 @@ function MostReadCard({ work }) {
             alignItems: "center",
             mr: 1,
           }}
-          image={work.picture}
-          alt={`ảnh bìa của ${work.name}`}
+          image={novel.picture}
+          alt={`ảnh bìa của ${novel.title}`}
         />
       </Box>
       <Box
@@ -38,7 +38,7 @@ function MostReadCard({ work }) {
             whiteSpace: "nowrap",
           }}
         >
-          {work.name}
+          {novel.title}
         </Typography>
         <Typography
           variant="body2"
@@ -49,22 +49,22 @@ function MostReadCard({ work }) {
             whiteSpace: "nowrap",
           }}
         >
-          {work.writer.name}
+          {novel.author.name}
         </Typography>
         <Typography variant="caption" color="text.dark" fontSize="0.8rem">
-          {viewsFormat(work.views)} lượt xem - 3 năm trước
+          {viewsFormat(novel.num_views)} lượt xem - 3 năm trước
         </Typography>
       </Box>
     </Card>
   );
 }
 
-export default function MostRead({ works }) {
+export default function MostRead({ novels }) {
   return (
     <>
       <CategoryLayout title="Truyện Đọc Nhiều">
-        {works.slice(0, 10).map((work) => (
-          <MostReadCard key={work.id} work={work} />
+        {novels.slice(0, 10).map((novel) => (
+          <MostReadCard key={novel.id} novel={novel} />
         ))}
       </CategoryLayout>
     </>

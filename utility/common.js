@@ -2,6 +2,23 @@ import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 import updateLocale from "dayjs/plugin/updateLocale";
 import "dayjs/locale/vi";
+import {
+  grey,
+  pink,
+  green,
+  red,
+  amber,
+  purple,
+  indigo,
+  blue,
+  teal,
+  deepOrange,
+  lightBlue,
+  orange,
+  yellow,
+  cyan,
+} from "@mui/material/colors";
+import lightTheme from "styles/theme/lightTheme";
 
 // ----- VN date config -----
 dayjs.extend(updateLocale);
@@ -61,4 +78,17 @@ export function viewsFormat(views) {
 export function timesFromNow(dateString) {
   const date = new Date(dateString);
   return dayjs(date).fromNow();
+}
+
+export function rankingColor(rank) {
+  switch (rank) {
+    case 1:
+      return red[500];
+    case 2:
+      return orange[700];
+    case 3:
+      return green["A700"];
+    default:
+      return lightTheme.palette.form.main;
+  }
 }

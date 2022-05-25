@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import Slider from "react-slick";
 
-export default function MyCarousel({ works }) {
+export default function MyCarousel({ novels }) {
   const settings = {
     dots: true,
     infinite: true,
@@ -25,15 +25,19 @@ export default function MyCarousel({ works }) {
       }}
     >
       <Slider {...settings}>
-        {works.slice(0, 5).map((work) => (
-          <Box key={work.id}>
+        {novels.slice(0, 5).map((novel) => (
+          <Box
+            key={novel.id}
+            sx={{
+              position: "relative",
+              height: "28vw",
+            }}
+          >
             <Image
-              alt={`anh3 bìa của ${work.name}`}
-              src={work.picture}
-              width={3}
-              height={2}
-              layout="responsive"
-              style={{ borderRadius: 5 }}
+              alt={`Ảnh bìa của ${novel.title}`}
+              src={novel.picture}
+              layout="fill"
+              style={{ borderRadius: "0.5rem" }}
             />
           </Box>
         ))}

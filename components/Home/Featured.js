@@ -7,15 +7,16 @@ import {
   Paper,
   Typography,
 } from "@mui/material";
+import SyncCarousel from "components/common/SyncCarousel";
 import CategoryLayout from "components/Layout/CategoryLayout";
 import React from "react";
 
-function FeaturedCard({ work }) {
+function FeaturedCard({ novel }) {
   return (
     <Card elevation={0} sx={{ borderRadius: 0 }}>
       <CardMedia
         component="img"
-        image={work.picture}
+        image={novel.picture}
         alt="green iguana"
         sx={{
           borderRadius: 1,
@@ -23,7 +24,7 @@ function FeaturedCard({ work }) {
         }}
       />
       <Typography gutterBottom variant="h6" fontSize="1rem" component="div">
-        {work.name}
+        {novel.title}
       </Typography>
       <Typography
         variant="subtitle2"
@@ -31,13 +32,13 @@ function FeaturedCard({ work }) {
         color="text.secondary"
         gutterBottom
       >
-        {work.writer.name}
+        {novel.author.name}
       </Typography>
     </Card>
   );
 }
 
-export default function Featured({ works }) {
+export default function Featured({ novels }) {
   return (
     <>
       <CategoryLayout title="Truyện Nổi Bật">
@@ -46,18 +47,18 @@ export default function Featured({ works }) {
             <Paper
               elevation={0}
               sx={{
+                padding: 2,
                 width: "100%",
-                height: "100%",
                 backgroundColor: "secondary.light",
               }}
             >
-              Truyện nổi bật nhất nằm đây
+              <SyncCarousel novels={novels.slice(0, 3)} />
             </Paper>
           </Grid>
           <Grid container item xs={12} lg={8} spacing={2}>
-            {works.slice(0, 12).map((work) => (
-              <Grid key={work.id} item xs={6} sm={4} md={3} lg={2}>
-                <FeaturedCard work={work} />
+            {novels.slice(3, 15).map((novel) => (
+              <Grid key={novel.id} item xs={6} sm={4} md={3} lg={2}>
+                <FeaturedCard novel={novel} />
               </Grid>
             ))}
           </Grid>

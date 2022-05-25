@@ -1,28 +1,20 @@
 import { Box, Paper, Typography } from "@mui/material";
+import RankingOrder from "components/common/RankingOrder";
 import CategoryLayout from "components/Layout/CategoryLayout";
 import React from "react";
 import { viewsFormat } from "utility/common";
 
-function TopWritersCard({ writer, rank }) {
+function TopWritersCard({ author, rank }) {
   return (
     <>
-      <Box key={writer.id} sx={{ display: "flex", gap: 1, mb: 1 }}>
+      <Box key={author.id} sx={{ display: "flex", gap: 1, mb: 1 }}>
         <Box>
-          <Typography
-            sx={{
-              borderRadius: "50%",
-              backgroundColor: "form.main",
-              width: "2rem",
-              height: "2rem",
-
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              color: "text.light",
-            }}
-          >
-            {rank}
-          </Typography>
+          <RankingOrder
+            order={rank}
+            width="2.5rem"
+            height="2.5rem"
+            crownWidth={24}
+          />
         </Box>
         <Box
           sx={{
@@ -40,12 +32,12 @@ function TopWritersCard({ writer, rank }) {
               whiteSpace: "nowrap",
             }}
           >
-            {writer.name}
+            {author.name}
           </Typography>
-          <Typography variant="body2">{writer.title}</Typography>
+          <Typography variant="body2">{author.ranking}</Typography>
           <Typography variant="caption" color="text.dark" fontSize="0.7rem">
-            {viewsFormat(writer.views)} lượt xem -{" "}
-            {viewsFormat(writer.total_words)} chữ - {writer.num_works} truyện
+            {viewsFormat(author.views)} lượt xem -{" "}
+            {viewsFormat(author.total_words)} chữ - {author.num_novels} truyện
           </Typography>
         </Box>
       </Box>
@@ -53,12 +45,12 @@ function TopWritersCard({ writer, rank }) {
   );
 }
 
-export default function TopWriters({ writers }) {
+export default function TopWriters({ authors }) {
   return (
     <>
       <CategoryLayout title="Tác Giả Bảng">
-        {writers.slice(0, 10).map((writer, index) => (
-          <TopWritersCard key={writer.id} writer={writer} rank={index + 1} />
+        {authors.slice(0, 10).map((author, index) => (
+          <TopWritersCard key={author.id} author={author} rank={index + 1} />
         ))}
       </CategoryLayout>
     </>

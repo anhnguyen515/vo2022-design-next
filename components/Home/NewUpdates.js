@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import CategoryLayout from "components/Layout/CategoryLayout";
 import * as React from "react";
 
-function NewUpdatesCard({ work }) {
+function NewUpdatesCard({ novel }) {
   return (
     <Card elevation={0} sx={{ display: "flex", borderRadius: 0, mb: 2 }}>
       <Box
@@ -28,7 +28,7 @@ function NewUpdatesCard({ work }) {
             whiteSpace: "nowrap",
           }}
         >
-          {work.name}
+          {novel.title}
         </Typography>
         <Typography
           variant="body2"
@@ -39,7 +39,7 @@ function NewUpdatesCard({ work }) {
             whiteSpace: "nowrap",
           }}
         >
-          {work.writer.name}
+          {novel.author.name}
         </Typography>
         <Typography variant="caption" color="text.dark" fontSize="0.8rem">
           Chương 1 - 2 giờ trước
@@ -52,7 +52,7 @@ function NewUpdatesCard({ work }) {
             width: 50,
             borderRadius: 1,
           }}
-          image={work.picture}
+          image={novel.picture}
           alt="Live from space album cover"
         />
       </Box>
@@ -60,12 +60,12 @@ function NewUpdatesCard({ work }) {
   );
 }
 
-export default function NewUpdates({ works }) {
+export default function NewUpdates({ novels }) {
   return (
     <>
       <CategoryLayout title="Truyện Mới Cập Nhật">
-        {works.slice(0, 5).map((work) => (
-          <NewUpdatesCard key={work.id} work={work} />
+        {novels.slice(0, 5).map((novel) => (
+          <NewUpdatesCard key={novel.id} novel={novel} />
         ))}
       </CategoryLayout>
     </>

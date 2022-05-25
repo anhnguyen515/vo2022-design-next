@@ -1,41 +1,32 @@
 import { Box, Paper, Typography } from "@mui/material";
+import RankingOrder from "components/common/RankingOrder";
 import React from "react";
 import { viewsFormat } from "utility/common";
+import { Divider } from "@mui/material";
 
-export default function TopFinished({ works }) {
+export default function TopFinished({ novels }) {
   return (
     <>
       <Paper sx={{ padding: 2, backgroundColor: "secondary.light" }}>
-        <Typography
-          variant="h6"
-          gutterBottom
-          textAlign="center"
-          // sx={{
-          //   overflow: "hidden",
-          //   textOverflow: "ellipsis",
-          //   whiteSpace: "nowrap",
-          // }}
-        >
+        <Typography variant="h6" gutterBottom textAlign="center">
           Top Truyện Đã Hoàn Thành
         </Typography>
-        {works.slice(0, 8).map((work, index) => (
-          <Box key={work.id} sx={{ display: "flex", gap: 1, mb: 1 }}>
+        {novels.slice(0, 8).map((novel, index) => (
+          <Box
+            key={novel.id}
+            sx={{
+              display: "flex",
+              gap: 1,
+              mb: 1,
+            }}
+          >
             <Box>
-              <Typography
-                sx={{
-                  borderRadius: "50%",
-                  backgroundColor: "form.main",
-                  width: "2rem",
-                  height: "2rem",
-
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  color: "text.light",
-                }}
-              >
-                {index + 1}
-              </Typography>
+              <RankingOrder
+                order={index + 1}
+                width="2.5rem"
+                height="2.5rem"
+                crownWidth={24}
+              />
             </Box>
             <Box
               sx={{
@@ -53,10 +44,10 @@ export default function TopFinished({ works }) {
                   whiteSpace: "nowrap",
                 }}
               >
-                {work.name}
+                {novel.title}
               </Typography>
               <Typography variant="caption">
-                {viewsFormat(work.views)} lượt xem
+                {viewsFormat(novel.num_views)} lượt xem
               </Typography>
             </Box>
           </Box>

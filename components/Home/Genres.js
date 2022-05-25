@@ -3,14 +3,14 @@ import CategoryLayout from "components/Layout/CategoryLayout";
 import React from "react";
 import { viewsFormat } from "utility/common";
 
-function GenresCard({ genre, works }) {
+function GenresCard({ genre, novels }) {
   return (
     <>
       <Paper elevation={0} variant="outlined">
         <Box sx={{ display: "flex", alignItems: "center", padding: 1 }}>
           <Avatar
             alt={`${genre.name}`}
-            src={genre.picture}
+            src={genre.svg_icon}
             sx={{
               width: {
                 xs: "1rem",
@@ -25,14 +25,14 @@ function GenresCard({ genre, works }) {
           <Box sx={{ ml: "auto" }}>
             <Typography fontWeight={500}>{genre.name}</Typography>
             <Typography variant="body2" textAlign="right">
-              ({genre.num_works})
+              ({genre.num_novels})
             </Typography>
           </Box>
         </Box>
         <Divider />
         <Grid container spacing={2} sx={{ padding: 1 }}>
-          {works.slice(0, 5).map((work) => (
-            <Grid key={work.id} item xs={12}>
+          {novels.slice(0, 5).map((novel) => (
+            <Grid key={novel.id} item xs={12}>
               <Box sx={{ display: "flex" }}>
                 <Box sx={{ overflow: "hidden", mr: 1 }}>
                   <Typography
@@ -43,7 +43,7 @@ function GenresCard({ genre, works }) {
                       textOverflow: "ellipsis",
                     }}
                   >
-                    {work.name}
+                    {novel.title}
                   </Typography>
                   <Typography
                     variant="caption"
@@ -53,7 +53,7 @@ function GenresCard({ genre, works }) {
                       textOverflow: "ellipsis",
                     }}
                   >
-                    {work.writer.name}
+                    {novel.author.name}
                   </Typography>
                 </Box>
                 <Typography
@@ -61,7 +61,7 @@ function GenresCard({ genre, works }) {
                   fontWeight={500}
                   sx={{ ml: "auto" }}
                 >
-                  {viewsFormat(work.views)}
+                  {viewsFormat(novel.num_views)}
                 </Typography>
               </Box>
             </Grid>
@@ -72,14 +72,14 @@ function GenresCard({ genre, works }) {
   );
 }
 
-export default function Genres({ genres, works }) {
+export default function Genres({ genres, novels }) {
   return (
     <>
       <CategoryLayout title="Thể Loại Truyện">
         <Grid container spacing={3}>
           {genres.slice(0, 6).map((genre) => (
             <Grid key={genre.id} item xs={6} md={4}>
-              <GenresCard genre={genre} works={works} />
+              <GenresCard genre={genre} novels={novels} />
             </Grid>
           ))}
         </Grid>

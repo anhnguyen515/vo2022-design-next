@@ -22,3 +22,9 @@ a {
   margin: 0;
   padding: 0;
 }
+
+.slick-center {
+  -webkit-transform: scale(1.18);
+  -moz-transform: scale(1.18);
+  transform: scale(1.18);
+}
