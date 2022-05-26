@@ -3,6 +3,7 @@ import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import CategoryLayout from "components/Layout/CategoryLayout";
+import Link from "next/link";
 import * as React from "react";
 import { viewsFormat } from "utility/common";
 
@@ -10,17 +11,21 @@ function MostReadCard({ novel }) {
   return (
     <Card elevation={0} sx={{ display: "flex", borderRadius: 0, mb: 2 }}>
       <Box>
-        <CardMedia
-          component="img"
-          sx={{
-            width: 50,
-            borderRadius: 1,
-            alignItems: "center",
-            mr: 1,
-          }}
-          image={novel.picture}
-          alt={`ảnh bìa của ${novel.title}`}
-        />
+        <Link href={`/${novel.slug}`}>
+          <a>
+            <CardMedia
+              component="img"
+              sx={{
+                width: 50,
+                borderRadius: 1,
+                alignItems: "center",
+                mr: 1,
+              }}
+              image={novel.picture}
+              alt={`ảnh bìa của ${novel.title}`}
+            />
+          </a>
+        </Link>
       </Box>
       <Box
         sx={{
@@ -38,7 +43,9 @@ function MostReadCard({ novel }) {
             whiteSpace: "nowrap",
           }}
         >
-          {novel.title}
+          <Link href={`/${novel.slug}`}>
+            <a>{novel.title}</a>
+          </Link>
         </Typography>
         <Typography
           variant="body2"
@@ -49,7 +56,9 @@ function MostReadCard({ novel }) {
             whiteSpace: "nowrap",
           }}
         >
-          {novel.author.name}
+          <Link href={`/tac-gia/${novel.author.slug}`}>
+            <a>{novel.author.name}</a>
+          </Link>
         </Typography>
         <Typography variant="caption" color="text.dark" fontSize="0.8rem">
           {viewsFormat(novel.num_views)} lượt xem - 3 năm trước

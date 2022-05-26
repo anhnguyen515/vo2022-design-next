@@ -1,6 +1,7 @@
 import { Box, Paper, Typography } from "@mui/material";
 import RankingOrder from "components/common/RankingOrder";
 import CategoryLayout from "components/Layout/CategoryLayout";
+import Link from "next/link";
 import React from "react";
 import { viewsFormat } from "utility/common";
 
@@ -9,12 +10,7 @@ function TopWritersCard({ author, rank }) {
     <>
       <Box key={author.id} sx={{ display: "flex", gap: 1, mb: 1 }}>
         <Box>
-          <RankingOrder
-            order={rank}
-            width="2.5rem"
-            height="2.5rem"
-            crownWidth={24}
-          />
+          <RankingOrder order={rank} width="2.5rem" height="2.5rem" rem={1.2} />
         </Box>
         <Box
           sx={{
@@ -32,7 +28,9 @@ function TopWritersCard({ author, rank }) {
               whiteSpace: "nowrap",
             }}
           >
-            {author.name}
+            <Link href={`/tac-gia/${author.slug}`}>
+              <a>{author.name}</a>
+            </Link>
           </Typography>
           <Typography variant="body2">{author.ranking}</Typography>
           <Typography variant="caption" color="text.dark" fontSize="0.7rem">

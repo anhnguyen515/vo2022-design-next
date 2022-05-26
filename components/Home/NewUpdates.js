@@ -4,6 +4,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
 import CategoryLayout from "components/Layout/CategoryLayout";
+import Link from "next/link";
 import * as React from "react";
 
 function NewUpdatesCard({ novel }) {
@@ -28,7 +29,9 @@ function NewUpdatesCard({ novel }) {
             whiteSpace: "nowrap",
           }}
         >
-          {novel.title}
+          <Link href={`/${novel.slug}`}>
+            <a>{novel.title}</a>
+          </Link>
         </Typography>
         <Typography
           variant="body2"
@@ -39,22 +42,28 @@ function NewUpdatesCard({ novel }) {
             whiteSpace: "nowrap",
           }}
         >
-          {novel.author.name}
+          <Link href={`/tac-gia/${novel.author.slug}`}>
+            <a>{novel.author.name}</a>
+          </Link>
         </Typography>
         <Typography variant="caption" color="text.dark" fontSize="0.8rem">
           Chương 1 - 2 giờ trước
         </Typography>
       </Box>
       <Box sx={{ ml: "auto" }}>
-        <CardMedia
-          component="img"
-          sx={{
-            width: 50,
-            borderRadius: 1,
-          }}
-          image={novel.picture}
-          alt="Live from space album cover"
-        />
+        <Link href={`/${novel.slug}`}>
+          <a>
+            <CardMedia
+              component="img"
+              sx={{
+                width: 50,
+                borderRadius: 1,
+              }}
+              image={novel.picture}
+              alt="Live from space album cover"
+            />
+          </a>
+        </Link>
       </Box>
     </Card>
   );

@@ -197,7 +197,7 @@
     {
       "id": 1,
       "title": "Sống Lại Thành Đại Ma Đầu",
-      "slug": "song-lai-thanh-dai-ma-dau-12345678",
+      "slug": "song-lai-thanh-dai-ma-dau",
       "novel_status": "C",
       "primary_genre": {
         "id": 1,
@@ -250,8 +250,8 @@
     },
     {
       "id": 2,
-      "title": "Sống Lại Thành Đại Ma Đầu",
-      "slug": "song-lai-thanh-dai-ma-dau-12345678",
+      "title": "SELENA WHITELEY",
+      "slug": "selena-whiteley",
       "novel_status": "C",
       "primary_genre": {
         "id": 1,
@@ -276,7 +276,7 @@
       "tags": ["Huyền Huyễn", "Tiên Hiệp"],
       "age_rank": 18,
       "summary": "<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, voluptates corrupti sequi iusto a reiciendis autem eligendi nam aliquid quod odio dicta commodi praesentium aliquam alias fuga, repellendus soluta deserunt cumque! Recusandae perferendis culpa aspernatur neque magni deleniti modi explicabo ipsa. Possimus illo minus iure corporis, perferendis sed itaque provident, sint alias ipsa libero! Unde fugiat corrupti placeat at fugit dolores, repellat ipsam error commodi maxime provident iste quae quos minus. Dolorum temporibus similique facilis explicabo. Aut saepe in veritatis laboriosam odit nulla perferendis doloribus, ad dolor nam maxime quas harum explicabo esse accusamus, provident sed! Quos autem quisquam ut.</div>",
-      "picture": "https://i.vnvl.net/vo/20220508/YW8opd.png.240x360_q85_crop.jpg",
+      "picture": "https://i.vnvl.net/vo/20220503/YW8Opd.png.240x360_q85_crop.jpg",
       "status": "P",
       "is_vip": false,
       "vip_started_at": "05/25/2022",
@@ -304,8 +304,8 @@
     },
     {
       "id": 3,
-      "title": "Sống Lại Thành Đại Ma Đầu",
-      "slug": "song-lai-thanh-dai-ma-dau-12345678",
+      "title": "Long Vương Dị Giới",
+      "slug": "long-vuong-di-gioi",
       "novel_status": "C",
       "primary_genre": {
         "id": 1,
@@ -330,7 +330,7 @@
       "tags": ["Huyền Huyễn", "Tiên Hiệp"],
       "age_rank": 18,
       "summary": "<h3>dfxhslkd</h3><p>lelximhfkdfh</p><p>sjxhmsdkxjfhfk</p><p>zshjdgnjashgd</p>",
-      "picture": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
+      "picture": "https://i.vnvl.net/vo/20220412/d66MPd.jpg.240x360_q85_crop.jpg",
       "status": "P",
       "is_vip": false,
       "vip_started_at": "05/25/2022",
@@ -358,8 +358,8 @@
     },
     {
       "id": 4,
-      "title": "Sống Lại Thành Đại Ma Đầu",
-      "slug": "song-lai-thanh-dai-ma-dau-12345678",
+      "title": "Chí Cao Thần Đế",
+      "slug": "chi-cao-than-de",
       "novel_status": "C",
       "primary_genre": {
         "id": 1,
@@ -384,7 +384,7 @@
       "tags": ["Huyền Huyễn", "Tiên Hiệp"],
       "age_rank": 18,
       "summary": "<h3>dfxhslkd</h3><p>lelximhfkdfh</p><p>sjxhmsdkxjfhfk</p><p>zshjdgnjashgd</p>",
-      "picture": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
+      "picture": "https://i.vnvl.net/vo/20220508/YW8opd.png.240x360_q85_crop.jpg",
       "status": "P",
       "is_vip": false,
       "vip_started_at": "05/25/2022",
@@ -412,8 +412,8 @@
     },
     {
       "id": 5,
-      "title": "Sống Lại Thành Đại Ma Đầu",
-      "slug": "song-lai-thanh-dai-ma-dau-12345678",
+      "title": "Thảo Cổ Tâm Thanh",
+      "slug": "thao-co-tam-thanh",
       "novel_status": "C",
       "primary_genre": {
         "id": 1,
@@ -438,7 +438,7 @@
       "tags": ["Huyền Huyễn", "Tiên Hiệp"],
       "age_rank": 18,
       "summary": "<h3>dfxhslkd</h3><p>lelximhfkdfh</p><p>sjxhmsdkxjfhfk</p><p>zshjdgnjashgd</p>",
-      "picture": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
+      "picture": "https://i.vnvl.net/vo/20200810/Y7R1gK.jpg.240x360_q85_crop.jpg",
       "status": "P",
       "is_vip": false,
       "vip_started_at": "05/25/2022",
@@ -466,8 +466,8 @@
     },
     {
       "id": 6,
-      "title": "Sống Lại Thành Đại Ma Đầu",
-      "slug": "song-lai-thanh-dai-ma-dau-12345678",
+      "title": "Vương",
+      "slug": "vuong",
       "novel_status": "C",
       "primary_genre": {
         "id": 1,
@@ -492,7 +492,7 @@
       "tags": ["Huyền Huyễn", "Tiên Hiệp"],
       "age_rank": 18,
       "summary": "<div>fcds xfg wr gwrfx gw trg wrtgwrtg rt gwrt gw rtg wtr gw rtg t rg wrt gwrt g wtrg wrt gwrt g wrtg wtr g wrtg wr tg wrtg wrt gaxsdf asdxfajfh</div>",
-      "picture": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
+      "picture": "https://i.vnvl.net/vo/20220120/YWj4WK.png.240x360_q85_crop.jpg",
       "status": "P",
       "is_vip": false,
       "vip_started_at": "05/25/2022",
@@ -520,8 +520,8 @@
     },
     {
       "id": 7,
-      "title": "Sống Lại Thành Đại Ma Đầu",
-      "slug": "song-lai-thanh-dai-ma-dau-12345678",
+      "title": "Xích Linh",
+      "slug": "xich-linh",
       "novel_status": "C",
       "primary_genre": {
         "id": 1,
@@ -546,7 +546,7 @@
       "tags": ["Huyền Huyễn", "Tiên Hiệp"],
       "age_rank": 18,
       "summary": "<div>fcds xfg wr gwrfx gw trg wrtgwrtg rt gwrt gw rtg wtr gw rtg t rg wrt gwrt g wtrg wrt gwrt g wrtg wtr g wrtg wr tg wrtg wrt gaxsdf asdxfajfh</div>",
-      "picture": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
+      "picture": "https://i.vnvl.net/vo/20220211/d6nVed.png.240x360_q85_crop.jpg",
       "status": "P",
       "is_vip": false,
       "vip_started_at": "05/25/2022",

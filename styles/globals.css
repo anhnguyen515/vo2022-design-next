@@ -24,7 +24,8 @@ a {
 }
 
 .slick-center {
-  -webkit-transform: scale(1.18);
-  -moz-transform: scale(1.18);
-  transform: scale(1.18);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transform: scale(1.2);
+  filter: blur(0);
 }

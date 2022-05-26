@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import Slider from "react-slick";
 
@@ -7,7 +8,7 @@ export default function MyCarousel({ novels }) {
   const settings = {
     dots: true,
     infinite: true,
-    fade: true,
+    // fade: true,
     arrows: false,
     speed: 1000,
     autoplay: true,
@@ -26,20 +27,22 @@ export default function MyCarousel({ novels }) {
     >
       <Slider {...settings}>
         {novels.slice(0, 5).map((novel) => (
-          <Box
-            key={novel.id}
-            sx={{
-              position: "relative",
-              height: "28vw",
-            }}
-          >
-            <Image
-              alt={`Ảnh bìa của ${novel.title}`}
-              src={novel.picture}
-              layout="fill"
-              style={{ borderRadius: "0.5rem" }}
-            />
-          </Box>
+          <Link key={novel.id} href={`/${novel.slug}`} passHref>
+            <Box
+              sx={{
+                position: "relative",
+                height: "28vw",
+                cursor: "pointer",
+              }}
+            >
+              <Image
+                alt={`Ảnh bìa của ${novel.title}`}
+                src={novel.picture}
+                layout="fill"
+                style={{ borderRadius: "0.5rem", cursor: "pointer" }}
+              />
+            </Box>
+          </Link>
         ))}
       </Slider>
     </Box>

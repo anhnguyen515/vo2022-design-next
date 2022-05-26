@@ -1,5 +1,5 @@
 import { Grid } from "@mui/material";
-import WorkCard from "components/common/WorkCard";
+import NovelCard from "components/common/NovelCard";
 import CategoryLayout from "components/Layout/CategoryLayout";
 import React from "react";
 
@@ -10,7 +10,7 @@ export default function FinishedNovels({ novels }) {
         <Grid container spacing={3}>
           {novels.slice(0, 6).map((novel) => (
             <Grid key={novel.id} item xs={12} lg={6}>
-              <WorkCard novel={novel} />
+              <NovelCard novel={novel} />
             </Grid>
           ))}
         </Grid>

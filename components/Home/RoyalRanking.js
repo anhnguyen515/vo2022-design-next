@@ -1,27 +1,37 @@
-import { Divider, Grid, Paper } from "@mui/material";
+import { Box, Grid, Paper } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
+import RankingOrder from "components/common/RankingOrder";
 import CategoryLayout from "components/Layout/CategoryLayout";
+import Link from "next/link";
 import * as React from "react";
 
-function RoyalRankingCard({ novel }) {
+function RoyalRankingCard({ novel, rank }) {
   return (
-    <Paper elevation={0} variant="outlined" sx={{ padding: 2 }}>
+    <Paper
+      elevation={0}
+      variant="outlined"
+      sx={{ padding: 2, position: "relative" }}
+    >
       <Card elevation={0} sx={{ borderRadius: 0 }}>
-        <CardMedia
-          component="img"
-          image={novel.picture}
-          alt="green iguana"
-          sx={{
-            borderRadius: 1,
-            mb: 1,
-            height: {
-              xs: 200,
-              sm: "",
-            },
-          }}
-        />
+        <Link href={`/${novel.slug}`}>
+          <a>
+            <CardMedia
+              component="img"
+              image={novel.picture}
+              alt="green iguana"
+              sx={{
+                borderRadius: 1,
+                mb: 1,
+                height: {
+                  xs: 200,
+                  sm: "",
+                },
+              }}
+            />
+          </a>
+        </Link>
         <Typography
           sx={{
             display: "-webkit-box",
@@ -35,9 +45,10 @@ function RoyalRankingCard({ novel }) {
           gutterBottom
           variant="h6"
           fontSize="1rem"
-          component="div"
         >
-          {novel.title}
+          <Link href={`/${novel.slug}`}>
+            <a>{novel.title}</a>
+          </Link>
         </Typography>
         <Typography
           variant="subtitle1"
@@ -49,7 +60,9 @@ function RoyalRankingCard({ novel }) {
           }}
           gutterBottom
         >
-          {novel.author.name}
+          <Link href={`/${novel.author.slug}`}>
+            <a>{novel.author.name}</a>
+          </Link>
         </Typography>
         <Typography
           variant="subtitle2"
@@ -58,6 +71,15 @@ function RoyalRankingCard({ novel }) {
         >
           {novel.num_chapters} chương
         </Typography>
+        <Box sx={{ position: "absolute", top: 4, left: 4 }}>
+          <RankingOrder
+            order={rank}
+            width="3rem"
+            height="3rem"
+            rem={1.5}
+            royalRanking
+          />
+        </Box>
       </Card>
     </Paper>
   );
@@ -66,11 +88,11 @@ function RoyalRankingCard({ novel }) {
 export default function RoyalRanking({ novels }) {
   return (
     <>
-      <CategoryLayout title="Royal Ranking - Bảng Xếp Hạng Truyện Chữ Hay Trong Tháng">
+      <CategoryLayout title="Royal Ranking">
         <Grid container spacing={2}>
-          {novels.slice(0, 5).map((novel) => (
+          {novels.slice(0, 5).map((novel, index) => (
             <Grid item key={novel.id} xs={12} sm={6} md={4} lg={2.4}>
-              <RoyalRankingCard novel={novel} />
+              <RoyalRankingCard novel={novel} rank={index + 1} />
             </Grid>
           ))}
         </Grid>

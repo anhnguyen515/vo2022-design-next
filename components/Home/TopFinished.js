@@ -3,6 +3,7 @@ import RankingOrder from "components/common/RankingOrder";
 import React from "react";
 import { viewsFormat } from "utility/common";
 import { Divider } from "@mui/material";
+import Link from "next/link";
 
 export default function TopFinished({ novels }) {
   return (
@@ -25,7 +26,7 @@ export default function TopFinished({ novels }) {
                 order={index + 1}
                 width="2.5rem"
                 height="2.5rem"
-                crownWidth={24}
+                rem={1.2}
               />
             </Box>
             <Box
@@ -36,7 +37,7 @@ export default function TopFinished({ novels }) {
               }}
             >
               <Typography
-                variant="body2"
+                variant="body1"
                 fontWeight={500}
                 sx={{
                   overflow: "hidden",
@@ -44,7 +45,9 @@ export default function TopFinished({ novels }) {
                   whiteSpace: "nowrap",
                 }}
               >
-                {novel.title}
+                <Link href={`/${novel.slug}`}>
+                  <a>{novel.title}</a>
+                </Link>
               </Typography>
               <Typography variant="caption">
                 {viewsFormat(novel.num_views)} lượt xem

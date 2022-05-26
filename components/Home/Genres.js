@@ -1,5 +1,6 @@
 import { Avatar, Box, Divider, Grid, Paper, Typography } from "@mui/material";
 import CategoryLayout from "components/Layout/CategoryLayout";
+import Link from "next/link";
 import React from "react";
 import { viewsFormat } from "utility/common";
 
@@ -43,7 +44,9 @@ function GenresCard({ genre, novels }) {
                       textOverflow: "ellipsis",
                     }}
                   >
-                    {novel.title}
+                    <Link href={`/${novel.slug}`}>
+                      <a>{novel.title}</a>
+                    </Link>
                   </Typography>
                   <Typography
                     variant="caption"
@@ -53,7 +56,9 @@ function GenresCard({ genre, novels }) {
                       textOverflow: "ellipsis",
                     }}
                   >
-                    {novel.author.name}
+                    <Link href={`/tac-gia/${novel.author.slug}`}>
+                      <a>{novel.author.name}</a>
+                    </Link>
                   </Typography>
                 </Box>
                 <Typography

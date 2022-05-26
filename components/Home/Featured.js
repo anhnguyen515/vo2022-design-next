@@ -9,22 +9,29 @@ import {
 } from "@mui/material";
 import SyncCarousel from "components/common/SyncCarousel";
 import CategoryLayout from "components/Layout/CategoryLayout";
+import Link from "next/link";
 import React from "react";
 
 function FeaturedCard({ novel }) {
   return (
     <Card elevation={0} sx={{ borderRadius: 0 }}>
-      <CardMedia
-        component="img"
-        image={novel.picture}
-        alt="green iguana"
-        sx={{
-          borderRadius: 1,
-          mb: 1,
-        }}
-      />
+      <Link href={`/${novel.slug}`}>
+        <a>
+          <CardMedia
+            component="img"
+            image={novel.picture}
+            alt="green iguana"
+            sx={{
+              borderRadius: 1,
+              mb: 1,
+            }}
+          />
+        </a>
+      </Link>
       <Typography gutterBottom variant="h6" fontSize="1rem" component="div">
-        {novel.title}
+        <Link href={`/${novel.slug}`}>
+          <a>{novel.title}</a>
+        </Link>
       </Typography>
       <Typography
         variant="subtitle2"
@@ -32,7 +39,9 @@ function FeaturedCard({ novel }) {
         color="text.secondary"
         gutterBottom
       >
-        {novel.author.name}
+        <Link href={`/tac-gia/${novel.author.slug}`}>
+          <a>{novel.author.name}</a>
+        </Link>
       </Typography>
     </Card>
   );
@@ -47,16 +56,15 @@ export default function Featured({ novels }) {
             <Paper
               elevation={0}
               sx={{
-                padding: 2,
                 width: "100%",
                 backgroundColor: "secondary.light",
               }}
             >
-              <SyncCarousel novels={novels.slice(0, 3)} />
+              <SyncCarousel novels={novels.slice(0, 12)} />
             </Paper>
           </Grid>
           <Grid container item xs={12} lg={8} spacing={2}>
-            {novels.slice(3, 15).map((novel) => (
+            {novels.slice(0, 12).map((novel) => (
               <Grid key={novel.id} item xs={6} sm={4} md={3} lg={2}>
                 <FeaturedCard novel={novel} />
               </Grid>
