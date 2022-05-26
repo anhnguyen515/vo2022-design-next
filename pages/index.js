@@ -1,4 +1,4 @@
-import { Box, Grid } from "@mui/material";
+import { Box, Container, Grid } from "@mui/material";
 import HeadPage from "components/common/HeadPage";
 import SyncCarousel from "components/common/SyncCarousel";
 import MainCarousel from "components/Home/MainCarousel";
@@ -35,68 +35,70 @@ export default function Home({ novels, genres, authors }) {
   return (
     <>
       <HeadPage title="Vietnovel Origin - Truyện Sáng Tác Việt" />
-      <Box sx={{ padding: 3 }}>
-        {/* phần carousel */}
-        <Box>
-          <Grid container spacing={3}>
-            {/* top truyện đã hoàn thành */}
-            <Grid item xs={12} lg={3}>
-              <TopFinished novels={novels} />
-            </Grid>
+      <Container maxWidth="2xl">
+        <Box sx={{ padding: 3 }}>
+          {/* phần carousel */}
+          <Box>
+            <Grid container spacing={3}>
+              {/* top truyện đã hoàn thành */}
+              <Grid item xs={12} lg={3}>
+                <TopFinished novels={novels} />
+              </Grid>
 
-            {/* carousel */}
-            <Grid item xs={12} lg={6}>
-              <MainCarousel novels={novels} />
-            </Grid>
+              {/* carousel */}
+              <Grid item xs={12} lg={6}>
+                <MainCarousel novels={novels} />
+              </Grid>
 
-            {/* creator studio */}
-            <Grid item xs={12} lg={3}>
-              <CreatorStudio />
+              {/* creator studio */}
+              <Grid item xs={12} lg={3}>
+                <CreatorStudio />
+              </Grid>
             </Grid>
-          </Grid>
+          </Box>
+
+          {/* phần royal ranking */}
+          <Box mt={10}>
+            <Grid container spacing={5}>
+              <Grid item xs={12} lg={9}>
+                <RoyalRanking novels={novels} />
+              </Grid>
+              <Grid item xs={12} lg={3}>
+                <NewUpdates novels={novels} />
+              </Grid>
+            </Grid>
+          </Box>
+
+          {/* phần truyện nổi bật */}
+          <Box mt={10}>
+            <Featured novels={novels} />
+          </Box>
+
+          {/* truyện đọc nhiều & thể loại truyện */}
+          <Box mt={10}>
+            <Grid container spacing={3}>
+              <Grid item xs={12} lg={3}>
+                <MostRead novels={novels} />
+              </Grid>
+              <Grid item xs={12} lg={9}>
+                <Genres genres={genres} novels={novels} />
+              </Grid>
+            </Grid>
+          </Box>
+
+          {/* tác giả bảng & truyện hoàn thành */}
+          <Box mt={10}>
+            <Grid container spacing={3}>
+              <Grid item xs={12} lg={3}>
+                <TopWriters authors={authors} />
+              </Grid>
+              <Grid item xs={12} lg={9}>
+                <FinishedNovels novels={novels} />
+              </Grid>
+            </Grid>
+          </Box>
         </Box>
-
-        {/* phần royal ranking */}
-        <Box mt={10}>
-          <Grid container spacing={5}>
-            <Grid item xs={12} lg={9}>
-              <RoyalRanking novels={novels} />
-            </Grid>
-            <Grid item xs={12} lg={3}>
-              <NewUpdates novels={novels} />
-            </Grid>
-          </Grid>
-        </Box>
-
-        {/* phần truyện nổi bật */}
-        <Box mt={10}>
-          <Featured novels={novels} />
-        </Box>
-
-        {/* truyện đọc nhiều & thể loại truyện */}
-        <Box mt={10}>
-          <Grid container spacing={3}>
-            <Grid item xs={12} lg={3}>
-              <MostRead novels={novels} />
-            </Grid>
-            <Grid item xs={12} lg={9}>
-              <Genres genres={genres} novels={novels} />
-            </Grid>
-          </Grid>
-        </Box>
-
-        {/* tác giả bảng & truyện hoàn thành */}
-        <Box mt={10}>
-          <Grid container spacing={3}>
-            <Grid item xs={12} lg={3}>
-              <TopWriters authors={authors} />
-            </Grid>
-            <Grid item xs={12} lg={9}>
-              <FinishedNovels novels={novels} />
-            </Grid>
-          </Grid>
-        </Box>
-      </Box>
+      </Container>
     </>
   );
 }

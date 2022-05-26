@@ -107,7 +107,7 @@ export default function SyncCarousel({ novels }) {
                   pr: 2,
                 }}
               >
-                {parse(novel.summary)}
+                {novel.summary}
               </Box>
             </Box>
           ))}
