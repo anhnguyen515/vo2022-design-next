@@ -20,25 +20,30 @@ export async function getServerSideProps() {
     .get("novels?_sort=views&_order=desc")
     .then((res) => res.data);
 
+  const finishedNovels = await axiosClient
+    .get("novels?novel_status=F")
+    .then((res) => res.data);
+
   const authors = await axiosClient.get("authors").then((res) => res.data);
 
   return {
     props: {
       novels,
+      finishedNovels,
       genres,
       authors,
     },
   };
 }
 
-export default function Home({ novels, genres, authors }) {
+export default function Home({ novels, finishedNovels, genres, authors }) {
   return (
     <>
       <HeadPage title="Vietnovel Origin - Truyện Sáng Tác Việt" />
       <Container maxWidth="2xl">
         <Box sx={{ padding: 3 }}>
           {/* phần carousel */}
-          <Box>
+          <Box mb={10}>
             <Grid container spacing={3}>
               {/* top truyện đã hoàn thành */}
               <Grid item xs={12} lg={3}>
@@ -58,44 +63,42 @@ export default function Home({ novels, genres, authors }) {
           </Box>
 
           {/* phần royal ranking */}
-          <Box mt={10}>
-            <Grid container spacing={5}>
-              <Grid item xs={12} lg={9}>
-                <RoyalRanking novels={novels} />
-              </Grid>
-              <Grid item xs={12} lg={3}>
-                <NewUpdates novels={novels} />
-              </Grid>
-            </Grid>
+          <Box mb={10}>
+            <RoyalRanking novels={novels} />
           </Box>
 
           {/* phần truyện nổi bật */}
-          <Box mt={10}>
+          <Box mb={10}>
             <Featured novels={novels} />
           </Box>
 
           {/* truyện đọc nhiều & thể loại truyện */}
-          <Box mt={10}>
+          <Box mb={10}>
             <Grid container spacing={3}>
-              <Grid item xs={12} lg={3}>
-                <MostRead novels={novels} />
-              </Grid>
               <Grid item xs={12} lg={9}>
                 <Genres genres={genres} novels={novels} />
+              </Grid>
+              <Grid item xs={12} lg={3}>
+                <MostRead novels={novels} />
               </Grid>
             </Grid>
           </Box>
 
           {/* tác giả bảng & truyện hoàn thành */}
-          <Box mt={10}>
+          <Box mb={10}>
             <Grid container spacing={3}>
               <Grid item xs={12} lg={3}>
                 <TopWriters authors={authors} />
               </Grid>
               <Grid item xs={12} lg={9}>
-                <FinishedNovels novels={novels} />
+                <FinishedNovels novels={finishedNovels} />
               </Grid>
             </Grid>
+          </Box>
+
+          {/* truyện mới cập nhật */}
+          <Box mb={10}>
+            <NewUpdates novels={novels} />
           </Box>
         </Box>
       </Container>

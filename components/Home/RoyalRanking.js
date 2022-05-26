@@ -44,7 +44,7 @@ function RoyalRankingCard({ novel, rank }) {
           }}
           gutterBottom
           variant="h6"
-          fontSize="1rem"
+          fontSize="1.2rem"
         >
           <Link href={`/${novel.slug}`}>
             <a>{novel.title}</a>
@@ -90,8 +90,8 @@ export default function RoyalRanking({ novels }) {
     <>
       <CategoryLayout title="Royal Ranking">
         <Grid container spacing={2}>
-          {novels.slice(0, 5).map((novel, index) => (
-            <Grid item key={novel.id} xs={12} sm={6} md={4} lg={2.4}>
+          {novels.slice(0, 6).map((novel, index) => (
+            <Grid item key={novel.id} xs={12} sm={6} md={4} lg={2}>
               <RoyalRankingCard novel={novel} rank={index + 1} />
             </Grid>
           ))}

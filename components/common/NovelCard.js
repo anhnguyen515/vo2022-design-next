@@ -10,6 +10,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import * as React from "react";
 import CheckIcon from "@mui/icons-material/Check";
+import WatchLaterIcon from "@mui/icons-material/WatchLater";
 
 export default function NovelCard({ novel }) {
   const router = useRouter();
@@ -63,21 +64,33 @@ export default function NovelCard({ novel }) {
             />
           ))}
         </Box>
-        <Box sx={{ display: "flex", gap: 1, mt: 2 }}>
-          <Chip
-            color="notification"
-            variant="outlined"
-            label={`${novel.num_chapters} Chương`}
-            sx={{ fontWeight: "bold" }}
-          />
-          <Chip
-            icon={<CheckIcon />}
-            color="notification"
-            variant="outlined"
-            label={"Hoàn Thành"}
-            sx={{ fontWeight: "bold" }}
-          />
-        </Box>
+        {novel.novel_status === "F" ? (
+          <Box sx={{ display: "flex", gap: 1, mt: 2, flexWrap: "wrap" }}>
+            <Chip
+              color="notification"
+              variant="outlined"
+              label={`${novel.num_chapters} Chương`}
+              sx={{ fontWeight: "bold" }}
+            />
+            <Chip
+              icon={<CheckIcon />}
+              color="notification"
+              variant="outlined"
+              label={"Hoàn Thành"}
+              sx={{ fontWeight: "bold" }}
+            />
+          </Box>
+        ) : (
+          <Box sx={{ display: "flex", gap: 1, mt: 2, flexWrap: "wrap" }}>
+            <Chip color="primary" variant="outlined" label={`Chương 1`} />
+            <Chip
+              icon={<WatchLaterIcon />}
+              color="primary"
+              variant="outlined"
+              label={`2 giờ trước`}
+            />
+          </Box>
+        )}
       </Box>
     </Card>
   );

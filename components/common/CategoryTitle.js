@@ -7,14 +7,14 @@ export default function CategoryTitle({ children }) {
     <>
       <Typography
         className="category--title"
-        variant="h6"
+        variant="h5"
         fontWeight={500}
         sx={{
           display: "inline-block",
           backgroundColor: "form.main",
           color: "text.light",
-          pl: 1,
-          pr: 1,
+          pl: 2,
+          pr: 2,
           height: "2.4rem",
           lineHeight: "2.4rem",
           width: "auto",
