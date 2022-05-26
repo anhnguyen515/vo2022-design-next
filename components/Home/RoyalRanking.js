@@ -89,7 +89,7 @@ export default function RoyalRanking({ novels }) {
   return (
     <>
       <CategoryLayout title="Royal Ranking">
-        <Grid container spacing={2}>
+        <Grid container spacing={3}>
           {novels.slice(0, 6).map((novel, index) => (
             <Grid item key={novel.id} xs={12} sm={6} md={4} lg={2}>
               <RoyalRankingCard novel={novel} rank={index + 1} />

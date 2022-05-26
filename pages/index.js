@@ -67,6 +67,11 @@ export default function Home({ novels, finishedNovels, genres, authors }) {
             <RoyalRanking novels={novels} />
           </Box>
 
+          {/* truyện mới cập nhật */}
+          <Box mb={10}>
+            <NewUpdates novels={novels} />
+          </Box>
+
           {/* phần truyện nổi bật */}
           <Box mb={10}>
             <Featured novels={novels} />
@@ -74,7 +79,7 @@ export default function Home({ novels, finishedNovels, genres, authors }) {
 
           {/* truyện đọc nhiều & thể loại truyện */}
           <Box mb={10}>
-            <Grid container spacing={3}>
+            <Grid container spacing={5}>
               <Grid item xs={12} lg={9}>
                 <Genres genres={genres} novels={novels} />
               </Grid>
@@ -86,7 +91,7 @@ export default function Home({ novels, finishedNovels, genres, authors }) {
 
           {/* tác giả bảng & truyện hoàn thành */}
           <Box mb={10}>
-            <Grid container spacing={3}>
+            <Grid container spacing={5}>
               <Grid item xs={12} lg={3}>
                 <TopWriters authors={authors} />
               </Grid>
@@ -94,11 +99,6 @@ export default function Home({ novels, finishedNovels, genres, authors }) {
                 <FinishedNovels novels={finishedNovels} />
               </Grid>
             </Grid>
-          </Box>
-
-          {/* truyện mới cập nhật */}
-          <Box mb={10}>
-            <NewUpdates novels={novels} />
           </Box>
         </Box>
       </Container>

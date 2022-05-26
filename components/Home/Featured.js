@@ -63,7 +63,7 @@ export default function Featured({ novels }) {
               <SyncCarousel novels={novels.slice(0, 12)} />
             </Paper>
           </Grid>
-          <Grid container item xs={12} lg={8} spacing={2}>
+          <Grid container item xs={12} lg={8} spacing={3}>
             {novels.slice(0, 12).map((novel) => (
               <Grid key={novel.id} item xs={6} sm={4} md={3} lg={2}>
                 <FeaturedCard novel={novel} />
