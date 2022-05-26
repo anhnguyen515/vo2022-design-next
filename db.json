@@ -219,7 +219,23 @@
         "total_words": 8062000,
         "num_novels": 7
       },
-      "tags": ["Huyền Huyễn", "Tiên Hiệp"],
+      "tags": [
+        {
+          "id": 1,
+          "name": "Huyền Huyễn",
+          "slug": "truyen-huyen-huyen"
+        },
+        {
+          "id": 2,
+          "name": "Tiên Hiệp",
+          "slug": "truyen-tien-hiep"
+        },
+        {
+          "id": 3,
+          "name": "Hệ Thống",
+          "slug": "truyen-he-thong"
+        }
+      ],
       "age_rank": 18,
       "summary": "<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit numquam illum culpa dolorum consequatur, dicta voluptatum, aperiam ad eum quia enim. Facere provident hic sunt delectus, tenetur atque assumenda molestiae?</p>",
       "picture": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
@@ -273,7 +289,28 @@
         "total_words": 8062000,
         "num_novels": 7
       },
-      "tags": ["Huyền Huyễn", "Tiên Hiệp"],
+      "tags": [
+        {
+          "id": 1,
+          "name": "Huyền Huyễn",
+          "slug": "truyen-huyen-huyen"
+        },
+        {
+          "id": 2,
+          "name": "Tiên Hiệp",
+          "slug": "truyen-tien-hiep"
+        },
+        {
+          "id": 3,
+          "name": "Hệ Thống",
+          "slug": "truyen-he-thong"
+        },
+        {
+          "id": 5,
+          "name": "Xuyên Không",
+          "slug": "truyen-xuyen-khong"
+        }
+      ],
       "age_rank": 18,
       "summary": "<div>Đã vài tháng kể từ ngày Selena rời London để đến với Landcaster - vùng đất của những Bellatores - một nơi đầy rẫy những thứ phép thuật kỳ bí, nơi mà những đôi tay nhuốm máu Quỷ của các chiến binh lại trở thành một việc thường ngày. Ai cũng nói Landcaster chính là nơi mà Selena đáng lẽ thuộc về. Ai cũng bảo rằng được theo học tại học việc Liam Patrick là một đặc quyền linh thiêng của những đứa trẻ mang trong mình dòng máu Bellatores. Nhưng tại sao Selena lại luôn cảm thấy lạc lõng ở nơi này, đến cả chiếc chăn bông còn chẳng thể mang đến cho con bé được một hơi ấm?</div><div>Tiểu thuyết là một câu chuyện kể về các chiến binh trong những cuộc phiêu lưu giữa hiểm nguy luôn rình rập. Cả những trận chiến cam go đầy máu và nước mắt. Và những thứ tình cảm đậm sâu, từ tình thân cho đến tình yêu mà mấy mươi năm cũng chẳng thể buông bỏ được.</div>",
       "picture": "https://i.vnvl.net/vo/20220503/YW8Opd.png.240x360_q85_crop.jpg",
@@ -327,7 +364,28 @@
         "total_words": 8062000,
         "num_novels": 7
       },
-      "tags": ["Huyền Huyễn", "Tiên Hiệp"],
+      "tags": [
+        {
+          "id": 1,
+          "name": "Huyền Huyễn",
+          "slug": "truyen-huyen-huyen"
+        },
+        {
+          "id": 5,
+          "name": "Xuyên Không",
+          "slug": "truyen-xuyen-khong"
+        },
+        {
+          "id": 2,
+          "name": "Tiên Hiệp",
+          "slug": "truyen-tien-hiep"
+        },
+        {
+          "id": 3,
+          "name": "Hệ Thống",
+          "slug": "truyen-he-thong"
+        }
+      ],
       "age_rank": 18,
       "summary": "<h3>dfxhslkd</h3><p>lelximhfkdfh</p><p>sjxhmsdkxjfhfk</p><p>zshjdgnjashgd</p>",
       "picture": "https://i.vnvl.net/vo/20220412/d66MPd.jpg.240x360_q85_crop.jpg",
@@ -381,7 +439,23 @@
         "total_words": 8062000,
         "num_novels": 7
       },
-      "tags": ["Huyền Huyễn", "Tiên Hiệp"],
+      "tags": [
+        {
+          "id": 1,
+          "name": "Huyền Huyễn",
+          "slug": "truyen-huyen-huyen"
+        },
+        {
+          "id": 2,
+          "name": "Tiên Hiệp",
+          "slug": "truyen-tien-hiep"
+        },
+        {
+          "id": 3,
+          "name": "Hệ Thống",
+          "slug": "truyen-he-thong"
+        }
+      ],
       "age_rank": 18,
       "summary": "<h3>dfxhslkd</h3><p>lelximhfkdfh</p><p>sjxhmsdkxjfhfk</p><p>zshjdgnjashgd</p>",
       "picture": "https://i.vnvl.net/vo/20220508/YW8opd.png.240x360_q85_crop.jpg",
@@ -435,7 +509,23 @@
         "total_words": 8062000,
         "num_novels": 7
       },
-      "tags": ["Huyền Huyễn", "Tiên Hiệp"],
+      "tags": [
+        {
+          "id": 1,
+          "name": "Huyền Huyễn",
+          "slug": "truyen-huyen-huyen"
+        },
+        {
+          "id": 2,
+          "name": "Tiên Hiệp",
+          "slug": "truyen-tien-hiep"
+        },
+        {
+          "id": 3,
+          "name": "Hệ Thống",
+          "slug": "truyen-he-thong"
+        }
+      ],
       "age_rank": 18,
       "summary": "<h3>dfxhslkd</h3><p>lelximhfkdfh</p><p>sjxhmsdkxjfhfk</p><p>zshjdgnjashgd</p>",
       "picture": "https://i.vnvl.net/vo/20200810/Y7R1gK.jpg.240x360_q85_crop.jpg",
@@ -489,7 +579,23 @@
         "total_words": 8062000,
         "num_novels": 7
       },
-      "tags": ["Huyền Huyễn", "Tiên Hiệp"],
+      "tags": [
+        {
+          "id": 1,
+          "name": "Huyền Huyễn",
+          "slug": "truyen-huyen-huyen"
+        },
+        {
+          "id": 2,
+          "name": "Tiên Hiệp",
+          "slug": "truyen-tien-hiep"
+        },
+        {
+          "id": 3,
+          "name": "Hệ Thống",
+          "slug": "truyen-he-thong"
+        }
+      ],
       "age_rank": 18,
       "summary": "<div>fcds xfg wr gwrfx gw trg wrtgwrtg rt gwrt gw rtg wtr gw rtg t rg wrt gwrt g wtrg wrt gwrt g wrtg wtr g wrtg wr tg wrtg wrt gaxsdf asdxfajfh</div>",
       "picture": "https://i.vnvl.net/vo/20220120/YWj4WK.png.240x360_q85_crop.jpg",
@@ -543,7 +649,23 @@
         "total_words": 8062000,
         "num_novels": 7
       },
-      "tags": ["Huyền Huyễn", "Tiên Hiệp"],
+      "tags": [
+        {
+          "id": 1,
+          "name": "Huyền Huyễn",
+          "slug": "truyen-huyen-huyen"
+        },
+        {
+          "id": 2,
+          "name": "Tiên Hiệp",
+          "slug": "truyen-tien-hiep"
+        },
+        {
+          "id": 3,
+          "name": "Hệ Thống",
+          "slug": "truyen-he-thong"
+        }
+      ],
       "age_rank": 18,
       "summary": "<div>fcds xfg wr gwrfx gw trg wrtgwrtg rt gwrt gw rtg wtr gw rtg t rg wrt gwrt g wtrg wrt gwrt g wrtg wtr g wrtg wr tg wrtg wrt gaxsdf asdxfajfh</div>",
       "picture": "https://i.vnvl.net/vo/20220211/d6nVed.png.240x360_q85_crop.jpg",
@@ -573,6 +695,131 @@
       "top_stripe": "Khai Bút Đầu Xuân 2021"
     }
   ],
+  "novel-tags": [
+    {
+      "id": 1,
+      "name": "Huyền Huyễn",
+      "slug": "truyen-huyen-huyen"
+    },
+    {
+      "id": 2,
+      "name": "Tiên Hiệp",
+      "slug": "truyen-tien-hiep"
+    },
+    {
+      "id": 3,
+      "name": "Hệ Thống",
+      "slug": "truyen-he-thong"
+    },
+    {
+      "id": 4,
+      "name": "Ngôn Tình",
+      "slug": "truyen-ngon-tinh"
+    },
+    {
+      "id": 5,
+      "name": "Xuyên Không",
+      "slug": "truyen-xuyen-khong"
+    },
+    {
+      "id": 6,
+      "name": "Dị Năng",
+      "slug": "truyen-di-nang"
+    },
+    {
+      "id": 7,
+      "name": "Đam Mỹ/ Boy Love",
+      "slug": "truyen-dam-my"
+    },
+    {
+      "id": 8,
+      "name": "Bách Hợp",
+      "slug": "truyen-bach-hop"
+    },
+    {
+      "id": 9,
+      "name": "Võng Du",
+      "slug": "truyen-vong-du"
+    },
+    {
+      "id": 10,
+      "name": "Kiếm Hiệp",
+      "slug": "truyen-kiem-hiep"
+    },
+    {
+      "id": 11,
+      "name": "Đô Thị",
+      "slug": "truyen-do-thi"
+    },
+    {
+      "id": 12,
+      "name": "LGBT+",
+      "slug": "truyen-lgbt"
+    },
+    {
+      "id": 13,
+      "name": "FanFic",
+      "slug": "truyen-fanfic"
+    },
+    {
+      "id": 14,
+      "name": "Nữ Hiệp",
+      "slug": "truyen-nu-hiep"
+    },
+    {
+      "id": 15,
+      "name": "Sủng",
+      "slug": "truyen-sung"
+    },
+    {
+      "id": 16,
+      "name": "Thám Hiểm",
+      "slug": "truyen-tham-hiem"
+    },
+    {
+      "id": 17,
+      "name": "Thương Nghiệp",
+      "slug": "truyen-thuong-nghiep"
+    },
+    {
+      "id": 18,
+      "name": "Ma Pháp",
+      "slug": "truyen-ma-phap"
+    },
+    {
+      "id": 19,
+      "name": "Dị Giới",
+      "slug": "truyen-di-gioi"
+    },
+    {
+      "id": 20,
+      "name": "Nữ Phụ",
+      "slug": "truyen-nu-phu"
+    },
+    {
+      "id": 21,
+      "name": "Tình Cảm",
+      "slug": "truyen-tinh-cam"
+    },
+    {
+      "id": 22,
+      "name": "Trinh Thám",
+      "slug": "truyen-trinh-tham"
+    },
+    {
+      "id": 23,
+      "name": "Nữ Cường",
+      "slug": "truyen-nu-cuong"
+    },
+    {
+      "id": 24,
+      "name": "Quân Sự",
+      "slug": "truyen-quan-su",
+      "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+      "order": 24,
+      "num_novels": 1234
+    }
+  ],
   "authors": [
     {
       "id": 1,
@@ -581,9 +828,10 @@
       "birth_year": 2000,
       "location": "TP. HCM",
       "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
+      "verified": true,
       "ranking": "Bút Lông Trung Kỳ",
       "views": 84500,
-      "total_words": 8062000,
+      "num_words": 8062000,
       "num_novels": 7
     },
     {
@@ -593,9 +841,10 @@
       "birth_year": 2000,
       "location": "TP. HCM",
       "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
+      "verified": true,
       "ranking": "Bút Tre Đỉnh Phong",
       "views": 667000,
-      "total_words": 6128000,
+      "num_words": 6128000,
       "num_novels": 2
     },
     {
@@ -605,9 +854,10 @@
       "birth_year": 2000,
       "location": "TP. HCM",
       "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
+      "verified": false,
       "ranking": "Bút Lông Đỉnh Phong",
       "views": 47900,
-      "total_words": 645900,
+      "num_words": 645900,
       "num_novels": 5
     },
     {
@@ -617,9 +867,10 @@
       "birth_year": 2000,
       "location": "TP. HCM",
       "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
+      "verified": false,
       "ranking": "Bút Đá Trung Kỳ",
       "views": 43600,
-      "total_words": 1100000,
+      "num_words": 1100000,
       "num_novels": 2
     },
     {
@@ -629,9 +880,10 @@
       "birth_year": 2000,
       "location": "TP. HCM",
       "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
+      "verified": false,
       "ranking": "Bút Lông Trung Kỳ",
       "views": 41900,
-      "total_words": 299700,
+      "num_words": 299700,
       "num_novels": 5
     }
   ]

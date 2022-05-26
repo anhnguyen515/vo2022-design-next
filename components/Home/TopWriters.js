@@ -35,7 +35,7 @@ function TopWritersCard({ author, rank }) {
           <Typography variant="body2">{author.ranking}</Typography>
           <Typography variant="caption" color="text.dark" fontSize="0.7rem">
             {viewsFormat(author.views)} lượt xem -{" "}
-            {viewsFormat(author.total_words)} chữ - {author.num_novels} truyện
+            {viewsFormat(author.num_words)} chữ - {author.num_novels} truyện
           </Typography>
         </Box>
       </Box>

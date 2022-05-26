@@ -10,7 +10,6 @@ export default function MyCarousel({ novels }) {
     infinite: true,
     // fade: true,
     arrows: false,
-    speed: 1000,
     autoplay: true,
     autoplaySpeed: 5000,
     slidesToShow: 1,

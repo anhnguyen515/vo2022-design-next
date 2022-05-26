@@ -10,7 +10,7 @@ export default function MainLayout({ children }) {
         style={{
           display: "flex",
           flexDirection: "column",
-          minHeight: "200vh",
+          minHeight: "100vh",
         }}
       >
         <Navbar />
