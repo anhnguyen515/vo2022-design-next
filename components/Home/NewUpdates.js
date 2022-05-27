@@ -8,7 +8,7 @@ export default function NewUpdates({ novels }) {
     <>
       <CategoryLayout title="Truyện Mới Cập Nhật">
         <Grid container spacing={3}>
-          {novels.slice(0, 5).map((novel) => (
+          {novels.slice(0, 16).map((novel) => (
             <Grid key={novel.id} item xs={12} lg={6} xl={4}>
               <NovelCard novel={novel} />
             </Grid>

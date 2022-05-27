@@ -13,7 +13,6 @@ export default function SyncCarousel({ novels }) {
     arrows: false,
     autoplay: true,
     autoplaySpeed: 10000,
-    swipeToSlide: true,
     slidesToShow: 3,
     focusOnSelect: true,
     centerMode: true,

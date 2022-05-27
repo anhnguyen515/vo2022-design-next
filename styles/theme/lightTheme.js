@@ -32,6 +32,7 @@ const lightTheme = createTheme({
       light: indigo[50],
       main: indigo[500],
       dark: indigo[700],
+      contrastText: "#fff",
     },
 
     notification: {

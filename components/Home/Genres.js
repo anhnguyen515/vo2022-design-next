@@ -2,7 +2,7 @@ import { Avatar, Box, Divider, Grid, Paper, Typography } from "@mui/material";
 import CategoryLayout from "components/Layout/CategoryLayout";
 import Link from "next/link";
 import React from "react";
-import { viewsFormat } from "utility/common";
+import { numberFormat } from "utility/common";
 
 function GenresCard({ genre, novels }) {
   return (
@@ -66,7 +66,7 @@ function GenresCard({ genre, novels }) {
                   fontWeight={500}
                   sx={{ ml: "auto" }}
                 >
-                  {viewsFormat(novel.num_views)}
+                  {numberFormat(novel.num_views)}
                 </Typography>
               </Box>
             </Grid>

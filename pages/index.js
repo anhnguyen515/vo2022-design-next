@@ -1,11 +1,10 @@
 import { Box, Container, Grid } from "@mui/material";
 import HeadPage from "components/common/HeadPage";
-import SyncCarousel from "components/common/SyncCarousel";
-import MainCarousel from "components/Home/MainCarousel";
 import CreatorStudio from "components/Home/CreatorStudio";
 import Featured from "components/Home/Featured";
 import FinishedNovels from "components/Home/FinishedNovels";
 import Genres from "components/Home/Genres";
+import MainCarousel from "components/Home/MainCarousel";
 import MostRead from "components/Home/MostRead";
 import NewUpdates from "components/Home/NewUpdates";
 import RoyalRanking from "components/Home/RoyalRanking";
@@ -24,19 +23,30 @@ export async function getServerSideProps() {
     .get("novels?novel_status=F")
     .then((res) => res.data);
 
+  const newUpdates = await axiosClient
+    .get("novels?novel_status=C")
+    .then((res) => res.data);
+
   const authors = await axiosClient.get("authors").then((res) => res.data);
 
   return {
     props: {
       novels,
       finishedNovels,
+      newUpdates,
       genres,
       authors,
     },
   };
 }
 
-export default function Home({ novels, finishedNovels, genres, authors }) {
+export default function Home({
+  novels,
+  finishedNovels,
+  newUpdates,
+  genres,
+  authors,
+}) {
   return (
     <>
       <HeadPage title="Vietnovel Origin - Truyện Sáng Tác Việt" />
@@ -69,7 +79,7 @@ export default function Home({ novels, finishedNovels, genres, authors }) {
 
           {/* truyện mới cập nhật */}
           <Box mb={10}>
-            <NewUpdates novels={novels} />
+            <NewUpdates novels={newUpdates} />
           </Box>
 
           {/* phần truyện nổi bật */}

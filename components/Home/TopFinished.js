@@ -1,7 +1,7 @@
 import { Box, Paper, Typography } from "@mui/material";
 import RankingOrder from "components/common/RankingOrder";
 import React from "react";
-import { viewsFormat } from "utility/common";
+import { numberFormat } from "utility/common";
 import { Divider } from "@mui/material";
 import Link from "next/link";
 
@@ -50,7 +50,7 @@ export default function TopFinished({ novels }) {
                 </Link>
               </Typography>
               <Typography variant="caption">
-                {viewsFormat(novel.num_views)} lượt xem
+                {numberFormat(novel.num_views)} lượt xem
               </Typography>
             </Box>
           </Box>

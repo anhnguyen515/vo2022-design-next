@@ -3,7 +3,7 @@ import RankingOrder from "components/common/RankingOrder";
 import CategoryLayout from "components/Layout/CategoryLayout";
 import Link from "next/link";
 import React from "react";
-import { viewsFormat } from "utility/common";
+import { numberFormat } from "utility/common";
 
 function TopWritersCard({ author, rank }) {
   return (
@@ -34,8 +34,8 @@ function TopWritersCard({ author, rank }) {
           </Typography>
           <Typography variant="body2">{author.ranking}</Typography>
           <Typography variant="caption" color="text.dark" fontSize="0.7rem">
-            {viewsFormat(author.views)} lượt xem -{" "}
-            {viewsFormat(author.num_words)} chữ - {author.num_novels} truyện
+            {numberFormat(author.views)} lượt xem -{" "}
+            {numberFormat(author.num_words)} chữ - {author.num_novels} truyện
           </Typography>
         </Box>
       </Box>

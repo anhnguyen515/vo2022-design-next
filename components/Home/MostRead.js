@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import CategoryLayout from "components/Layout/CategoryLayout";
 import Link from "next/link";
 import * as React from "react";
-import { viewsFormat } from "utility/common";
+import { numberFormat } from "utility/common";
 
 function MostReadCard({ novel }) {
   return (
@@ -61,7 +61,7 @@ function MostReadCard({ novel }) {
           </Link>
         </Typography>
         <Typography variant="caption" color="text.dark" fontSize="0.8rem">
-          {viewsFormat(novel.num_views)} lượt xem - 3 năm trước
+          {numberFormat(novel.num_views)} lượt xem - 3 năm trước
         </Typography>
       </Box>
     </Card>

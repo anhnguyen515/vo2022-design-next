@@ -8,7 +8,7 @@ export default function MyCarousel({ novels }) {
   const settings = {
     dots: true,
     infinite: true,
-    // fade: true,
+    draggable: false,
     arrows: false,
     autoplay: true,
     autoplaySpeed: 5000,

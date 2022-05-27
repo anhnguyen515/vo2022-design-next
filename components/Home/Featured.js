@@ -28,7 +28,12 @@ function FeaturedCard({ novel }) {
           />
         </a>
       </Link>
-      <Typography gutterBottom variant="h6" fontSize="1rem" component="div">
+      <Typography
+        gutterBottom
+        variant="h6"
+        fontSize="1rem"
+        sx={{ lineHeight: "1.2rem" }}
+      >
         <Link href={`/${novel.slug}`}>
           <a>{novel.title}</a>
         </Link>
@@ -38,6 +43,7 @@ function FeaturedCard({ novel }) {
         fontWeight="normal"
         color="text.secondary"
         gutterBottom
+        sx={{ lineHeight: "1.1rem" }}
       >
         <Link href={`/tac-gia/${novel.author.slug}`}>
           <a>{novel.author.name}</a>

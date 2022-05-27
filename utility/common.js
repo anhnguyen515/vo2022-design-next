@@ -1,23 +1,8 @@
+import { green, grey, orange, red } from "@mui/material/colors";
 import dayjs from "dayjs";
+import "dayjs/locale/vi";
 import relativeTime from "dayjs/plugin/relativeTime";
 import updateLocale from "dayjs/plugin/updateLocale";
-import "dayjs/locale/vi";
-import {
-  grey,
-  pink,
-  green,
-  red,
-  amber,
-  purple,
-  indigo,
-  blue,
-  teal,
-  deepOrange,
-  lightBlue,
-  orange,
-  yellow,
-  cyan,
-} from "@mui/material/colors";
 import lightTheme from "styles/theme/lightTheme";
 
 // ----- VN date config -----
@@ -62,7 +47,7 @@ const config = {
 dayjs.locale("vi");
 dayjs.extend(relativeTime, config);
 
-export function viewsFormat(views) {
+export function numberFormat(views) {
   const THOUSAND = 1000;
   const MILLION = 1000000;
 
@@ -90,5 +75,26 @@ export function rankingColor(rank) {
       return green["A700"];
     default:
       return lightTheme.palette.form.main;
+  }
+}
+
+export function ageColor(age) {
+  if (age < 12) {
+    return grey[50];
+  } else if (age >= 12 && age < 16) {
+    return green[400];
+  } else {
+    return orange[500];
+  }
+}
+
+export function novelStatus(status) {
+  switch (status) {
+    case "C":
+      return "Còn tiếp";
+    case "F":
+      return "Hoàn thành";
+    case "D":
+      return "Chưa hoàn thành";
   }
 }

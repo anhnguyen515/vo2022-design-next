@@ -236,11 +236,11 @@
           "slug": "truyen-he-thong"
         }
       ],
-      "age_rank": 18,
+      "age_rank": 16,
       "summary": "<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit numquam illum culpa dolorum consequatur, dicta voluptatum, aperiam ad eum quia enim. Facere provident hic sunt delectus, tenetur atque assumenda molestiae?</p>",
       "picture": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
       "status": "P",
-      "is_vip": false,
+      "is_vip": true,
       "vip_started_at": "05/25/2022",
       "withdraw_locked": false,
       "lock_comments": false,
@@ -262,7 +262,7 @@
       "num_views": 70120,
       "num_chapters": 213,
       "num_words": 515000,
-      "top_stripe": "Khai Bút Đầu Xuân 2021"
+      "top_stripe": "Top 1 Royal Ranking"
     },
     {
       "id": 2,
@@ -270,30 +270,31 @@
       "slug": "selena-whiteley",
       "novel_status": "C",
       "primary_genre": {
-        "id": 1,
-        "name": "Huyền Huyễn",
-        "slug": "truyen-huyen-huyen",
+        "id": 6,
+        "name": "Dị Năng",
+        "slug": "truyen-di-nang",
         "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
-        "order": 1,
+        "order": 6,
         "num_novels": 1234
       },
       "author": {
-        "id": 1,
-        "name": "Thanh Uẩn Tương Ly",
-        "slug": "thanh-uan-tuong-ly",
+        "id": 2,
+        "name": "An Nhân Đạo Tiên",
+        "slug": "an-nhan-dao-tien",
         "birth_year": 2000,
         "location": "TP. HCM",
         "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
-        "ranking": "Bút Lông Trung Kỳ",
-        "views": 84500,
-        "total_words": 8062000,
-        "num_novels": 7
+        "verified": true,
+        "ranking": "Bút Tre Đỉnh Phong",
+        "views": 667000,
+        "num_words": 6128000,
+        "num_novels": 2
       },
       "tags": [
         {
-          "id": 1,
-          "name": "Huyền Huyễn",
-          "slug": "truyen-huyen-huyen"
+          "id": 6,
+          "name": "Dị Năng",
+          "slug": "truyen-di-nang"
         },
         {
           "id": 2,
@@ -311,7 +312,7 @@
           "slug": "truyen-xuyen-khong"
         }
       ],
-      "age_rank": 18,
+      "age_rank": 13,
       "summary": "<div>Đã vài tháng kể từ ngày Selena rời London để đến với Landcaster - vùng đất của những Bellatores - một nơi đầy rẫy những thứ phép thuật kỳ bí, nơi mà những đôi tay nhuốm máu Quỷ của các chiến binh lại trở thành một việc thường ngày. Ai cũng nói Landcaster chính là nơi mà Selena đáng lẽ thuộc về. Ai cũng bảo rằng được theo học tại học việc Liam Patrick là một đặc quyền linh thiêng của những đứa trẻ mang trong mình dòng máu Bellatores. Nhưng tại sao Selena lại luôn cảm thấy lạc lõng ở nơi này, đến cả chiếc chăn bông còn chẳng thể mang đến cho con bé được một hơi ấm?</div><div>Tiểu thuyết là một câu chuyện kể về các chiến binh trong những cuộc phiêu lưu giữa hiểm nguy luôn rình rập. Cả những trận chiến cam go đầy máu và nước mắt. Và những thứ tình cảm đậm sâu, từ tình thân cho đến tình yêu mà mấy mươi năm cũng chẳng thể buông bỏ được.</div>",
       "picture": "https://i.vnvl.net/vo/20220503/YW8Opd.png.240x360_q85_crop.jpg",
       "status": "P",
@@ -337,13 +338,13 @@
       "num_views": 70120,
       "num_chapters": 213,
       "num_words": 515000,
-      "top_stripe": "Khai Bút Đầu Xuân 2021"
+      "top_stripe": "Top 2 Royal Ranking"
     },
     {
       "id": 3,
       "title": "Long Vương Dị Giới",
       "slug": "long-vuong-di-gioi",
-      "novel_status": "C",
+      "novel_status": "D",
       "primary_genre": {
         "id": 1,
         "name": "Huyền Huyễn",
@@ -353,16 +354,17 @@
         "num_novels": 1234
       },
       "author": {
-        "id": 1,
-        "name": "Thanh Uẩn Tương Ly",
-        "slug": "thanh-uan-tuong-ly",
+        "id": 3,
+        "name": "Thanh Y",
+        "slug": "thanh-y",
         "birth_year": 2000,
         "location": "TP. HCM",
         "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
-        "ranking": "Bút Lông Trung Kỳ",
-        "views": 84500,
-        "total_words": 8062000,
-        "num_novels": 7
+        "verified": false,
+        "ranking": "Bút Lông Đỉnh Phong",
+        "views": 47900,
+        "num_words": 645900,
+        "num_novels": 5
       },
       "tags": [
         {
@@ -412,7 +414,7 @@
       "num_views": 70120,
       "num_chapters": 213,
       "num_words": 515000,
-      "top_stripe": "Khai Bút Đầu Xuân 2021"
+      "top_stripe": "Top 3 Royal Ranking"
     },
     {
       "id": 4,
@@ -428,16 +430,17 @@
         "num_novels": 1234
       },
       "author": {
-        "id": 1,
-        "name": "Thanh Uẩn Tương Ly",
-        "slug": "thanh-uan-tuong-ly",
+        "id": 4,
+        "name": "Hắc Long",
+        "slug": "hac-long",
         "birth_year": 2000,
         "location": "TP. HCM",
         "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
-        "ranking": "Bút Lông Trung Kỳ",
-        "views": 84500,
-        "total_words": 8062000,
-        "num_novels": 7
+        "verified": false,
+        "ranking": "Bút Đá Trung Kỳ",
+        "views": 43600,
+        "num_words": 1100000,
+        "num_novels": 2
       },
       "tags": [
         {
@@ -482,7 +485,7 @@
       "num_views": 70120,
       "num_chapters": 213,
       "num_words": 515000,
-      "top_stripe": "Khai Bút Đầu Xuân 2021"
+      "top_stripe": "Top 4 Royal Ranking"
     },
     {
       "id": 5,
@@ -498,16 +501,17 @@
         "num_novels": 1234
       },
       "author": {
-        "id": 1,
-        "name": "Thanh Uẩn Tương Ly",
-        "slug": "thanh-uan-tuong-ly",
+        "id": 5,
+        "name": "Dương gia Đại thiếu",
+        "slug": "duong-gia-dai-thieu",
         "birth_year": 2000,
         "location": "TP. HCM",
         "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
+        "verified": false,
         "ranking": "Bút Lông Trung Kỳ",
-        "views": 84500,
-        "total_words": 8062000,
-        "num_novels": 7
+        "views": 41900,
+        "num_words": 299700,
+        "num_novels": 5
       },
       "tags": [
         {
@@ -552,7 +556,7 @@
       "num_views": 70120,
       "num_chapters": 213,
       "num_words": 515000,
-      "top_stripe": "Khai Bút Đầu Xuân 2021"
+      "top_stripe": "Top 5 Royal Ranking"
     },
     {
       "id": 6,
@@ -622,7 +626,7 @@
       "num_views": 70120,
       "num_chapters": 213,
       "num_words": 515000,
-      "top_stripe": "Khai Bút Đầu Xuân 2021"
+      "top_stripe": "Top 6 Royal Ranking"
     },
     {
       "id": 7,
@@ -692,7 +696,7 @@
       "num_views": 70120,
       "num_chapters": 213,
       "num_words": 515000,
-      "top_stripe": "Khai Bút Đầu Xuân 2021"
+      "top_stripe": "Top 7 Royal Ranking"
     }
   ],
   "novel-tags": [
