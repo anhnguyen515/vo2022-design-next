@@ -3,7 +3,7 @@ import dayjs from "dayjs";
 import "dayjs/locale/vi";
 import relativeTime from "dayjs/plugin/relativeTime";
 import updateLocale from "dayjs/plugin/updateLocale";
-import lightTheme from "styles/theme/lightTheme";
+import { lightTheme } from "styles/theme/theme";
 
 // ----- VN date config -----
 dayjs.extend(updateLocale);

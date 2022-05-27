@@ -1,5 +1,6 @@
 import { Box, Container, Grid } from "@mui/material";
 import HeadPage from "components/common/HeadPage";
+import BigScreenCarousel from "components/Home/BigScreenCarousel";
 import CreatorStudio from "components/Home/CreatorStudio";
 import Featured from "components/Home/Featured";
 import FinishedNovels from "components/Home/FinishedNovels";
@@ -52,27 +53,28 @@ export default function Home({
       <HeadPage title="Vietnovel Origin - Truyện Sáng Tác Việt" />
       <Container maxWidth="2xl">
         <Box sx={{ padding: 3 }}>
-          {/* phần carousel */}
+          {/* header */}
           <Box mb={10}>
             <Grid container spacing={3}>
               {/* top truyện đã hoàn thành */}
-              <Grid item xs={12} lg={3}>
+              <Grid item xs={12} md={6} lg={3} order={{ xs: 0 }}>
                 <TopFinished novels={novels} />
               </Grid>
 
               {/* carousel */}
-              <Grid item xs={12} lg={6}>
+              <Grid item xs={12} lg={6} order={{ xs: 2, lg: 1 }}>
                 <MainCarousel novels={novels} />
+                <BigScreenCarousel novels={novels} />
               </Grid>
 
               {/* creator studio */}
-              <Grid item xs={12} lg={3}>
+              <Grid item xs={12} md={6} lg={3} order={{ xs: 1, lg: 2 }}>
                 <CreatorStudio />
               </Grid>
             </Grid>
           </Box>
 
-          {/* phần royal ranking */}
+          {/* royal ranking */}
           <Box mb={10}>
             <RoyalRanking novels={novels} />
           </Box>
@@ -82,7 +84,7 @@ export default function Home({
             <NewUpdates novels={newUpdates} />
           </Box>
 
-          {/* phần truyện nổi bật */}
+          {/* truyện nổi bật */}
           <Box mb={10}>
             <Featured novels={novels} />
           </Box>

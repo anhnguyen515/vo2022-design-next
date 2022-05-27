@@ -10,7 +10,7 @@ export default function NewUpdates({ novels }) {
         <Grid container spacing={3}>
           {novels.slice(0, 16).map((novel) => (
             <Grid key={novel.id} item xs={12} lg={6} xl={4}>
-              <NovelCard novel={novel} />
+              <NovelCard novel={novel} displayStatus />
             </Grid>
           ))}
         </Grid>

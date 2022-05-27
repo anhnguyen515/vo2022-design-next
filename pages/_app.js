@@ -3,7 +3,7 @@ import { CacheProvider } from "@emotion/react";
 import { ThemeProvider, CssBaseline } from "@mui/material";
 
 import createEmotionCache from "utility/createEmotionCache";
-import lightTheme from "styles/theme/lightTheme";
+import { lightTheme } from "styles/theme/theme";
 import "../styles/globals.css";
 import MainLayout from "../components/Layout/MainLayout";
 

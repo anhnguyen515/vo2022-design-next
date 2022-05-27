@@ -10,7 +10,7 @@ export default function FinishedNovels({ novels }) {
         <Grid container spacing={3}>
           {novels.slice(0, 6).map((novel) => (
             <Grid key={novel.id} item xs={12} lg={6}>
-              <NovelCard novel={novel} />
+              <NovelCard novel={novel} displayStatus />
             </Grid>
           ))}
         </Grid>

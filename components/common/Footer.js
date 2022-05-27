@@ -224,6 +224,7 @@ export default function Footer() {
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
+                  flexWrap: "wrap",
                   gap: 5,
                   mt: 5,
                   mb: 5,

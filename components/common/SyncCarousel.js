@@ -1,5 +1,4 @@
 import { Box, Card, CardMedia, Typography } from "@mui/material";
-import parse from "html-react-parser";
 import Link from "next/link";
 import React, { useState } from "react";
 import Slider from "react-slick";

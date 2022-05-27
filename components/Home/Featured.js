@@ -1,12 +1,4 @@
-import {
-  Box,
-  Card,
-  CardMedia,
-  Divider,
-  Grid,
-  Paper,
-  Typography,
-} from "@mui/material";
+import { Card, CardMedia, Grid, Paper, Typography } from "@mui/material";
 import SyncCarousel from "components/common/SyncCarousel";
 import CategoryLayout from "components/Layout/CategoryLayout";
 import Link from "next/link";

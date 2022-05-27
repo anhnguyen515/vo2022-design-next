@@ -1,6 +1,5 @@
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-import { Box } from "@mui/material";
-import IconButton from "@mui/material/IconButton";
+import { Box, IconButton } from "@mui/material";
 import * as React from "react";
 import NavAuth from "./NavAuth";
 import NavLink from "./NavLink";

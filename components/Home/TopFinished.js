@@ -1,9 +1,8 @@
 import { Box, Paper, Typography } from "@mui/material";
 import RankingOrder from "components/common/RankingOrder";
+import Link from "next/link";
 import React from "react";
 import { numberFormat } from "utility/common";
-import { Divider } from "@mui/material";
-import Link from "next/link";
 
 export default function TopFinished({ novels }) {
   return (

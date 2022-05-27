@@ -1,10 +1,9 @@
-import { Badge, Box } from "@mui/material";
-import Typography from "@mui/material/Typography";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import { Badge, Box, Typography } from "@mui/material";
+import { styled } from "@mui/material/styles";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
-import { styled } from "@mui/material/styles";
-import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import NavGenreDropdown from "./NavGenreDropdown";
 
 const StyledBadge = styled(Badge)(() => ({

@@ -1,6 +1,4 @@
-import { Box } from "@mui/material";
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
+import { Box, Menu, MenuItem } from "@mui/material";
 import * as React from "react";
 
 export default function NavGenreDropdown({ children }) {
