@@ -61,18 +61,6 @@ export default function Header({ novel }) {
               <HomeIcon /> Trang chủ
             </Typography>
           </Link>
-          <Link href={`/the-loai/${novel.primary_genre.slug}`} passHref>
-            <Typography
-              sx={{
-                cursor: "pointer",
-                "&:hover": {
-                  color: "text.light",
-                },
-              }}
-            >
-              {novel.primary_genre.name}
-            </Typography>
-          </Link>
           <Typography fontWeight={500} color="text.light">
             {novel.title}
           </Typography>

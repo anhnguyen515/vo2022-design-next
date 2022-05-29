@@ -1,5 +1,5 @@
 import { Card, CardMedia, Grid, Paper, Typography } from "@mui/material";
-import SyncCarousel from "components/common/SyncCarousel";
+import FeaturedCarousel from "components/common/FeaturedCarousel";
 import CategoryLayout from "components/Layout/CategoryLayout";
 import Link from "next/link";
 import React from "react";
@@ -52,13 +52,11 @@ export default function Featured({ novels }) {
         <Grid container spacing={3}>
           <Grid item xs={12} lg={4}>
             <Paper
-              elevation={0}
               sx={{
-                width: "100%",
                 backgroundColor: "secondary.light",
               }}
             >
-              <SyncCarousel novels={novels.slice(0, 12)} />
+              <FeaturedCarousel novels={novels.slice(0, 12)} />
             </Paper>
           </Grid>
           <Grid container item xs={12} lg={8} spacing={3}>
