@@ -1,5 +1,5 @@
 import { Card, CardMedia, Grid, Paper, Typography } from "@mui/material";
-import FeaturedCarousel from "components/common/FeaturedCarousel";
+import Carousel from "components/common/Carousel";
 import CategoryLayout from "components/Layout/CategoryLayout";
 import Link from "next/link";
 import React from "react";
@@ -56,7 +56,7 @@ export default function Featured({ novels }) {
                 backgroundColor: "secondary.light",
               }}
             >
-              <FeaturedCarousel novels={novels.slice(0, 12)} />
+              <Carousel novels={novels.slice(0, 12)} />
             </Paper>
           </Grid>
           <Grid container item xs={12} lg={8} spacing={3}>

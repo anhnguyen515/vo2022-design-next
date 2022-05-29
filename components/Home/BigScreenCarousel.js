@@ -1,74 +1,184 @@
-import { Box, Chip, Grid, Typography } from "@mui/material";
+import { faPenNib } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import { Box, Chip, Grid, IconButton, Typography } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React from "react";
 import Slider from "react-slick";
-import { faQuoteLeft, faPenNib } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import NovelCard from "components/common/NovelCard";
+import { ageColor, novelStatus, numberFormat } from "utility/common";
+
+function PrevArrow(props) {
+  const { onClick } = props;
+  return (
+    <IconButton
+      // className="slick-arrow"
+      onClick={onClick}
+      color="text"
+      sx={{
+        position: "absolute",
+        top: "40%",
+        left: 0,
+        zIndex: 100,
+      }}
+    >
+      <ArrowBackIosNewIcon />
+    </IconButton>
+  );
+}
+
+function NextArrow(props) {
+  const { onClick } = props;
+  return (
+    <IconButton
+      // className="slick-arrow"
+      onClick={onClick}
+      color="text"
+      sx={{
+        position: "absolute",
+        top: "40%",
+        right: 0,
+        zIndex: 100,
+      }}
+    >
+      <ArrowForwardIosIcon />
+    </IconButton>
+  );
+}
 
 export default function BigScreenCarousel({ novels }) {
-  const [nav1, setNav1] = useState();
-  const [nav2, setNav2] = useState();
+  const novelStatusGrid = {
+    name: {
+      item: true,
+      xs: 4,
+    },
+    info: {
+      item: true,
+      xs: 8,
+    },
+  };
 
   const settings = {
     infinite: true,
-    arrows: false,
     autoplay: true,
     autoplaySpeed: 5000,
-    focusOnSelect: true,
+    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />,
   };
 
   return (
-    <Box
-      sx={{
-        display: {
-          xs: "none",
-          xl: "block",
-        },
-      }}
-    >
-      <Grid container spacing={2}>
-        <Grid item xs={5}>
-          <Slider
-            // {...settings}
-            draggable={false}
-            asNavFor={nav2}
-            ref={(slider1) => setNav1(slider1)}
-          >
-            {novels.map((novel) => (
-              <Link key={novel.id} href={`/${novel.slug}`}>
-                <a>
-                  <Image
-                    alt={`Ảnh bìa của ${novel.title}`}
-                    src={novel.picture}
-                    width={2}
-                    height={3}
-                    layout="responsive"
-                  />
-                </a>
-              </Link>
-            ))}
-          </Slider>
-        </Grid>
-        <Grid item xs={7}>
-          <Slider
-            {...settings}
-            vertical={true}
-            verticalSwiping={true}
-            slidesToShow={3}
-            dots={true}
-            asNavFor={nav1}
-            ref={(slider2) => setNav2(slider2)}
-          >
-            {novels.map((novel) => (
-              <Box key={novel.id} sx={{ minHeight: "10rem" }}>
-                <NovelCard novel={novel} />
+    <>
+      <Box
+        sx={{
+          display: {
+            xs: "none",
+            xl: "block",
+          },
+        }}
+      >
+        <Slider {...settings}>
+          {novels.map((novel) => (
+            <Box
+              key={novel.id}
+              sx={{
+                backgroundImage: `
+              linear-gradient(to bottom, rgba(21, 21, 21, 0.7), rgba(21, 21, 21, 1)), 
+              url(${novel.picture})
+              `,
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+                borderRadius: 1,
+                pt: 3,
+                pb: 3,
+                display: "flex !important",
+              }}
+            >
+              <Box sx={{ ml: "2.5rem" }}>
+                <Link href={`/${novel.slug}`} passHref>
+                  <Box
+                    sx={{
+                      border: 1,
+                      position: "relative",
+                      borderColor: "text.main",
+                      cursor: "pointer",
+                      width: "12rem",
+                      height: "18rem",
+                    }}
+                  >
+                    <Image
+                      alt={`Ảnh bìa của ${novel.title}`}
+                      src={novel.picture}
+                      layout="fill"
+                      style={{ borderRadius: "0.25rem" }}
+                    />
+                  </Box>
+                </Link>
               </Box>
-            ))}
-          </Slider>
-        </Grid>
-      </Grid>
-    </Box>
+              <Box sx={{ color: "text.light", pl: 2, pr: 2 }}>
+                <Typography variant="h4" fontWeight={500}>
+                  {novel.title}
+                </Typography>
+                <Typography variant="h6" gutterBottom>
+                  <FontAwesomeIcon
+                    icon={faPenNib}
+                    width={18}
+                    style={{ marginRight: "0.5rem" }}
+                  />
+                  {novel.author.name}
+                </Typography>
+                {/* <Box> */}
+                <Grid container spacing={2}>
+                  {/* thể loại chính */}
+                  <Grid {...novelStatusGrid.name}>
+                    <Typography>Thể loại chính</Typography>
+                  </Grid>
+                  <Grid {...novelStatusGrid.info}>
+                    <Chip
+                      color="warning"
+                      label={novel.primary_genre.name}
+                      size="small"
+                    />
+                  </Grid>
+
+                  {/* tags */}
+                  <Grid {...novelStatusGrid.name}>
+                    <Typography>Tags</Typography>
+                  </Grid>
+                  <Grid {...novelStatusGrid.info}>
+                    <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap" }}>
+                      {novel.tags.map((tag) => (
+                        <Chip
+                          key={tag.id}
+                          color="form"
+                          label={tag.name}
+                          size="small"
+                        />
+                      ))}
+                    </Box>
+                  </Grid>
+                  {/* tổng chữ */}
+                  <Grid {...novelStatusGrid.name}>
+                    <Typography>Tổng chữ</Typography>
+                  </Grid>
+                  <Grid {...novelStatusGrid.info}>
+                    <Typography>{numberFormat(novel.num_words)}</Typography>
+                  </Grid>
+                  {/* lượt xem */}
+                  <Grid {...novelStatusGrid.name}>
+                    <Typography>Lượt xem</Typography>
+                  </Grid>
+                  <Grid {...novelStatusGrid.info}>
+                    <Typography>{numberFormat(novel.num_views)}</Typography>
+                  </Grid>
+                </Grid>
+                {/* </Box> */}
+              </Box>
+            </Box>
+          ))}
+        </Slider>
+      </Box>
+    </>
   );
 }
