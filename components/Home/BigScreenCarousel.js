@@ -1,11 +1,13 @@
-import { Box, Card, CardMedia, Grid, Typography } from "@mui/material";
-import NovelCard from "components/common/NovelCard";
+import { Box, Chip, Grid, Typography } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import Slider from "react-slick";
+import { faQuoteLeft, faPenNib } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import NovelCard from "components/common/NovelCard";
 
-export default function SyncCarousel({ novels }) {
+export default function BigScreenCarousel({ novels }) {
   const [nav1, setNav1] = useState();
   const [nav2, setNav2] = useState();
 
@@ -13,6 +15,7 @@ export default function SyncCarousel({ novels }) {
     infinite: true,
     arrows: false,
     autoplay: true,
+    autoplaySpeed: 5000,
     focusOnSelect: true,
   };
 
@@ -26,25 +29,29 @@ export default function SyncCarousel({ novels }) {
       }}
     >
       <Grid container spacing={2}>
-        <Grid item xs={4}>
+        <Grid item xs={5}>
           <Slider
-            {...settings}
+            // {...settings}
+            draggable={false}
             asNavFor={nav2}
             ref={(slider1) => setNav1(slider1)}
           >
             {novels.map((novel) => (
-              <Image
-                key={novel.id}
-                alt={`Ảnh bìa của ${novel.title}`}
-                src={novel.picture}
-                width={2}
-                height={3}
-                layout="responsive"
-              />
+              <Link key={novel.id} href={`/${novel.slug}`}>
+                <a>
+                  <Image
+                    alt={`Ảnh bìa của ${novel.title}`}
+                    src={novel.picture}
+                    width={2}
+                    height={3}
+                    layout="responsive"
+                  />
+                </a>
+              </Link>
             ))}
           </Slider>
         </Grid>
-        <Grid item xs={8}>
+        <Grid item xs={7}>
           <Slider
             {...settings}
             vertical={true}
@@ -55,7 +62,7 @@ export default function SyncCarousel({ novels }) {
             ref={(slider2) => setNav2(slider2)}
           >
             {novels.map((novel) => (
-              <Box key={novel.id}>
+              <Box key={novel.id} sx={{ minHeight: "10rem" }}>
                 <NovelCard novel={novel} />
               </Box>
             ))}
