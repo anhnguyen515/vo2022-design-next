@@ -11,6 +11,7 @@ import {
   Box,
   Breadcrumbs,
   Button,
+  ButtonGroup,
   Chip,
   Grid,
   IconButton,
@@ -20,21 +21,39 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React from "react";
+import React, { useState } from "react";
 import { ageColor, novelStatus, numberFormat } from "utility/common";
+import {
+  faThumbsUp,
+  faHeart,
+  faFaceLaughBeam,
+  faFaceSadCry,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Header({ novel }) {
+  // const [like, setLike] = useState(false);
+  // const [favorite, setFavorite] = useState(false);
+  // const [happy, setHappy] = useState(false);
+  // const [sad, setSad] = useState(false);
+  const [emotion, setEmotion] = useState({
+    like: false,
+    favorite: false,
+    happy: false,
+    sad: false,
+  });
+
   const router = useRouter();
   const novelStatusGrid = {
     name: {
       item: true,
       xs: 4,
-      lg: 2,
+      md: 2,
     },
     info: {
       item: true,
       xs: 8,
-      lg: 10,
+      md: 10,
     },
   };
 
@@ -71,7 +90,7 @@ export default function Header({ novel }) {
       <Box>
         <Grid container columnSpacing={5}>
           {/* thumbnail */}
-          <Grid item xs={0} lg={3} xl={3}>
+          <Grid item xs={0} md={3} xl={2}>
             <Box>
               <Image
                 alt={`ảnh bìa của ${novel.title}`}
@@ -87,172 +106,236 @@ export default function Header({ novel }) {
           </Grid>
 
           {/* chi tiết */}
-          <Grid item xs={12} lg={9} xl={9}>
+          <Grid container item xs={12} md={9} xl={10}>
             {/* danh hiệu */}
-            <Box
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                flexWrap: "wrap",
-                gap: 2,
-              }}
-            >
-              <Chip
-                color={novel.top_stripe.includes("1") ? "error" : "form"}
-                icon={<EmojiEventsIcon />}
-                label={novel.top_stripe}
+            <Grid item xs={12} md={8} lg={6}>
+              <Box
                 sx={{
-                  fontSize: "1rem",
-                  fontWeight: 500,
+                  display: "flex",
+                  alignItems: "center",
+                  flexWrap: "wrap",
+                  gap: 2,
                 }}
-              />
-              {novel.is_vip && (
+              >
                 <Chip
-                  color="notification"
-                  label="Truyện VIP"
+                  color={novel.top_stripe.includes("1") ? "error" : "form"}
+                  icon={<EmojiEventsIcon />}
+                  label={novel.top_stripe}
                   sx={{
                     fontSize: "1rem",
                     fontWeight: 500,
                   }}
                 />
-              )}
-            </Box>
-            {/* tiêu đề truyện */}
-            <Box
-              mt={1}
-              mb={1}
-              sx={{ display: "flex", alignItems: "center", gap: 1 }}
-            >
-              <Typography variant="h4" fontWeight="bold">
-                {novel.title}
-              </Typography>
-              <IconButton color="text">
-                <BookmarkAddIcon fontSize="large" />
-              </IconButton>
-              <IconButton color="warning">
-                <BookmarkAddedIcon fontSize="large" />
-              </IconButton>
-            </Box>
-            {/* tổng chữ, lượt xem, lượt thích */}
-            <Box sx={{ display: "flex", alignItems: "center", gap: 5 }}>
-              <Typography
-                sx={{ display: "flex", alignItems: "center", gap: 1 }}
-              >
-                <AbcIcon fontSize="large" /> {numberFormat(novel.num_words)}
-              </Typography>
-              <Typography
-                sx={{ display: "flex", alignItems: "center", gap: 1 }}
-              >
-                <VisibilityIcon /> {numberFormat(novel.num_views)}
-              </Typography>
-              <Typography
-                sx={{ display: "flex", alignItems: "center", gap: 1 }}
-              >
-                <ThumbUpIcon /> {numberFormat(novel.num_likes)}
-              </Typography>
-            </Box>
-            {/* rating */}
-            <Box
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                gap: 1,
-                mt: 2,
-                mb: 2,
-              }}
-            >
-              <Rating
-                value={4.3}
-                precision={0.1}
-                emptyIcon={
-                  <StarIcon
-                    fontSize="inherit"
-                    sx={{ opacity: 0.2, color: "warning.light" }}
-                  />
-                }
-                size="large"
-                readOnly
-              />
-              <Typography fontStyle="italic">(24 lượt)</Typography>
-            </Box>
-            {/* status */}
-            <Box>
-              <Grid container spacing={1}>
-                {/* tình trạng */}
-                <Grid {...novelStatusGrid.name}>
-                  <Typography fontWeight={500}>Tình trạng</Typography>
-                </Grid>
-                <Grid {...novelStatusGrid.info}>
-                  <Typography>{novelStatus(novel.novel_status)}</Typography>
-                </Grid>
-
-                {/* số chương */}
-                <Grid {...novelStatusGrid.name}>
-                  <Typography fontWeight={500}>Số chương</Typography>
-                </Grid>
-                <Grid {...novelStatusGrid.info}>
-                  <Typography>{novel.num_chapters}</Typography>
-                </Grid>
-
-                {/* thể loại chính */}
-                <Grid {...novelStatusGrid.name}>
-                  <Typography fontWeight={500}>Thể loại chính</Typography>
-                </Grid>
-                <Grid {...novelStatusGrid.info}>
+                {novel.is_vip && (
                   <Chip
-                    color="success"
-                    label={novel.primary_genre.name}
-                    size="small"
-                    onClick={() =>
-                      router.push(`/the-loai/${novel.primary_genre.slug}`)
-                    }
+                    color="notification"
+                    label="Truyện VIP"
+                    sx={{
+                      fontSize: "1rem",
+                      fontWeight: 500,
+                    }}
                   />
-                </Grid>
-
-                {/* tags */}
-                <Grid {...novelStatusGrid.name}>
-                  <Typography fontWeight={500}>Tags</Typography>
-                </Grid>
-                <Grid {...novelStatusGrid.info}>
-                  <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap" }}>
-                    {novel.tags.map((tag) => (
-                      <Chip
-                        key={tag.id}
-                        color="secondary"
-                        label={tag.name}
-                        size="small"
-                        onClick={() => router.push(`/the-loai/${tag.slug}`)}
-                      />
-                    ))}
-                  </Box>
-                </Grid>
-
-                {/* độ tuổi */}
-                <Grid {...novelStatusGrid.name}>
-                  <Typography fontWeight={500}>Độ tuổi</Typography>
-                </Grid>
-                <Grid {...novelStatusGrid.info}>
-                  <Typography color={ageColor(novel.age_rank)}>
-                    {novel.age_rank}+
-                  </Typography>
-                </Grid>
-              </Grid>
-              {/* cta */}
+                )}
+              </Box>
+              {/* tiêu đề truyện */}
               <Box
-                sx={{ display: "flex", alignItems: "center", gap: 2, mt: 2 }}
+                mt={1}
+                mb={1}
+                sx={{ display: "flex", alignItems: "center", gap: 1 }}
+              >
+                <Typography variant="h4" fontWeight="bold">
+                  {novel.title}
+                </Typography>
+                <IconButton color="text">
+                  <BookmarkAddIcon fontSize="large" />
+                </IconButton>
+                <IconButton color="warning">
+                  <BookmarkAddedIcon fontSize="large" />
+                </IconButton>
+              </Box>
+              {/* tổng chữ, lượt xem, lượt thích */}
+              <Box sx={{ display: "flex", alignItems: "center", gap: 5 }}>
+                <Typography
+                  sx={{ display: "flex", alignItems: "center", gap: 1 }}
+                >
+                  <AbcIcon fontSize="large" /> {numberFormat(novel.num_words)}
+                </Typography>
+                <Typography
+                  sx={{ display: "flex", alignItems: "center", gap: 1 }}
+                >
+                  <VisibilityIcon /> {numberFormat(novel.num_views)}
+                </Typography>
+                <Typography
+                  sx={{ display: "flex", alignItems: "center", gap: 1 }}
+                >
+                  <ThumbUpIcon /> {numberFormat(novel.num_likes)}
+                </Typography>
+              </Box>
+              {/* rating */}
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 1,
+                  mt: 2,
+                  mb: 2,
+                }}
+              >
+                <Rating
+                  value={4.3}
+                  precision={0.1}
+                  emptyIcon={
+                    <StarIcon
+                      fontSize="inherit"
+                      sx={{ opacity: 0.2, color: "warning.light" }}
+                    />
+                  }
+                  size="large"
+                  readOnly
+                />
+                <Typography fontStyle="italic">(24 lượt)</Typography>
+              </Box>
+              {/* status */}
+              <Box>
+                <Grid container spacing={1}>
+                  {/* tình trạng */}
+                  <Grid {...novelStatusGrid.name}>
+                    <Typography fontWeight={500}>Tình trạng</Typography>
+                  </Grid>
+                  <Grid {...novelStatusGrid.info}>
+                    <Typography>{novelStatus(novel.novel_status)}</Typography>
+                  </Grid>
+
+                  {/* số chương */}
+                  <Grid {...novelStatusGrid.name}>
+                    <Typography fontWeight={500}>Số chương</Typography>
+                  </Grid>
+                  <Grid {...novelStatusGrid.info}>
+                    <Typography>{novel.num_chapters}</Typography>
+                  </Grid>
+
+                  {/* thể loại chính */}
+                  <Grid {...novelStatusGrid.name}>
+                    <Typography fontWeight={500}>Thể loại chính</Typography>
+                  </Grid>
+                  <Grid {...novelStatusGrid.info}>
+                    <Chip
+                      color="success"
+                      label={novel.primary_genre.name}
+                      size="small"
+                      onClick={() =>
+                        router.push(`/the-loai/${novel.primary_genre.slug}`)
+                      }
+                    />
+                  </Grid>
+
+                  {/* tags */}
+                  <Grid {...novelStatusGrid.name}>
+                    <Typography fontWeight={500}>Tags</Typography>
+                  </Grid>
+                  <Grid {...novelStatusGrid.info}>
+                    <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap" }}>
+                      {novel.tags.map((tag) => (
+                        <Chip
+                          key={tag.id}
+                          color="secondary"
+                          label={tag.name}
+                          size="small"
+                          onClick={() => router.push(`/the-loai/${tag.slug}`)}
+                        />
+                      ))}
+                    </Box>
+                  </Grid>
+
+                  {/* độ tuổi */}
+                  <Grid {...novelStatusGrid.name}>
+                    <Typography fontWeight={500}>Độ tuổi</Typography>
+                  </Grid>
+                  <Grid {...novelStatusGrid.info}>
+                    <Typography color={ageColor(novel.age_rank)}>
+                      {novel.age_rank}+
+                    </Typography>
+                  </Grid>
+                </Grid>
+                {/* cta */}
+              </Box>
+            </Grid>
+            {/* cta */}
+            <Grid item xs={12} md={4} lg={6}>
+              <Box
+                mt={2}
+                sx={{ display: "flex", flexDirection: "column", gap: 1 }}
               >
                 <Button
                   variant="contained"
                   size="large"
                   startIcon={<PlayArrowIcon />}
+                  sx={{ alignSelf: "flex-start" }}
                 >
                   Đọc từ đầu
                 </Button>
-                <Button variant="contained" size="large">
-                  Like, yêu thích các kiểu nằm đây
-                </Button>
+                <ButtonGroup
+                  orientation="horizontal"
+                  variant="text"
+                  // color="primary"
+                  size="large"
+                >
+                  <Button
+                    color={emotion.like ? "like" : "text"}
+                    name="like"
+                    onClick={() =>
+                      setEmotion((prev) => ({
+                        like: !prev.like,
+                        favorite: false,
+                        happy: false,
+                        sad: false,
+                      }))
+                    }
+                  >
+                    <FontAwesomeIcon icon={faThumbsUp} width={30} />
+                  </Button>
+                  <Button
+                    color={emotion.favorite ? "favorite" : "text"}
+                    onClick={() =>
+                      setEmotion((prev) => ({
+                        like: false,
+                        favorite: !prev.favorite,
+                        happy: false,
+                        sad: false,
+                      }))
+                    }
+                  >
+                    <FontAwesomeIcon icon={faHeart} width={30} />
+                  </Button>
+                  <Button
+                    color={emotion.happy ? "warning" : "text"}
+                    onClick={() =>
+                      setEmotion((prev) => ({
+                        like: false,
+                        favorite: false,
+                        happy: !prev.happy,
+                        sad: false,
+                      }))
+                    }
+                  >
+                    <FontAwesomeIcon icon={faFaceLaughBeam} width={30} />
+                  </Button>
+                  <Button
+                    color={emotion.sad ? "success" : "text"}
+                    onClick={() =>
+                      setEmotion((prev) => ({
+                        like: false,
+                        favorite: false,
+                        happy: false,
+                        sad: !prev.sad,
+                      }))
+                    }
+                  >
+                    <FontAwesomeIcon icon={faFaceSadCry} width={30} />
+                  </Button>
+                </ButtonGroup>
               </Box>
-            </Box>
+            </Grid>
           </Grid>
         </Grid>
       </Box>

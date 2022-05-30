@@ -42,6 +42,14 @@ export const lightTheme = createTheme({
       contrastText: "#fff",
     },
 
+    like: {
+      main: blue[500],
+    },
+
+    favorite: {
+      main: pink[500],
+    },
+
     text: {
       light: grey[50],
       main: grey[500],

@@ -14,6 +14,7 @@ export default function Body({ novel }) {
             sx={{
               overflow: "auto",
               height: "17rem",
+              pr: 1,
               "&>*": {
                 fontWeight: 300,
                 mb: 1,
