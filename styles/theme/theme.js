@@ -1,15 +1,11 @@
 import {
-  grey,
-  pink,
-  green,
-  red,
-  amber,
-  purple,
-  indigo,
   blue,
+  green,
+  grey,
+  indigo,
+  orange,
+  pink,
   teal,
-  deepOrange,
-  lightBlue,
 } from "@mui/material/colors";
 import { createTheme } from "@mui/material/styles";
 
@@ -43,11 +39,19 @@ export const lightTheme = createTheme({
     },
 
     like: {
-      main: blue[500],
+      main: teal["A700"],
     },
 
     favorite: {
       main: pink[500],
+    },
+
+    happy: {
+      main: orange[500],
+    },
+
+    sad: {
+      main: blue[500],
     },
 
     text: {
@@ -58,10 +62,7 @@ export const lightTheme = createTheme({
 
     success: {
       main: green["A700"],
-    },
-
-    error: {
-      main: red[500],
+      // contrastText: "#fff",
     },
 
     background: {

@@ -1,9 +1,12 @@
-import { Box, Container } from "@mui/material";
+import { Avatar, Box, Container, IconButton, Typography } from "@mui/material";
 import HeadPage from "components/common/HeadPage";
 import Body from "components/NovelDetail/Body";
 import Header from "components/NovelDetail/Header";
+import NovelTabs from "components/NovelDetail/NovelTabs";
 import React from "react";
 import axiosClient from "utility/axiosConfig";
+import FlagIcon from "@mui/icons-material/Flag";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 export async function getServerSideProps(context) {
   const { slug } = context.params;
@@ -23,6 +26,7 @@ export default function NovelDetail({ novel }) {
   return (
     <>
       <HeadPage title={`${novel[0].title} - Vietnovel Origin`} />
+      {/* header */}
       <Box
         sx={{
           backgroundImage: `
@@ -41,9 +45,13 @@ export default function NovelDetail({ novel }) {
           </Box>
         </Container>
       </Box>
+
+      {/* body */}
       <Box>
         <Container maxWidth="2xl">
-          <Body novel={novel[0]} />
+          <Box sx={{ padding: 3 }}>
+            <Body novel={novel[0]} />
+          </Box>
         </Container>
       </Box>
     </>

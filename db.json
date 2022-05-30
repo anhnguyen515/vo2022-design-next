@@ -214,9 +214,11 @@
         "birth_year": 2000,
         "location": "TP. HCM",
         "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
+        "verified": true,
         "ranking": "Bút Lông Trung Kỳ",
-        "views": 84500,
-        "total_words": 8062000,
+        "num_views": 84500,
+        "num_words": 8062000,
+        "num_likes": 12345,
         "num_novels": 7
       },
       "tags": [
@@ -286,8 +288,9 @@
         "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
         "verified": true,
         "ranking": "Bút Tre Đỉnh Phong",
-        "views": 667000,
+        "num_views": 667000,
         "num_words": 6128000,
+        "num_likes": 12345,
         "num_novels": 2
       },
       "tags": [
@@ -362,8 +365,9 @@
         "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
         "verified": false,
         "ranking": "Bút Lông Đỉnh Phong",
-        "views": 47900,
+        "num_views": 47900,
         "num_words": 645900,
+        "num_likes": 12345,
         "num_novels": 5
       },
       "tags": [
@@ -438,8 +442,9 @@
         "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
         "verified": false,
         "ranking": "Bút Đá Trung Kỳ",
-        "views": 43600,
+        "num_views": 43600,
         "num_words": 1100000,
+        "num_likes": 12345,
         "num_novels": 2
       },
       "tags": [
@@ -509,8 +514,9 @@
         "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
         "verified": false,
         "ranking": "Bút Lông Trung Kỳ",
-        "views": 41900,
+        "num_views": 41900,
         "num_words": 299700,
+        "num_likes": 12345,
         "num_novels": 5
       },
       "tags": [
@@ -579,8 +585,9 @@
         "location": "TP. HCM",
         "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
         "ranking": "Bút Lông Trung Kỳ",
-        "views": 84500,
-        "total_words": 8062000,
+        "num_views": 84500,
+        "num_words": 8062000,
+        "num_likes": 12345,
         "num_novels": 7
       },
       "tags": [
@@ -649,8 +656,9 @@
         "location": "TP. HCM",
         "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
         "ranking": "Bút Lông Trung Kỳ",
-        "views": 84500,
-        "total_words": 8062000,
+        "num_views": 84500,
+        "num_words": 8062000,
+        "num_likes": 12345,
         "num_novels": 7
       },
       "tags": [
@@ -834,8 +842,9 @@
       "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
       "verified": true,
       "ranking": "Bút Lông Trung Kỳ",
-      "views": 84500,
+      "num_views": 84500,
       "num_words": 8062000,
+      "num_likes": 12345,
       "num_novels": 7
     },
     {
@@ -847,8 +856,9 @@
       "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
       "verified": true,
       "ranking": "Bút Tre Đỉnh Phong",
-      "views": 667000,
+      "num_views": 667000,
       "num_words": 6128000,
+      "num_likes": 12345,
       "num_novels": 2
     },
     {
@@ -860,8 +870,9 @@
       "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
       "verified": false,
       "ranking": "Bút Lông Đỉnh Phong",
-      "views": 47900,
+      "num_views": 47900,
       "num_words": 645900,
+      "num_likes": 12345,
       "num_novels": 5
     },
     {
@@ -873,8 +884,9 @@
       "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
       "verified": false,
       "ranking": "Bút Đá Trung Kỳ",
-      "views": 43600,
+      "num_views": 43600,
       "num_words": 1100000,
+      "num_likes": 12345,
       "num_novels": 2
     },
     {
@@ -886,8 +898,9 @@
       "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
       "verified": false,
       "ranking": "Bút Lông Trung Kỳ",
-      "views": 41900,
+      "num_views": 41900,
       "num_words": 299700,
+      "num_likes": 12345,
       "num_novels": 5
     }
   ]

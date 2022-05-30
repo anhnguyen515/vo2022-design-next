@@ -32,10 +32,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Header({ novel }) {
-  // const [like, setLike] = useState(false);
-  // const [favorite, setFavorite] = useState(false);
-  // const [happy, setHappy] = useState(false);
-  // const [sad, setSad] = useState(false);
+  const [bookmark, setBookmark] = useState(false);
   const [emotion, setEmotion] = useState({
     like: false,
     favorite: false,
@@ -48,12 +45,12 @@ export default function Header({ novel }) {
     name: {
       item: true,
       xs: 4,
-      md: 2,
+      md: 3,
     },
     info: {
       item: true,
       xs: 8,
-      md: 10,
+      md: 9,
     },
   };
 
@@ -108,7 +105,7 @@ export default function Header({ novel }) {
           {/* chi tiết */}
           <Grid container item xs={12} md={9} xl={10}>
             {/* danh hiệu */}
-            <Grid item xs={12} md={8} lg={6}>
+            <Grid item xs={12} md={8}>
               <Box
                 sx={{
                   display: "flex",
@@ -146,11 +143,15 @@ export default function Header({ novel }) {
                 <Typography variant="h4" fontWeight="bold">
                   {novel.title}
                 </Typography>
-                <IconButton color="text">
-                  <BookmarkAddIcon fontSize="large" />
-                </IconButton>
-                <IconButton color="warning">
-                  <BookmarkAddedIcon fontSize="large" />
+                <IconButton
+                  color={bookmark ? "success" : "text"}
+                  onClick={() => setBookmark((prev) => !prev)}
+                >
+                  {bookmark ? (
+                    <BookmarkAddedIcon fontSize="large" />
+                  ) : (
+                    <BookmarkAddIcon fontSize="large" />
+                  )}
                 </IconButton>
               </Box>
               {/* tổng chữ, lượt xem, lượt thích */}
@@ -220,7 +221,7 @@ export default function Header({ novel }) {
                   </Grid>
                   <Grid {...novelStatusGrid.info}>
                     <Chip
-                      color="success"
+                      color="warning"
                       label={novel.primary_genre.name}
                       size="small"
                       onClick={() =>
@@ -231,7 +232,7 @@ export default function Header({ novel }) {
 
                   {/* tags */}
                   <Grid {...novelStatusGrid.name}>
-                    <Typography fontWeight={500}>Tags</Typography>
+                    <Typography fontWeight={500}>Thể loại</Typography>
                   </Grid>
                   <Grid {...novelStatusGrid.info}>
                     <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap" }}>
@@ -261,23 +262,31 @@ export default function Header({ novel }) {
               </Box>
             </Grid>
             {/* cta */}
-            <Grid item xs={12} md={4} lg={6}>
+            <Grid item xs={12} md={4}>
               <Box
                 mt={2}
-                sx={{ display: "flex", flexDirection: "column", gap: 1 }}
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: 2,
+                  alignItems: {
+                    xs: "flex-start",
+                    md: "flex-end",
+                    xl: "flex-start",
+                  },
+                }}
               >
                 <Button
                   variant="contained"
                   size="large"
                   startIcon={<PlayArrowIcon />}
-                  sx={{ alignSelf: "flex-start" }}
                 >
                   Đọc từ đầu
                 </Button>
                 <ButtonGroup
                   orientation="horizontal"
                   variant="text"
-                  // color="primary"
+                  color="text"
                   size="large"
                 >
                   <Button
@@ -308,7 +317,7 @@ export default function Header({ novel }) {
                     <FontAwesomeIcon icon={faHeart} width={30} />
                   </Button>
                   <Button
-                    color={emotion.happy ? "warning" : "text"}
+                    color={emotion.happy ? "happy" : "text"}
                     onClick={() =>
                       setEmotion((prev) => ({
                         like: false,
@@ -321,7 +330,7 @@ export default function Header({ novel }) {
                     <FontAwesomeIcon icon={faFaceLaughBeam} width={30} />
                   </Button>
                   <Button
-                    color={emotion.sad ? "success" : "text"}
+                    color={emotion.sad ? "sad" : "text"}
                     onClick={() =>
                       setEmotion((prev) => ({
                         like: false,

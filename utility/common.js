@@ -78,6 +78,16 @@ export function rankingColor(rank) {
   }
 }
 
+export function ratingColor(rating) {
+  if (rating >= 4) {
+    return green["A700"];
+  } else if (rating >= 2 && rating < 4) {
+    return orange[500];
+  } else {
+    return red[500];
+  }
+}
+
 export function ageColor(age) {
   if (age < 12) {
     return grey[50];
