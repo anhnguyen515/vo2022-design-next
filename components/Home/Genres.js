@@ -83,7 +83,7 @@ export default function Genres({ genres, novels }) {
       <CategoryLayout title="Thể Loại Truyện">
         <Grid container spacing={3}>
           {genres.slice(0, 6).map((genre) => (
-            <Grid key={genre.id} item xs={12} sm={6} md={4}>
+            <Grid key={genre.id} item xs={12} sm={6} lg={4}>
               <GenresCard genre={genre} novels={novels} />
             </Grid>
           ))}

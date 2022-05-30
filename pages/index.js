@@ -57,7 +57,7 @@ export default function Home({
           <Box mb={10}>
             <Grid container spacing={3}>
               {/* top truyện đã hoàn thành */}
-              <Grid item xs={12} md={6} lg={3} order={{ xs: 0 }}>
+              <Grid item xs={12} sm={6} lg={3} order={{ xs: 0 }}>
                 <TopFinished novels={novels} />
               </Grid>
 
@@ -68,7 +68,7 @@ export default function Home({
               </Grid>
 
               {/* creator studio */}
-              <Grid item xs={12} md={6} lg={3} order={{ xs: 1, lg: 2 }}>
+              <Grid item xs={12} sm={6} lg={3} order={{ xs: 1, lg: 2 }}>
                 <CreatorStudio />
               </Grid>
             </Grid>
@@ -92,10 +92,10 @@ export default function Home({
           {/* truyện đọc nhiều & thể loại truyện */}
           <Box mb={10}>
             <Grid container spacing={5}>
-              <Grid item xs={12} lg={9}>
+              <Grid item xs={12} md={8} lg={9}>
                 <Genres genres={genres} novels={novels} />
               </Grid>
-              <Grid item xs={12} lg={3}>
+              <Grid item xs={12} md={4} lg={3}>
                 <MostRead novels={novels} />
               </Grid>
             </Grid>
@@ -104,10 +104,10 @@ export default function Home({
           {/* tác giả bảng & truyện hoàn thành */}
           <Box mb={10}>
             <Grid container spacing={5}>
-              <Grid item xs={12} lg={3}>
+              <Grid item xs={12} md={4} lg={3}>
                 <TopWriters authors={authors} />
               </Grid>
-              <Grid item xs={12} lg={9}>
+              <Grid item xs={12} md={8} lg={9}>
                 <FinishedNovels novels={finishedNovels} />
               </Grid>
             </Grid>

@@ -91,7 +91,7 @@ export default function RoyalRanking({ novels }) {
       <CategoryLayout title="Royal Ranking">
         <Grid container spacing={3}>
           {novels.slice(0, 6).map((novel, index) => (
-            <Grid item key={novel.id} xs={12} sm={6} md={4} lg={2}>
+            <Grid item key={novel.id} xs={12} sm={4} md={2}>
               <RoyalRankingCard novel={novel} rank={index + 1} />
             </Grid>
           ))}

@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Slider from "react-slick";
-import { ageColor, novelStatus, numberFormat } from "utility/common";
+import { numberFormat } from "utility/common";
 
 function PrevArrow(props) {
   const { onClick } = props;
@@ -18,7 +18,7 @@ function PrevArrow(props) {
       color="text"
       sx={{
         position: "absolute",
-        top: "40%",
+        top: "45%",
         left: 0,
         zIndex: 100,
       }}
@@ -37,7 +37,7 @@ function NextArrow(props) {
       color="text"
       sx={{
         position: "absolute",
-        top: "40%",
+        top: "45%",
         right: 0,
         zIndex: 100,
       }}
@@ -129,7 +129,7 @@ export default function BigScreenCarousel({ novels }) {
                   {novel.author.name}
                 </Typography>
                 {/* <Box> */}
-                <Grid container spacing={2}>
+                <Grid container spacing={1}>
                   {/* thể loại chính */}
                   <Grid {...novelStatusGrid.name}>
                     <Typography>Thể loại chính</Typography>
@@ -157,13 +157,6 @@ export default function BigScreenCarousel({ novels }) {
                         />
                       ))}
                     </Box>
-                  </Grid>
-                  {/* tổng chữ */}
-                  <Grid {...novelStatusGrid.name}>
-                    <Typography>Tổng chữ</Typography>
-                  </Grid>
-                  <Grid {...novelStatusGrid.info}>
-                    <Typography>{numberFormat(novel.num_words)}</Typography>
                   </Grid>
                   {/* lượt xem */}
                   <Grid {...novelStatusGrid.name}>

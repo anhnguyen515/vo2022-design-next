@@ -61,7 +61,7 @@ export default function Featured({ novels }) {
           </Grid>
           <Grid container item xs={12} lg={8} spacing={3}>
             {novels.slice(0, 12).map((novel) => (
-              <Grid key={novel.id} item xs={6} sm={4} md={3} lg={2}>
+              <Grid key={novel.id} item xs={6} sm={4} md={2}>
                 <FeaturedCard novel={novel} />
               </Grid>
             ))}

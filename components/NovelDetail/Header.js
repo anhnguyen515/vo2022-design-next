@@ -71,21 +71,23 @@ export default function Header({ novel }) {
       <Box>
         <Grid container columnSpacing={5}>
           {/* thumbnail */}
-          <Grid item xs={0} md={3} xl={2}>
-            <Image
-              alt={`ảnh bìa của ${novel.title}`}
-              src={novel.picture}
-              width={2}
-              height={3}
-              layout="responsive"
-              style={{
-                borderRadius: "0.25rem",
-              }}
-            />
+          <Grid item xs={0} lg={3} xl={3}>
+            <Box>
+              <Image
+                alt={`ảnh bìa của ${novel.title}`}
+                src={novel.picture}
+                width={2}
+                height={3}
+                layout="responsive"
+                style={{
+                  borderRadius: "0.25rem",
+                }}
+              />
+            </Box>
           </Grid>
 
           {/* chi tiết */}
-          <Grid item xs={12} md={9} xl={10}>
+          <Grid item xs={12} lg={9} xl={9}>
             {/* danh hiệu */}
             <Box
               sx={{
@@ -245,6 +247,9 @@ export default function Header({ novel }) {
                   startIcon={<PlayArrowIcon />}
                 >
                   Đọc từ đầu
+                </Button>
+                <Button variant="contained" size="large">
+                  Like, yêu thích các kiểu nằm đây
                 </Button>
               </Box>
             </Box>

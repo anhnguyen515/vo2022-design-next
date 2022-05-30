@@ -1,22 +1,64 @@
-import { Box } from "@mui/material";
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import { Box, IconButton } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 
+function PrevArrow(props) {
+  const { onClick } = props;
+  return (
+    <IconButton
+      onClick={onClick}
+      sx={{
+        color: "text.light",
+        position: "absolute",
+        top: "45%",
+        left: "0.25rem",
+        zIndex: 100,
+      }}
+    >
+      <ArrowBackIosNewIcon />
+    </IconButton>
+  );
+}
+
+function NextArrow(props) {
+  const { onClick } = props;
+  return (
+    <IconButton
+      onClick={onClick}
+      sx={{
+        color: "text.light",
+        position: "absolute",
+        top: "45%",
+        right: "0.25rem",
+        zIndex: 100,
+      }}
+    >
+      <ArrowForwardIosIcon />
+    </IconButton>
+  );
+}
+
 export default function MyCarousel({ novels }) {
+  const [showArrows, setShowArrows] = useState(false);
   const settings = {
-    dots: true,
     infinite: true,
+    arrows: showArrows,
     draggable: false,
-    arrows: false,
     autoplay: true,
     autoplaySpeed: 5000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />,
   };
   return (
     <Box
+      onMouseEnter={() => setShowArrows(true)}
+      onMouseLeave={() => setShowArrows(false)}
       sx={{
         display: {
           xs: "none",

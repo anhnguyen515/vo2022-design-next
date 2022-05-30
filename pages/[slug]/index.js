@@ -1,5 +1,6 @@
 import { Box, Container } from "@mui/material";
 import HeadPage from "components/common/HeadPage";
+import Body from "components/NovelDetail/Body";
 import Header from "components/NovelDetail/Header";
 import React from "react";
 import axiosClient from "utility/axiosConfig";
@@ -42,7 +43,7 @@ export default function NovelDetail({ novel }) {
       </Box>
       <Box>
         <Container maxWidth="2xl">
-          <Box sx={{ padding: 3 }}>{novel[0].title}</Box>
+          <Body novel={novel[0]} />
         </Container>
       </Box>
     </>
