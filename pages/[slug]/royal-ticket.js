@@ -1,4 +1,4 @@
-import { Box, Container } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import HeadPage from "components/common/HeadPage";
 import Body from "components/NovelDetail/Body";
 import Header from "components/NovelDetail/Header";
@@ -20,7 +20,7 @@ export async function getServerSideProps(context) {
   };
 }
 
-export default function NovelDetail({ novel }) {
+export default function RoyalTicketsPage({ novel }) {
   return (
     <>
       <HeadPage title={`${novel[0].title} - Vietnovel Origin`} />
@@ -48,9 +48,9 @@ export default function NovelDetail({ novel }) {
       <Box>
         <Container maxWidth="2xl">
           <Box sx={{ padding: 3 }}>
-            <NovelTabs novel={novel[0]} value={0} />
+            <NovelTabs novel={novel[0]} value={4} />
             <br />
-            <Body novel={novel[0]} />
+            <Typography variant="h1">Royal Ticket</Typography>
           </Box>
         </Container>
       </Box>

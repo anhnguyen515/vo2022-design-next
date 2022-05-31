@@ -92,9 +92,9 @@ export function ageColor(age) {
   if (age < 12) {
     return grey[50];
   } else if (age >= 12 && age < 16) {
-    return green[400];
+    return green["A700"];
   } else {
-    return orange[500];
+    return orange[700];
   }
 }
 

@@ -39,7 +39,7 @@ export const lightTheme = createTheme({
     },
 
     like: {
-      main: teal["A700"],
+      main: blue[500],
     },
 
     favorite: {
@@ -51,7 +51,7 @@ export const lightTheme = createTheme({
     },
 
     sad: {
-      main: blue[500],
+      main: teal["A700"],
     },
 
     text: {
