@@ -69,7 +69,7 @@ export default function MyCarousel({ novels }) {
     >
       <Slider {...settings}>
         {novels.slice(0, 5).map((novel) => (
-          <Link key={novel.id} href={`/${novel.slug}`}>
+          <Link key={novel.id} href={`/truyen/${novel.slug}`}>
             <a>
               <Image
                 alt={`Ảnh bìa của ${novel.title}`}

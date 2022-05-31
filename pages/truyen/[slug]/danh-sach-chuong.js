@@ -1,6 +1,5 @@
 import { Box, Container, Typography } from "@mui/material";
 import HeadPage from "components/common/HeadPage";
-import Body from "components/NovelDetail/Body";
 import Header from "components/NovelDetail/Header";
 import NovelTabs from "components/NovelDetail/NovelTabs";
 import React from "react";
@@ -48,7 +47,7 @@ export default function ChaptersPage({ novel }) {
       <Box>
         <Container maxWidth="2xl">
           <Box sx={{ padding: 3 }}>
-            <NovelTabs novel={novel[0]} value={1} />
+            <NovelTabs novel={novel[0]} value={3} />
             <br />
             <Typography variant="h1">Danh sách chương</Typography>
           </Box>

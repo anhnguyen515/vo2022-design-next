@@ -44,7 +44,7 @@ export default function TopFinished({ novels }) {
                   whiteSpace: "nowrap",
                 }}
               >
-                <Link href={`/${novel.slug}`}>
+                <Link href={`/truyen/${novel.slug}`}>
                   <a>{novel.title}</a>
                 </Link>
               </Typography>

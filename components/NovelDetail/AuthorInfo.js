@@ -40,7 +40,7 @@ export default function AuthorInfo({ author }) {
           }}
         >
           <Typography sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-            <AbcIcon fontSize="large" color="notification" />{" "}
+            <AbcIcon fontSize="large" color="warning" />{" "}
             {numberFormat(author.num_words)}
           </Typography>
           <Typography sx={{ display: "flex", alignItems: "center", gap: 1 }}>
@@ -48,7 +48,7 @@ export default function AuthorInfo({ author }) {
             {numberFormat(author.num_likes)}
           </Typography>
           <Typography sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-            <VisibilityIcon fontSize="small" color="warning" />{" "}
+            <VisibilityIcon fontSize="small" color="favorite" />{" "}
             {numberFormat(author.num_views)}
           </Typography>
         </Box>

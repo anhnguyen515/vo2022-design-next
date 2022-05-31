@@ -11,7 +11,7 @@ function MostReadCard({ novel }) {
   return (
     <Card elevation={0} sx={{ display: "flex", borderRadius: 0, mb: 2 }}>
       <Box>
-        <Link href={`/${novel.slug}`}>
+        <Link href={`/truyen/${novel.slug}`}>
           <a>
             <CardMedia
               component="img"
@@ -43,7 +43,7 @@ function MostReadCard({ novel }) {
             whiteSpace: "nowrap",
           }}
         >
-          <Link href={`/${novel.slug}`}>
+          <Link href={`/truyen/${novel.slug}`}>
             <a>{novel.title}</a>
           </Link>
         </Typography>

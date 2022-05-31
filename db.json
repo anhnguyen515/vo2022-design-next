@@ -285,7 +285,7 @@
         "slug": "an-nhan-dao-tien",
         "birth_year": 2000,
         "location": "TP. HCM",
-        "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
+        "picture": "https://i.vnvl.net/user/20210828/dMgmWK.png.320x320_q85_crop.jpg",
         "verified": true,
         "ranking": "Bút Tre Đỉnh Phong",
         "num_views": 667000,
@@ -853,7 +853,7 @@
       "slug": "an-nhan-dao-tien",
       "birth_year": 2000,
       "location": "TP. HCM",
-      "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
+      "picture": "https://i.vnvl.net/user/20210828/dMgmWK.png.320x320_q85_crop.jpg",
       "verified": true,
       "ranking": "Bút Tre Đỉnh Phong",
       "num_views": 667000,
@@ -902,6 +902,673 @@
       "num_words": 299700,
       "num_likes": 12345,
       "num_novels": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "user": {
+        "id": 1,
+        "username": "người dùng 1",
+        "picture": "https://www.vietnovel.com/static/img/avatars/default-male.jpg"
+      },
+      "novel": {
+        "id": 2,
+        "title": "SELENA WHITELEY",
+        "slug": "selena-whiteley",
+        "novel_status": "C",
+        "primary_genre": {
+          "id": 6,
+          "name": "Dị Năng",
+          "slug": "truyen-di-nang",
+          "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+          "order": 6,
+          "num_novels": 1234
+        },
+        "author": {
+          "id": 2,
+          "name": "An Nhân Đạo Tiên",
+          "slug": "an-nhan-dao-tien",
+          "birth_year": 2000,
+          "location": "TP. HCM",
+          "picture": "https://i.vnvl.net/user/20210828/dMgmWK.png.320x320_q85_crop.jpg",
+          "verified": true,
+          "ranking": "Bút Tre Đỉnh Phong",
+          "num_views": 667000,
+          "num_words": 6128000,
+          "num_likes": 12345,
+          "num_novels": 2
+        },
+        "tags": [
+          {
+            "id": 6,
+            "name": "Dị Năng",
+            "slug": "truyen-di-nang"
+          },
+          {
+            "id": 2,
+            "name": "Tiên Hiệp",
+            "slug": "truyen-tien-hiep"
+          },
+          {
+            "id": 3,
+            "name": "Hệ Thống",
+            "slug": "truyen-he-thong"
+          },
+          {
+            "id": 5,
+            "name": "Xuyên Không",
+            "slug": "truyen-xuyen-khong"
+          }
+        ],
+        "age_rank": 13,
+        "summary": "<div>Đã vài tháng kể từ ngày Selena rời London để đến với Landcaster - vùng đất của những Bellatores - một nơi đầy rẫy những thứ phép thuật kỳ bí, nơi mà những đôi tay nhuốm máu Quỷ của các chiến binh lại trở thành một việc thường ngày. Ai cũng nói Landcaster chính là nơi mà Selena đáng lẽ thuộc về. Ai cũng bảo rằng được theo học tại học việc Liam Patrick là một đặc quyền linh thiêng của những đứa trẻ mang trong mình dòng máu Bellatores. Nhưng tại sao Selena lại luôn cảm thấy lạc lõng ở nơi này, đến cả chiếc chăn bông còn chẳng thể mang đến cho con bé được một hơi ấm?</div><div>Tiểu thuyết là một câu chuyện kể về các chiến binh trong những cuộc phiêu lưu giữa hiểm nguy luôn rình rập. Cả những trận chiến cam go đầy máu và nước mắt. Và những thứ tình cảm đậm sâu, từ tình thân cho đến tình yêu mà mấy mươi năm cũng chẳng thể buông bỏ được.</div>",
+        "picture": "https://i.vnvl.net/vo/20220503/YW8Opd.png.240x360_q85_crop.jpg",
+        "status": "P",
+        "is_vip": false,
+        "vip_started_at": "05/25/2022",
+        "withdraw_locked": false,
+        "lock_comments": false,
+        "login_required": false,
+        "no_ads": false,
+        "turnoff_notifications": false,
+        "turnoff_last_update": false,
+        "mobile_app_banned": false,
+        "app_only": false,
+        "app_only_from": 0,
+
+        "team_notes": "",
+
+        "updated_at": "05/25/2022",
+        "created_at": "05/25/2022",
+        "created_by": "",
+        "og_img": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
+        "num_likes": 12345,
+        "num_views": 70120,
+        "num_chapters": 213,
+        "num_words": 515000,
+        "top_stripe": "Top 2 Royal Ranking"
+      },
+      "parent": null,
+      "chap_num": 1,
+      "content": "",
+      "content_safe": "<p>Hay 👍</p><p>Nghi ngờ ông Helios yêu em gái nuôi quá 😂</p>",
+      "removed": false,
+      "featured": false,
+      "muted": false,
+      "created_at": "05/23/2022",
+      "updated_at": "05/25/2022",
+      "last_updated": "05/25/2022",
+      "likes": [1, 2, 3, 4, 5]
+    },
+    {
+      "id": 2,
+      "user": {
+        "id": 2,
+        "username": "người dùng 2",
+        "picture": "https://www.vietnovel.com/static/img/avatars/default-male.jpg"
+      },
+      "novel": {
+        "id": 2,
+        "title": "SELENA WHITELEY",
+        "slug": "selena-whiteley",
+        "novel_status": "C",
+        "primary_genre": {
+          "id": 6,
+          "name": "Dị Năng",
+          "slug": "truyen-di-nang",
+          "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+          "order": 6,
+          "num_novels": 1234
+        },
+        "author": {
+          "id": 2,
+          "name": "An Nhân Đạo Tiên",
+          "slug": "an-nhan-dao-tien",
+          "birth_year": 2000,
+          "location": "TP. HCM",
+          "picture": "https://i.vnvl.net/user/20210828/dMgmWK.png.320x320_q85_crop.jpg",
+          "verified": true,
+          "ranking": "Bút Tre Đỉnh Phong",
+          "num_views": 667000,
+          "num_words": 6128000,
+          "num_likes": 12345,
+          "num_novels": 2
+        },
+        "tags": [
+          {
+            "id": 6,
+            "name": "Dị Năng",
+            "slug": "truyen-di-nang"
+          },
+          {
+            "id": 2,
+            "name": "Tiên Hiệp",
+            "slug": "truyen-tien-hiep"
+          },
+          {
+            "id": 3,
+            "name": "Hệ Thống",
+            "slug": "truyen-he-thong"
+          },
+          {
+            "id": 5,
+            "name": "Xuyên Không",
+            "slug": "truyen-xuyen-khong"
+          }
+        ],
+        "age_rank": 13,
+        "summary": "<div>Đã vài tháng kể từ ngày Selena rời London để đến với Landcaster - vùng đất của những Bellatores - một nơi đầy rẫy những thứ phép thuật kỳ bí, nơi mà những đôi tay nhuốm máu Quỷ của các chiến binh lại trở thành một việc thường ngày. Ai cũng nói Landcaster chính là nơi mà Selena đáng lẽ thuộc về. Ai cũng bảo rằng được theo học tại học việc Liam Patrick là một đặc quyền linh thiêng của những đứa trẻ mang trong mình dòng máu Bellatores. Nhưng tại sao Selena lại luôn cảm thấy lạc lõng ở nơi này, đến cả chiếc chăn bông còn chẳng thể mang đến cho con bé được một hơi ấm?</div><div>Tiểu thuyết là một câu chuyện kể về các chiến binh trong những cuộc phiêu lưu giữa hiểm nguy luôn rình rập. Cả những trận chiến cam go đầy máu và nước mắt. Và những thứ tình cảm đậm sâu, từ tình thân cho đến tình yêu mà mấy mươi năm cũng chẳng thể buông bỏ được.</div>",
+        "picture": "https://i.vnvl.net/vo/20220503/YW8Opd.png.240x360_q85_crop.jpg",
+        "status": "P",
+        "is_vip": false,
+        "vip_started_at": "05/25/2022",
+        "withdraw_locked": false,
+        "lock_comments": false,
+        "login_required": false,
+        "no_ads": false,
+        "turnoff_notifications": false,
+        "turnoff_last_update": false,
+        "mobile_app_banned": false,
+        "app_only": false,
+        "app_only_from": 0,
+
+        "team_notes": "",
+
+        "updated_at": "05/25/2022",
+        "created_at": "05/25/2022",
+        "created_by": "",
+        "og_img": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
+        "num_likes": 12345,
+        "num_views": 70120,
+        "num_chapters": 213,
+        "num_words": 515000,
+        "top_stripe": "Top 2 Royal Ranking"
+      },
+      "parent": {
+        "id": 1,
+        "user": {
+          "id": 1,
+          "username": "người dùng 1",
+          "picture": "https://www.vietnovel.com/static/img/avatars/default-male.jpg"
+        },
+        "novel": {
+          "id": 2,
+          "title": "SELENA WHITELEY",
+          "slug": "selena-whiteley",
+          "novel_status": "C",
+          "primary_genre": {
+            "id": 6,
+            "name": "Dị Năng",
+            "slug": "truyen-di-nang",
+            "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+            "order": 6,
+            "num_novels": 1234
+          },
+          "author": {
+            "id": 2,
+            "name": "An Nhân Đạo Tiên",
+            "slug": "an-nhan-dao-tien",
+            "birth_year": 2000,
+            "location": "TP. HCM",
+            "picture": "https://i.vnvl.net/user/20210828/dMgmWK.png.320x320_q85_crop.jpg",
+            "verified": true,
+            "ranking": "Bút Tre Đỉnh Phong",
+            "num_views": 667000,
+            "num_words": 6128000,
+            "num_likes": 12345,
+            "num_novels": 2
+          },
+          "tags": [
+            {
+              "id": 6,
+              "name": "Dị Năng",
+              "slug": "truyen-di-nang"
+            },
+            {
+              "id": 2,
+              "name": "Tiên Hiệp",
+              "slug": "truyen-tien-hiep"
+            },
+            {
+              "id": 3,
+              "name": "Hệ Thống",
+              "slug": "truyen-he-thong"
+            },
+            {
+              "id": 5,
+              "name": "Xuyên Không",
+              "slug": "truyen-xuyen-khong"
+            }
+          ],
+          "age_rank": 13,
+          "summary": "<div>Đã vài tháng kể từ ngày Selena rời London để đến với Landcaster - vùng đất của những Bellatores - một nơi đầy rẫy những thứ phép thuật kỳ bí, nơi mà những đôi tay nhuốm máu Quỷ của các chiến binh lại trở thành một việc thường ngày. Ai cũng nói Landcaster chính là nơi mà Selena đáng lẽ thuộc về. Ai cũng bảo rằng được theo học tại học việc Liam Patrick là một đặc quyền linh thiêng của những đứa trẻ mang trong mình dòng máu Bellatores. Nhưng tại sao Selena lại luôn cảm thấy lạc lõng ở nơi này, đến cả chiếc chăn bông còn chẳng thể mang đến cho con bé được một hơi ấm?</div><div>Tiểu thuyết là một câu chuyện kể về các chiến binh trong những cuộc phiêu lưu giữa hiểm nguy luôn rình rập. Cả những trận chiến cam go đầy máu và nước mắt. Và những thứ tình cảm đậm sâu, từ tình thân cho đến tình yêu mà mấy mươi năm cũng chẳng thể buông bỏ được.</div>",
+          "picture": "https://i.vnvl.net/vo/20220503/YW8Opd.png.240x360_q85_crop.jpg",
+          "status": "P",
+          "is_vip": false,
+          "vip_started_at": "05/25/2022",
+          "withdraw_locked": false,
+          "lock_comments": false,
+          "login_required": false,
+          "no_ads": false,
+          "turnoff_notifications": false,
+          "turnoff_last_update": false,
+          "mobile_app_banned": false,
+          "app_only": false,
+          "app_only_from": 0,
+
+          "team_notes": "",
+
+          "updated_at": "05/25/2022",
+          "created_at": "05/25/2022",
+          "created_by": "",
+          "og_img": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
+          "num_likes": 12345,
+          "num_views": 70120,
+          "num_chapters": 213,
+          "num_words": 515000,
+          "top_stripe": "Top 2 Royal Ranking"
+        },
+        "parent": null,
+        "chap_num": 1,
+        "content": "",
+        "content_safe": "<p>Hay 👍</p><p>Nghi ngờ ông Helios yêu em gái nuôi quá 😂</p>",
+        "removed": false,
+        "featured": false,
+        "muted": false,
+        "created_at": "05/25/2022",
+        "updated_at": "05/25/2022",
+        "last_updated": "05/25/2022",
+        "likes": [1, 2, 3, 4, 5]
+      },
+      "chap_num": 1,
+      "content": "",
+      "content_safe": "<p>akxsndgasagdsdgsdjasdg</p>",
+      "removed": false,
+      "featured": false,
+      "muted": false,
+      "created_at": "05/25/2022",
+      "updated_at": "05/25/2022",
+      "last_updated": "05/25/2022",
+      "likes": [1, 2, 3]
+    },
+    {
+      "id": 3,
+      "user": {
+        "id": 2,
+        "username": "người dùng 2",
+        "picture": "https://www.vietnovel.com/static/img/avatars/default-male.jpg"
+      },
+      "novel": {
+        "id": 1,
+        "title": "Sống Lại Thành Đại Ma Đầu",
+        "slug": "song-lai-thanh-dai-ma-dau",
+        "novel_status": "F",
+        "primary_genre": {
+          "id": 1,
+          "name": "Huyền Huyễn",
+          "slug": "truyen-huyen-huyen",
+          "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+          "order": 1,
+          "num_novels": 1234
+        },
+        "author": {
+          "id": 1,
+          "name": "Thanh Uẩn Tương Ly",
+          "slug": "thanh-uan-tuong-ly",
+          "birth_year": 2000,
+          "location": "TP. HCM",
+          "picture": "https://i.vnvl.net/user/20210618/YZ6BlY.png.320x320_q85_crop.jpg",
+          "verified": true,
+          "ranking": "Bút Lông Trung Kỳ",
+          "num_views": 84500,
+          "num_words": 8062000,
+          "num_likes": 12345,
+          "num_novels": 7
+        },
+        "tags": [
+          {
+            "id": 1,
+            "name": "Huyền Huyễn",
+            "slug": "truyen-huyen-huyen"
+          },
+          {
+            "id": 2,
+            "name": "Tiên Hiệp",
+            "slug": "truyen-tien-hiep"
+          },
+          {
+            "id": 3,
+            "name": "Hệ Thống",
+            "slug": "truyen-he-thong"
+          }
+        ],
+        "age_rank": 16,
+        "summary": "<p>Khuất Tử Dạ là anh hùng của tu chân giới được người người kính trọng, thế nhưng kết cục lại bị người khác hãm hại, mang lấy oan danh âm thầm cấu kết tà đạo làm chuyện thương thiên hại lý, dẫn đến người đời chán ghét khinh bỉ.</p><p>Hắn đem lòng yêu say đắm một nữ nhân, đến cuối cùng, lại bị chính tay nữ nhân mà hắn yêu thương nhất hại chết.<p><p>Một kiếm xuyên tim!</p><p>Kiếp này được trùng sinh, hắn quyết tâm báo thù, đem toàn bộ tu chân giới dẫm đạp dưới chân.<p/><p>Một lần bị rắn cắn, cả đời sợ dây thừng!</p><p>Hắn trở nên căm ghét nữ nhân, lòng thề tuyệt đối không chạm vào nữ sắc.</p><p>Ấy thế mà một thẳng nam như hắn lại chạm vào một nam nhân khác, khiến cả đời lưu luyến, không thể tách rời!</p><br /><br/><p>-----</p><p>- Tên truyện: SỐNG LẠI THÀNH ĐẠI MA ĐẦU</p><p>- Tác giả: Tinh Quỷ Zenly</p><p>- Thể loại: tình cảm nam nam, trùng sinh, 1vs1, ngược nhẹ, Tôn chủ anh tuấn cường công - Thủ lĩnh kiêm thị vệ cận thân mỹ nhân thụ, thụ si tình công, HE.</p><p>- Nhân vật chính: Khuất Tử Dạ - Nghiêm Dung</p><p>- Tổng số chương: 3x chương</p><p>- Lịch cập nhật chương: tối thứ năm hàng tuần</p><p>- Vẽ minh họa: _Seivert_</p><p>- Thiết kế bìa: Basic Needs</p><p><strong>LƯU Ý: Truyện chỉ phù hợp với đối tượng trên 16 tuổi! Kiếp trước thụ là kỹ nam! Lần đầu tiên của công và thụ là do sự cố! Cảm thấy không phù hợp có thể click-back, cảm ơn!</strong></p><p>!! Tuyệt đối không được chuyển ver hay đem truyện đi bất cứ đâu khi chưa có sự cho phép của tác giả Tinh Quỷ Zenly !!</p>",
+        "picture": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
+        "status": "P",
+        "is_vip": true,
+        "vip_started_at": "05/25/2022",
+        "withdraw_locked": false,
+        "lock_comments": false,
+        "login_required": false,
+        "no_ads": false,
+        "turnoff_notifications": false,
+        "turnoff_last_update": false,
+        "mobile_app_banned": false,
+        "app_only": false,
+        "app_only_from": 0,
+
+        "team_notes": "",
+
+        "updated_at": "05/25/2022",
+        "created_at": "05/25/2022",
+        "created_by": "",
+        "og_img": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
+        "num_likes": 12345,
+        "num_views": 70120,
+        "num_chapters": 213,
+        "num_words": 515000,
+        "top_stripe": "Top 1 Royal Ranking"
+      },
+      "parent": null,
+      "chap_num": 15,
+      "content": "",
+      "content_safe": "<p>Truyện hay vl</p>",
+      "removed": false,
+      "featured": false,
+      "muted": false,
+      "created_at": "05/25/2022",
+      "updated_at": "05/25/2022",
+      "last_updated": "05/25/2022",
+      "likes": [1, 2, 3, 4, 5]
+    },
+    {
+      "id": 4,
+      "user": {
+        "id": 3,
+        "username": "người dùng 3",
+        "picture": "https://www.vietnovel.com/static/img/avatars/default-male.jpg"
+      },
+      "novel": {
+        "id": 2,
+        "title": "SELENA WHITELEY",
+        "slug": "selena-whiteley",
+        "novel_status": "C",
+        "primary_genre": {
+          "id": 6,
+          "name": "Dị Năng",
+          "slug": "truyen-di-nang",
+          "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+          "order": 6,
+          "num_novels": 1234
+        },
+        "author": {
+          "id": 2,
+          "name": "An Nhân Đạo Tiên",
+          "slug": "an-nhan-dao-tien",
+          "birth_year": 2000,
+          "location": "TP. HCM",
+          "picture": "https://i.vnvl.net/user/20210828/dMgmWK.png.320x320_q85_crop.jpg",
+          "verified": true,
+          "ranking": "Bút Tre Đỉnh Phong",
+          "num_views": 667000,
+          "num_words": 6128000,
+          "num_likes": 12345,
+          "num_novels": 2
+        },
+        "tags": [
+          {
+            "id": 6,
+            "name": "Dị Năng",
+            "slug": "truyen-di-nang"
+          },
+          {
+            "id": 2,
+            "name": "Tiên Hiệp",
+            "slug": "truyen-tien-hiep"
+          },
+          {
+            "id": 3,
+            "name": "Hệ Thống",
+            "slug": "truyen-he-thong"
+          },
+          {
+            "id": 5,
+            "name": "Xuyên Không",
+            "slug": "truyen-xuyen-khong"
+          }
+        ],
+        "age_rank": 13,
+        "summary": "<div>Đã vài tháng kể từ ngày Selena rời London để đến với Landcaster - vùng đất của những Bellatores - một nơi đầy rẫy những thứ phép thuật kỳ bí, nơi mà những đôi tay nhuốm máu Quỷ của các chiến binh lại trở thành một việc thường ngày. Ai cũng nói Landcaster chính là nơi mà Selena đáng lẽ thuộc về. Ai cũng bảo rằng được theo học tại học việc Liam Patrick là một đặc quyền linh thiêng của những đứa trẻ mang trong mình dòng máu Bellatores. Nhưng tại sao Selena lại luôn cảm thấy lạc lõng ở nơi này, đến cả chiếc chăn bông còn chẳng thể mang đến cho con bé được một hơi ấm?</div><div>Tiểu thuyết là một câu chuyện kể về các chiến binh trong những cuộc phiêu lưu giữa hiểm nguy luôn rình rập. Cả những trận chiến cam go đầy máu và nước mắt. Và những thứ tình cảm đậm sâu, từ tình thân cho đến tình yêu mà mấy mươi năm cũng chẳng thể buông bỏ được.</div>",
+        "picture": "https://i.vnvl.net/vo/20220503/YW8Opd.png.240x360_q85_crop.jpg",
+        "status": "P",
+        "is_vip": false,
+        "vip_started_at": "05/25/2022",
+        "withdraw_locked": false,
+        "lock_comments": false,
+        "login_required": false,
+        "no_ads": false,
+        "turnoff_notifications": false,
+        "turnoff_last_update": false,
+        "mobile_app_banned": false,
+        "app_only": false,
+        "app_only_from": 0,
+
+        "team_notes": "",
+
+        "updated_at": "05/25/2022",
+        "created_at": "05/25/2022",
+        "created_by": "",
+        "og_img": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
+        "num_likes": 12345,
+        "num_views": 70120,
+        "num_chapters": 213,
+        "num_words": 515000,
+        "top_stripe": "Top 2 Royal Ranking"
+      },
+      "parent": {
+        "id": 1,
+        "user": {
+          "id": 1,
+          "username": "người dùng 1",
+          "picture": "https://www.vietnovel.com/static/img/avatars/default-male.jpg"
+        },
+        "novel": {
+          "id": 2,
+          "title": "SELENA WHITELEY",
+          "slug": "selena-whiteley",
+          "novel_status": "C",
+          "primary_genre": {
+            "id": 6,
+            "name": "Dị Năng",
+            "slug": "truyen-di-nang",
+            "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+            "order": 6,
+            "num_novels": 1234
+          },
+          "author": {
+            "id": 2,
+            "name": "An Nhân Đạo Tiên",
+            "slug": "an-nhan-dao-tien",
+            "birth_year": 2000,
+            "location": "TP. HCM",
+            "picture": "https://i.vnvl.net/user/20210828/dMgmWK.png.320x320_q85_crop.jpg",
+            "verified": true,
+            "ranking": "Bút Tre Đỉnh Phong",
+            "num_views": 667000,
+            "num_words": 6128000,
+            "num_likes": 12345,
+            "num_novels": 2
+          },
+          "tags": [
+            {
+              "id": 6,
+              "name": "Dị Năng",
+              "slug": "truyen-di-nang"
+            },
+            {
+              "id": 2,
+              "name": "Tiên Hiệp",
+              "slug": "truyen-tien-hiep"
+            },
+            {
+              "id": 3,
+              "name": "Hệ Thống",
+              "slug": "truyen-he-thong"
+            },
+            {
+              "id": 5,
+              "name": "Xuyên Không",
+              "slug": "truyen-xuyen-khong"
+            }
+          ],
+          "age_rank": 13,
+          "summary": "<div>Đã vài tháng kể từ ngày Selena rời London để đến với Landcaster - vùng đất của những Bellatores - một nơi đầy rẫy những thứ phép thuật kỳ bí, nơi mà những đôi tay nhuốm máu Quỷ của các chiến binh lại trở thành một việc thường ngày. Ai cũng nói Landcaster chính là nơi mà Selena đáng lẽ thuộc về. Ai cũng bảo rằng được theo học tại học việc Liam Patrick là một đặc quyền linh thiêng của những đứa trẻ mang trong mình dòng máu Bellatores. Nhưng tại sao Selena lại luôn cảm thấy lạc lõng ở nơi này, đến cả chiếc chăn bông còn chẳng thể mang đến cho con bé được một hơi ấm?</div><div>Tiểu thuyết là một câu chuyện kể về các chiến binh trong những cuộc phiêu lưu giữa hiểm nguy luôn rình rập. Cả những trận chiến cam go đầy máu và nước mắt. Và những thứ tình cảm đậm sâu, từ tình thân cho đến tình yêu mà mấy mươi năm cũng chẳng thể buông bỏ được.</div>",
+          "picture": "https://i.vnvl.net/vo/20220503/YW8Opd.png.240x360_q85_crop.jpg",
+          "status": "P",
+          "is_vip": false,
+          "vip_started_at": "05/25/2022",
+          "withdraw_locked": false,
+          "lock_comments": false,
+          "login_required": false,
+          "no_ads": false,
+          "turnoff_notifications": false,
+          "turnoff_last_update": false,
+          "mobile_app_banned": false,
+          "app_only": false,
+          "app_only_from": 0,
+
+          "team_notes": "",
+
+          "updated_at": "05/25/2022",
+          "created_at": "05/25/2022",
+          "created_by": "",
+          "og_img": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
+          "num_likes": 12345,
+          "num_views": 70120,
+          "num_chapters": 213,
+          "num_words": 515000,
+          "top_stripe": "Top 2 Royal Ranking"
+        },
+        "parent": null,
+        "chap_num": 1,
+        "content": "",
+        "content_safe": "<p>Hay 👍</p><p>Nghi ngờ ông Helios yêu em gái nuôi quá 😂</p>",
+        "removed": false,
+        "featured": false,
+        "muted": false,
+        "created_at": "05/25/2022",
+        "updated_at": "05/25/2022",
+        "last_updated": "05/25/2022",
+        "likes": [1, 2, 3, 4, 5]
+      },
+      "chap_num": 1,
+      "content": "",
+      "content_safe": "<p>Tôi cũng đồng ý với ý kiến của thớt</p>",
+      "removed": false,
+      "featured": false,
+      "muted": false,
+      "created_at": "05/25/2022",
+      "updated_at": "05/25/2022",
+      "last_updated": "05/25/2022",
+      "likes": [1, 2]
+    },
+    {
+      "id": 5,
+      "user": {
+        "id": 2,
+        "username": "người dùng 2",
+        "picture": "https://www.vietnovel.com/static/img/avatars/default-male.jpg"
+      },
+      "novel": {
+        "id": 2,
+        "title": "SELENA WHITELEY",
+        "slug": "selena-whiteley",
+        "novel_status": "C",
+        "primary_genre": {
+          "id": 6,
+          "name": "Dị Năng",
+          "slug": "truyen-di-nang",
+          "svg_icon": "https://media.vietnovel.com/genre-icons/yellowstars.svg",
+          "order": 6,
+          "num_novels": 1234
+        },
+        "author": {
+          "id": 2,
+          "name": "An Nhân Đạo Tiên",
+          "slug": "an-nhan-dao-tien",
+          "birth_year": 2000,
+          "location": "TP. HCM",
+          "picture": "https://i.vnvl.net/user/20210828/dMgmWK.png.320x320_q85_crop.jpg",
+          "verified": true,
+          "ranking": "Bút Tre Đỉnh Phong",
+          "num_views": 667000,
+          "num_words": 6128000,
+          "num_likes": 12345,
+          "num_novels": 2
+        },
+        "tags": [
+          {
+            "id": 6,
+            "name": "Dị Năng",
+            "slug": "truyen-di-nang"
+          },
+          {
+            "id": 2,
+            "name": "Tiên Hiệp",
+            "slug": "truyen-tien-hiep"
+          },
+          {
+            "id": 3,
+            "name": "Hệ Thống",
+            "slug": "truyen-he-thong"
+          },
+          {
+            "id": 5,
+            "name": "Xuyên Không",
+            "slug": "truyen-xuyen-khong"
+          }
+        ],
+        "age_rank": 13,
+        "summary": "<div>Đã vài tháng kể từ ngày Selena rời London để đến với Landcaster - vùng đất của những Bellatores - một nơi đầy rẫy những thứ phép thuật kỳ bí, nơi mà những đôi tay nhuốm máu Quỷ của các chiến binh lại trở thành một việc thường ngày. Ai cũng nói Landcaster chính là nơi mà Selena đáng lẽ thuộc về. Ai cũng bảo rằng được theo học tại học việc Liam Patrick là một đặc quyền linh thiêng của những đứa trẻ mang trong mình dòng máu Bellatores. Nhưng tại sao Selena lại luôn cảm thấy lạc lõng ở nơi này, đến cả chiếc chăn bông còn chẳng thể mang đến cho con bé được một hơi ấm?</div><div>Tiểu thuyết là một câu chuyện kể về các chiến binh trong những cuộc phiêu lưu giữa hiểm nguy luôn rình rập. Cả những trận chiến cam go đầy máu và nước mắt. Và những thứ tình cảm đậm sâu, từ tình thân cho đến tình yêu mà mấy mươi năm cũng chẳng thể buông bỏ được.</div>",
+        "picture": "https://i.vnvl.net/vo/20220503/YW8Opd.png.240x360_q85_crop.jpg",
+        "status": "P",
+        "is_vip": false,
+        "vip_started_at": "05/25/2022",
+        "withdraw_locked": false,
+        "lock_comments": false,
+        "login_required": false,
+        "no_ads": false,
+        "turnoff_notifications": false,
+        "turnoff_last_update": false,
+        "mobile_app_banned": false,
+        "app_only": false,
+        "app_only_from": 0,
+
+        "team_notes": "",
+
+        "updated_at": "05/25/2022",
+        "created_at": "05/25/2022",
+        "created_by": "",
+        "og_img": "https://i.vnvl.net/vo/20200820/YLWBLK.jpg.240x360_q85_crop.jpg",
+        "num_likes": 12345,
+        "num_views": 70120,
+        "num_chapters": 213,
+        "num_words": 515000,
+        "top_stripe": "Top 2 Royal Ranking"
+      },
+      "parent": null,
+      "chap_num": 3,
+      "content": "",
+      "content_safe": "<p>Văn phong hay. Rất mong chờ các chap sau của tác</p>",
+      "removed": false,
+      "featured": false,
+      "muted": false,
+      "created_at": "05/25/2022",
+      "updated_at": "05/25/2022",
+      "last_updated": "05/25/2022",
+      "likes": [1, 2, 3, 4]
     }
   ]
 }

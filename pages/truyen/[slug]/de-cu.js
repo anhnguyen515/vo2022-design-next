@@ -1,6 +1,5 @@
 import { Box, Container, Typography } from "@mui/material";
 import HeadPage from "components/common/HeadPage";
-import Body from "components/NovelDetail/Body";
 import Header from "components/NovelDetail/Header";
 import NovelTabs from "components/NovelDetail/NovelTabs";
 import React from "react";
@@ -20,12 +19,10 @@ export async function getServerSideProps(context) {
   };
 }
 
-export default function CommentsPage({ novel }) {
+export default function RatingsPage({ novel }) {
   return (
     <>
-      <HeadPage
-        title={`Bình Luận Truyện ${novel[0].title} - Vietnovel Origin`}
-      />
+      <HeadPage title={`Đề Cử Truyện ${novel[0].title} - Vietnovel Origin`} />
       {/* header */}
       <Box
         sx={{
@@ -52,7 +49,7 @@ export default function CommentsPage({ novel }) {
           <Box sx={{ padding: 3 }}>
             <NovelTabs novel={novel[0]} value={2} />
             <br />
-            <Typography variant="h1">Bình luận</Typography>
+            <Typography variant="h1">Đề cử</Typography>
           </Box>
         </Container>
       </Box>

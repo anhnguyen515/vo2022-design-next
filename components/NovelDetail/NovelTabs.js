@@ -22,9 +22,10 @@ export default function NovelTabs({ novel, value }) {
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
+        flexWrap: "wrap",
 
         backgroundColor: "background.default",
-        borderBottom: 1,
+        border: 1,
         borderColor: "form.light",
         pt: 1,
         pb: 1,
@@ -35,59 +36,56 @@ export default function NovelTabs({ novel, value }) {
         zIndex: 900,
       }}
     >
-      <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
+      <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
         <Avatar
           alt=""
           src={novel.author.picture}
           sx={{ width: "3.5rem", height: "3.5rem" }}
         />
-        <Box>
-          <Typography
-            variant="h6"
-            sx={{ display: "flex", alignItems: "center", gap: 1 }}
-          >
-            {novel.author.name}{" "}
-            {novel.author.verified && <CheckCircleIcon color="success" />}
-          </Typography>
-          <Typography>@{novel.author.slug}</Typography>
-        </Box>
+        <Typography
+          variant="h6"
+          sx={{ display: "flex", alignItems: "center", gap: 1 }}
+        >
+          {novel.author.name}{" "}
+          {novel.author.verified && (
+            <CheckCircleIcon color="success" fontSize="small" />
+          )}
+        </Typography>
       </Box>
-      <Tabs value={value} indicatorColor="primary">
-        <Link href={`/${novel.slug}`} passHref>
+      <Tabs
+        value={value}
+        indicatorColor="primary"
+        // variant="scrollable"
+        // scrollButtons="auto"
+        // allowScrollButtonsMobile
+      >
+        <Link href={`/truyen/${novel.slug}`} passHref>
           <Tab
             label="Giới thiệu"
             sx={{ color: value === 0 ? "primary.main" : "" }}
           />
         </Link>
-        <Link href={`/${novel.slug}/danh-sach-chuong`} passHref>
-          <Tab
-            label="Danh Sách Chương"
-            sx={{ color: value === 1 ? "primary.main" : "" }}
-          />
-        </Link>
-        <Link href={`/${novel.slug}/binh-luan`} passHref>
+        <Link href={`/truyen/${novel.slug}/binh-luan`} passHref>
           <StyledBadge badgeContent={21} color="primary">
             <Tab
               label="Bình Luận"
+              sx={{ color: value === 1 ? "primary.main" : "" }}
+            />
+          </StyledBadge>
+        </Link>
+        <Link href={`/truyen/${novel.slug}/de-cu`} passHref>
+          <StyledBadge badgeContent={20} color="primary">
+            <Tab
+              label="Đề Cử"
               sx={{ color: value === 2 ? "primary.main" : "" }}
             />
           </StyledBadge>
         </Link>
-        <Link href={`/${novel.slug}/de-cu`} passHref>
-          <StyledBadge badgeContent={20} color="primary">
-            <Tab
-              label="Đề Cử"
-              sx={{ color: value === 3 ? "primary.main" : "" }}
-            />
-          </StyledBadge>
-        </Link>
-        <Link href={`/${novel.slug}/royal-ticket`} passHref>
-          <StyledBadge badgeContent={0} color="primary">
-            <Tab
-              label="Royal Ticket"
-              sx={{ color: value === 4 ? "primary.main" : "" }}
-            />
-          </StyledBadge>
+        <Link href={`/truyen/${novel.slug}/danh-sach-chuong`} passHref>
+          <Tab
+            label="Danh Sách Chương"
+            sx={{ color: value === 3 ? "primary.main" : "" }}
+          />
         </Link>
       </Tabs>
       <IconButton>

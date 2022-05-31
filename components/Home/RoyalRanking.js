@@ -15,7 +15,7 @@ function RoyalRankingCard({ novel, rank }) {
       sx={{ padding: 2, position: "relative" }}
     >
       <Card elevation={0} sx={{ borderRadius: 0 }}>
-        <Link href={`/${novel.slug}`}>
+        <Link href={`/truyen/${novel.slug}`}>
           <a>
             <CardMedia
               component="img"
@@ -46,7 +46,7 @@ function RoyalRankingCard({ novel, rank }) {
           variant="h6"
           fontSize="1.2rem"
         >
-          <Link href={`/${novel.slug}`}>
+          <Link href={`/truyen/${novel.slug}`}>
             <a>{novel.title}</a>
           </Link>
         </Typography>
@@ -60,7 +60,7 @@ function RoyalRankingCard({ novel, rank }) {
           }}
           gutterBottom
         >
-          <Link href={`/${novel.author.slug}`}>
+          <Link href={`/tac-gia/${novel.author.slug}`}>
             <a>{novel.author.name}</a>
           </Link>
         </Typography>

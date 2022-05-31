@@ -44,7 +44,7 @@ function GenresCard({ genre, novels }) {
                       textOverflow: "ellipsis",
                     }}
                   >
-                    <Link href={`/${novel.slug}`}>
+                    <Link href={`/truyen/${novel.slug}`}>
                       <a>{novel.title}</a>
                     </Link>
                   </Typography>

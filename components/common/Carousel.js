@@ -82,7 +82,7 @@ export default function FeaturedCarousel({ novels }) {
                   pb: 3,
                 }}
               >
-                <Link href={`/${novel.slug}`} passHref>
+                <Link href={`/truyen/${novel.slug}`} passHref>
                   <Box
                     sx={{
                       border: 1,
@@ -112,7 +112,7 @@ export default function FeaturedCarousel({ novels }) {
               {/* contents container */}
               <Box mt={1}>
                 <Typography variant="h5" fontWeight={500} textAlign="center">
-                  <Link href={`/${novel.slug}`}>
+                  <Link href={`/truyen/${novel.slug}`}>
                     <a>{novel.title}</a>
                   </Link>
                 </Typography>

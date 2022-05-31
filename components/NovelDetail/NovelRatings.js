@@ -1,4 +1,4 @@
-import { Box, Grid, Rating, Typography } from "@mui/material";
+import { Box, Button, Grid, Rating, Typography } from "@mui/material";
 import CategoryTitle from "components/common/CategoryTitle";
 import RatingScore from "components/common/RatingScore";
 import React from "react";
@@ -82,6 +82,9 @@ export default function NovelRatings() {
           <Typography fontWeight={500}>Tốc Độ Ra Chương</Typography>
           <Rating readOnly value={5} precision={0.1} />
         </Box>
+      </Box>
+      <Box sx={{ textAlign: "center", padding: 2 }}>
+        <Button variant="contained">Đến trang đề cử</Button>
       </Box>
     </Box>
   );

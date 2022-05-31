@@ -96,7 +96,7 @@ export default function BigScreenCarousel({ novels }) {
               }}
             >
               <Box sx={{ ml: "2.5rem" }}>
-                <Link href={`/${novel.slug}`} passHref>
+                <Link href={`/truyen/${novel.slug}`} passHref>
                   <Box
                     sx={{
                       border: 1,
