@@ -4,6 +4,7 @@ import jsCookie from "js-cookie";
 const axiosClient = axios.create({
   baseURL: process.env.NEXT_PUBLIC_BASE_URL,
   xsrfCookieName: "csrftoken",
+  withCredentials: false,
   xsrfHeaderName: "X-CSRFToken",
 });
 
