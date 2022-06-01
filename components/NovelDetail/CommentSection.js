@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 import axiosClient from "utility/axiosConfig";
 import CommentReply from "../common/CommentReply";
 
-export default function CommentSection({ comment, isRating }) {
+export default function CommentSection({ comment }) {
   const [replies, setReplies] = useState([]);
 
   useEffect(() => {
@@ -39,7 +39,7 @@ export default function CommentSection({ comment, isRating }) {
             />
             Xem các phản hồi
           </Typography>
-          <Box ml={9} mt={1}>
+          <Box ml={9} mt={1} sx={{ "&>*": { mb: 2 } }}>
             {replies.slice(0, 2).map((reply) => (
               <CommentReply key={reply.id} comment={reply} />
             ))}

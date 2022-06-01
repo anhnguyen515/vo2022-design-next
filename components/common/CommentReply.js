@@ -14,7 +14,6 @@ export default function CommentReply({ comment }) {
           display: "flex",
           gap: 2,
           padding: 1,
-          mb: 1,
         }}
       >
         {/* user avatar*/}

@@ -1,6 +1,6 @@
 import { Box, Button, Grid, Rating, Typography } from "@mui/material";
 import CategoryTitle from "components/common/CategoryTitle";
-import RatingScore from "components/common/RatingScore";
+import Score from "components/common/Score";
 import React from "react";
 
 export default function NovelRatings() {
@@ -18,7 +18,7 @@ export default function NovelRatings() {
         }}
       >
         <Typography>Tổng Điểm</Typography>
-        <RatingScore score={4.6} width="5rem" height="5rem" fontSize="2.5rem" />
+        <Score score={4.6} width="5rem" height="5rem" fontSize="2.5rem" />
         <Rating readOnly size="large" value={4.6} precision={0.1} />
         <Typography variant="subtitle1">20 lượt đề cử</Typography>
       </Box>

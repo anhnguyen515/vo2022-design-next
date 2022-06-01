@@ -1,11 +1,11 @@
 import { Box } from "@mui/material";
-import Comment from "components/common/Comment";
+import UserRating from "components/common/UserRating";
 import React from "react";
 
 export default function RatingSection({ comment }) {
   return (
     <Box>
-      <Comment comment={comment} isRating />
+      <UserRating rating={comment} />
     </Box>
   );
 }
