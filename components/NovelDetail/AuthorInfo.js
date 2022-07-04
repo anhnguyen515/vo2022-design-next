@@ -1,6 +1,6 @@
 import { Avatar, Box, Button, Paper, Typography } from "@mui/material";
 import React from "react";
-import { numberFormat } from "utility/common";
+import { numberFormat } from "utility/utils";
 import AbcIcon from "@mui/icons-material/Abc";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
@@ -11,7 +11,7 @@ export default function AuthorInfo({ author }) {
       <Paper
         elevation={0}
         sx={{
-          backgroundColor: "secondary.light",
+          backgroundColor: "primary.light",
           mb: 3,
           padding: 3,
           display: "flex",

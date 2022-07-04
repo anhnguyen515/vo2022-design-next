@@ -21,15 +21,15 @@ export default function NavLink() {
     borderRadius: 1,
     fontWeight: 500,
     "&:hover": {
-      color: "notification.dark",
+      color: "secondary.dark",
     },
   };
 
   const activeStyle = {
     ...generalStyle,
     border: 1,
-    borderColor: "notification.main",
-    color: "notification.main",
+    borderColor: "secondary.main",
+    color: "secondary.main",
   };
 
   const linkStyle = {
@@ -74,7 +74,7 @@ export default function NavLink() {
             : generalStyle
         }
       >
-        <StyledBadge badgeContent={100} color="notification">
+        <StyledBadge badgeContent={100} color="secondary">
           <Link href="/truyen-sang-tac-moi-ra-mat">
             <a style={linkStyle}>Truyện mới</a>
           </Link>
@@ -102,7 +102,7 @@ export default function NavLink() {
         variant="h6"
         sx={router.asPath.includes("/forum") ? activeStyle : generalStyle}
       >
-        <StyledBadge badgeContent={1} color="notification">
+        <StyledBadge badgeContent={1} color="secondary">
           <Link href="/forum">
             <a style={linkStyle}>Diễn đàn</a>
           </Link>

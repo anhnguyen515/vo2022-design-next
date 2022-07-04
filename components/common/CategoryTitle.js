@@ -8,10 +8,10 @@ export default function CategoryTitle({ children }) {
       <Typography
         className="category--title"
         variant="h5"
-        fontWeight={500}
+        fontWeight={700}
         sx={{
           display: "inline-block",
-          backgroundColor: "form.main",
+          backgroundColor: "primary.main",
           color: "text.light",
           pl: 2,
           pr: 2,
@@ -36,7 +36,7 @@ export default function CategoryTitle({ children }) {
             left: "0.5rem",
             right: "-0.7rem",
             height: "2.4rem",
-            backgroundColor: "form.main",
+            backgroundColor: "primary.main",
             transform: "skewX(-15deg)",
             zIndex: -1,
           },

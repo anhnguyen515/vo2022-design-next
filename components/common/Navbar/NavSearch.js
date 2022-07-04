@@ -10,7 +10,7 @@ export default function NavSearch() {
           ml: 1,
           mr: 1,
           "&:hover": {
-            color: "notification.main",
+            color: "secondary.main",
           },
         }}
       >

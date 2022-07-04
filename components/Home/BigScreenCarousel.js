@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Slider from "react-slick";
-import { numberFormat } from "utility/common";
+import { numberFormat } from "utility/utils";
 
 function PrevArrow(props) {
   const { onClick } = props;
@@ -96,7 +96,7 @@ export default function BigScreenCarousel({ novels }) {
               }}
             >
               <Box sx={{ ml: "2.5rem" }}>
-                <Link href={`/truyen/${novel.slug}`} passHref>
+                <Link href={`/truyen/${novel.id}`} passHref>
                   <Box
                     sx={{
                       border: 1,

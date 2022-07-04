@@ -1,5 +1,6 @@
 import {
   blue,
+  blueGrey,
   green,
   grey,
   indigo,
@@ -10,6 +11,34 @@ import {
 import { createTheme } from "@mui/material/styles";
 
 export const lightTheme = createTheme({
+  components: {
+    MuiButton: {
+      defaultProps: {
+        disableElevation: true,
+      },
+      styleOverrides: {
+        root: {
+          borderRadius: "3rem",
+          fontWeight: 700,
+        },
+      },
+    },
+  },
+
+  typography: {
+    fontFamily: [
+      "Nunito",
+      "-apple-system",
+      "BlinkMacSystemFont",
+      "Segoe UI",
+      "Helvetica",
+      "Arial",
+      "sans-serif",
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+    ].join(", "),
+  },
+
   palette: {
     mode: "light",
     // primary: {
@@ -18,10 +47,28 @@ export const lightTheme = createTheme({
     //   dark: indigo[700],
     // },
 
+    // secondary: {
+    //   light: "#F6F7FC",
+    //   main: "#222731",
+    //   dark: "#1F212D",
+    // },
+    primary: {
+      light: blue[50],
+      main: "#2E6FF3",
+      dark: blue[800],
+    },
+
     secondary: {
-      light: "#F6F7FC",
+      light: pink[50],
+      main: pink[500],
+      dark: pink[700],
+    },
+
+    sub: {
+      light: blueGrey[50],
       main: "#222731",
       dark: "#1F212D",
+      contrastText: "#fff",
     },
 
     form: {
@@ -55,7 +102,7 @@ export const lightTheme = createTheme({
     },
 
     text: {
-      light: grey[50],
+      light: grey[100],
       main: grey[500],
       dark: grey[600],
     },

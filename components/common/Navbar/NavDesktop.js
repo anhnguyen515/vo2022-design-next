@@ -25,7 +25,7 @@ export default function NavDesktop() {
           sx={{
             ml: 1,
             "&:hover": {
-              color: "notification.main",
+              color: "secondary.main",
             },
           }}
         >

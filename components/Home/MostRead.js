@@ -5,13 +5,13 @@ import Typography from "@mui/material/Typography";
 import CategoryLayout from "components/Layout/CategoryLayout";
 import Link from "next/link";
 import * as React from "react";
-import { numberFormat } from "utility/common";
+import { numberFormat } from "utility/utils";
 
 function MostReadCard({ novel }) {
   return (
     <Card elevation={0} sx={{ display: "flex", borderRadius: 0, mb: 2 }}>
       <Box>
-        <Link href={`/truyen/${novel.slug}`}>
+        <Link href={`/truyen/${novel.id}`}>
           <a>
             <CardMedia
               component="img"
@@ -35,7 +35,7 @@ function MostReadCard({ novel }) {
         <Typography
           variant="body1"
           fontSize="0.9rem"
-          fontWeight={500}
+          fontWeight={600}
           gutterBottom
           sx={{
             overflow: "hidden",
@@ -43,7 +43,7 @@ function MostReadCard({ novel }) {
             whiteSpace: "nowrap",
           }}
         >
-          <Link href={`/truyen/${novel.slug}`}>
+          <Link href={`/truyen/${novel.id}`}>
             <a>{novel.title}</a>
           </Link>
         </Typography>

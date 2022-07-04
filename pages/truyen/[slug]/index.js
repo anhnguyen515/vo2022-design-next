@@ -17,12 +17,10 @@ import RatingSection from "components/NovelDetail/RatingSection";
 export async function getServerSideProps(context) {
   const { slug } = context.params;
 
-  const novel = await axiosClient
-    .get(`novels?slug=${slug}`)
-    .then((res) => res.data);
+  const novel = await axiosClient.get(`novels/${slug}`).then((res) => res.data);
 
   const comments = await axiosClient
-    .get(`comments?novel.slug=${slug}`)
+    .get(`comments?novel.id=${slug}`)
     .then((res) => res.data);
 
   const alsoReadNovels = await axiosClient
@@ -41,13 +39,13 @@ export async function getServerSideProps(context) {
 export default function NovelDetail({ novel, comments, alsoReadNovels }) {
   return (
     <>
-      <HeadPage title={`${novel[0].title} - Vietnovel Origin`} />
+      <HeadPage title={`${novel.title} - Vietnovel Origin`} />
       {/* header */}
       <Box
         sx={{
           backgroundImage: `
               linear-gradient(to bottom, rgba(61, 61, 61, 0.7), rgba(61, 61, 61, 0.7)), 
-              url(${novel[0].picture})
+              url(${novel.picture})
               `,
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -56,8 +54,8 @@ export default function NovelDetail({ novel, comments, alsoReadNovels }) {
         }}
       >
         <Container maxWidth="2xl">
-          <Box sx={{ padding: 3 }}>
-            <Header novel={novel[0]} />
+          <Box sx={{ padding: { xs: 1, md: 3 } }}>
+            <Header novel={novel} />
           </Box>
         </Container>
       </Box>
@@ -65,8 +63,8 @@ export default function NovelDetail({ novel, comments, alsoReadNovels }) {
       {/* body */}
       <Box>
         <Container maxWidth="2xl">
-          <Box sx={{ padding: 3 }}>
-            <NovelTabs novel={novel[0]} value={0} />
+          <Box sx={{ padding: { xs: 1, md: 3 } }}>
+            <NovelTabs novel={novel} value={""} />
             <br />
 
             <Box>
@@ -75,7 +73,7 @@ export default function NovelDetail({ novel, comments, alsoReadNovels }) {
                 <Grid item xs={12} md={8}>
                   <Box>
                     {/* giới thiệu truyện */}
-                    <Box mb={3}>
+                    <Box mb={5}>
                       <CategoryTitle>Giới Thiệu Truyện</CategoryTitle>
                       <Box
                         sx={{
@@ -90,11 +88,11 @@ export default function NovelDetail({ novel, comments, alsoReadNovels }) {
                           },
                         }}
                       >
-                        {parse(novel[0].summary)}
+                        {parse(novel.summary)}
                         <Typography fontStyle="italic">
                           Chúc bạn có những phút giây thư giãn khi đọc truyện{" "}
                           <span style={{ fontWeight: "bold" }}>
-                            {novel[0].title}
+                            {novel.title}
                           </span>{" "}
                           tại Vietnovel Origin!
                         </Typography>
@@ -102,7 +100,7 @@ export default function NovelDetail({ novel, comments, alsoReadNovels }) {
                     </Box>
 
                     {/* chương mới */}
-                    <Box mb={3}>
+                    <Box mb={5}>
                       <CategoryTitle>Chương Mới Cập Nhật</CategoryTitle>
                       <Box mt={3}>
                         {[...Array(5).keys()].map((item, index) => (
@@ -121,18 +119,20 @@ export default function NovelDetail({ novel, comments, alsoReadNovels }) {
                             <Typography
                               variant="h6"
                               fontSize="1.2rem"
-                              color="favorite.main"
+                              color="secondary"
                             >
                               Chương 30: Tên chương
                             </Typography>
-                            <Typography>2 ngày trước</Typography>
+                            <Typography color="text.dark">
+                              2 ngày trước
+                            </Typography>
                           </Box>
                         ))}
                       </Box>
                     </Box>
 
                     {/* bình luận */}
-                    <Box mb={3}>
+                    <Box mb={5}>
                       <CategoryTitle>Bình luận</CategoryTitle>
                       <Box mt={3}>
                         {comments.length !== 0 ? (
@@ -163,7 +163,7 @@ export default function NovelDetail({ novel, comments, alsoReadNovels }) {
                         ) : (
                           <Typography fontSize="1.1rem" fontStyle="italic">
                             Chưa có bình luận trong truyện này. Bạn có muốn{" "}
-                            <Link href={`/truyen/${novel[0].slug}/binh-luan`}>
+                            <Link href={`/truyen/${novel.slug}/binh-luan`}>
                               <a style={{ color: "blue" }}>bình luận</a>
                             </Link>{" "}
                             gì đó về truyện này không?
@@ -173,12 +173,12 @@ export default function NovelDetail({ novel, comments, alsoReadNovels }) {
                     </Box>
 
                     {/* bài viết diễn đàn */}
-                    <Box mb={3}>
+                    <Box mb={5}>
                       <CategoryTitle>Bài Viết Diễn Đàn Liên Quan</CategoryTitle>
                       <Box mt={3}>
                         <Typography fontSize="1.1rem" fontStyle="italic">
                           Chưa có bài viết nào. Bạn có muốn{" "}
-                          <Link href={`/truyen/${novel[0].slug}/binh-luan`}>
+                          <Link href={`/truyen/${novel.slug}/binh-luan`}>
                             <a style={{ color: "blue" }}>viết cảm nhận</a>
                           </Link>{" "}
                           của mình về truyện này không?
@@ -187,7 +187,7 @@ export default function NovelDetail({ novel, comments, alsoReadNovels }) {
                     </Box>
 
                     {/* bạn có thể muốn đọc */}
-                    <Box mb={3}>
+                    <Box mb={5}>
                       <CategoryTitle>Bạn Có Thể Muốn Đọc</CategoryTitle>
                       <Box mt={3} sx={{ "&>*": { mb: 2 } }}>
                         <Grid container spacing={2}>
@@ -206,12 +206,12 @@ export default function NovelDetail({ novel, comments, alsoReadNovels }) {
                 <Grid item xs={12} md={4}>
                   <Box>
                     {/* thông tin tác giả */}
-                    <AuthorInfo author={novel[0].author} />
+                    <AuthorInfo author={novel.author} />
                     {/* đề cử truyện */}
                     <NovelRatings />
                     <br />
                     {/* đề cử tiêu biểu */}
-                    <Box mb={3}>
+                    <Box mb={5}>
                       {comments.length !== 0 && (
                         <>
                           <CategoryTitle>Đề Cử Tiêu Biểu</CategoryTitle>

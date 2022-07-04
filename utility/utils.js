@@ -47,16 +47,17 @@ const config = {
 dayjs.locale("vi");
 dayjs.extend(relativeTime, config);
 
-export function numberFormat(views) {
-  const THOUSAND = 1000;
+export function numberFormat(numbers) {
+  // const THOUSAND = 1000;
   const MILLION = 1000000;
+  const BILLION = 1000000000;
 
-  if (views >= THOUSAND && views < MILLION) {
-    return parseFloat(views / THOUSAND).toFixed(1) + "K";
-  } else if (views >= MILLION) {
-    return parseFloat(views / MILLION).toFixed(1) + "M";
+  if (numbers >= MILLION && numbers < BILLION) {
+    return parseFloat(numbers / MILLION).toFixed(1) + "M";
+  } else if (numbers >= BILLION) {
+    return parseFloat(numbers / BILLION).toFixed(1) + "B";
   } else {
-    return views;
+    return numbers.toLocaleString("en-US");
   }
 }
 
@@ -74,7 +75,7 @@ export function rankingColor(rank) {
     case 3:
       return green["A700"];
     default:
-      return lightTheme.palette.form.main;
+      return lightTheme.palette.primary.main;
   }
 }
 

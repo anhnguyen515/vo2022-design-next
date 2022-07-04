@@ -3,7 +3,7 @@ import RankingOrder from "components/common/RankingOrder";
 import CategoryLayout from "components/Layout/CategoryLayout";
 import Link from "next/link";
 import React from "react";
-import { numberFormat } from "utility/common";
+import { numberFormat } from "utility/utils";
 
 function TopWritersCard({ author, rank }) {
   return (
@@ -21,7 +21,7 @@ function TopWritersCard({ author, rank }) {
         >
           <Typography
             fontSize="1.1rem"
-            fontWeight={500}
+            fontWeight={600}
             sx={{
               overflow: "hidden",
               textOverflow: "ellipse",
@@ -34,7 +34,7 @@ function TopWritersCard({ author, rank }) {
           </Typography>
           <Typography variant="body2">{author.ranking}</Typography>
           <Typography variant="caption" color="text.dark" fontSize="0.7rem">
-            {numberFormat(author.views)} lượt xem -{" "}
+            {numberFormat(author.num_views)} lượt xem -{" "}
             {numberFormat(author.num_words)} chữ - {author.num_novels} truyện
           </Typography>
         </Box>

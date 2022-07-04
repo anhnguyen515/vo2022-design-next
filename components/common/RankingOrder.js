@@ -2,7 +2,7 @@ import { faCrown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Typography } from "@mui/material";
 import React from "react";
-import { rankingColor } from "utility/common";
+import { rankingColor } from "utility/utils";
 
 export default function RankingOrder({
   order,

@@ -2,7 +2,7 @@ import { Avatar, Box, Divider, Grid, Paper, Typography } from "@mui/material";
 import CategoryLayout from "components/Layout/CategoryLayout";
 import Link from "next/link";
 import React from "react";
-import { numberFormat } from "utility/common";
+import { numberFormat } from "utility/utils";
 
 function GenresCard({ genre, novels }) {
   return (
@@ -24,7 +24,7 @@ function GenresCard({ genre, novels }) {
             }}
           />
           <Box sx={{ ml: "auto" }}>
-            <Typography fontWeight={500}>{genre.name}</Typography>
+            <Typography fontWeight={600}>{genre.name}</Typography>
             <Typography variant="body2" textAlign="right">
               ({genre.num_novels})
             </Typography>
@@ -37,14 +37,14 @@ function GenresCard({ genre, novels }) {
               <Box sx={{ display: "flex" }}>
                 <Box sx={{ overflow: "hidden", mr: 1 }}>
                   <Typography
-                    fontWeight={500}
+                    fontWeight={600}
                     sx={{
                       overflow: "hidden",
                       whiteSpace: "nowrap",
                       textOverflow: "ellipsis",
                     }}
                   >
-                    <Link href={`/truyen/${novel.slug}`}>
+                    <Link href={`/truyen/${novel.id}`}>
                       <a>{novel.title}</a>
                     </Link>
                   </Typography>

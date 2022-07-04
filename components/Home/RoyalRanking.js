@@ -15,7 +15,7 @@ function RoyalRankingCard({ novel, rank }) {
       sx={{ padding: 2, position: "relative" }}
     >
       <Card elevation={0} sx={{ borderRadius: 0 }}>
-        <Link href={`/truyen/${novel.slug}`}>
+        <Link href={`/truyen/${novel.id}`}>
           <a>
             <CardMedia
               component="img"
@@ -46,7 +46,7 @@ function RoyalRankingCard({ novel, rank }) {
           variant="h6"
           fontSize="1.2rem"
         >
-          <Link href={`/truyen/${novel.slug}`}>
+          <Link href={`/truyen/${novel.id}`}>
             <a>{novel.title}</a>
           </Link>
         </Typography>

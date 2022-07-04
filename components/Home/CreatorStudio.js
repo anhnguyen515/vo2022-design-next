@@ -4,8 +4,13 @@ import React from "react";
 export default function CreatorStudio() {
   return (
     <>
-      <Paper sx={{ padding: 2, backgroundColor: "secondary.light" }}>
-        <Typography variant="h6" textAlign="center" gutterBottom>
+      <Paper elevation={0} sx={{ padding: 2, backgroundColor: "text.light" }}>
+        <Typography
+          variant="h6"
+          fontWeight={600}
+          textAlign="center"
+          gutterBottom
+        >
           Bạn Muốn Viết Truyện?
         </Typography>
         <Typography variant="body2">

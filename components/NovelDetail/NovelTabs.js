@@ -1,21 +1,21 @@
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import FlagIcon from "@mui/icons-material/Flag";
-import { Avatar, Badge, IconButton, Typography } from "@mui/material";
+import { Avatar, IconButton, Typography } from "@mui/material";
 import Box from "@mui/material/Box";
-import { styled } from "@mui/material/styles";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
-import Link from "next/link";
+import { useRouter } from "next/router";
 import * as React from "react";
 
-const StyledBadge = styled(Badge)(() => ({
-  "& .MuiBadge-badge": {
-    right: "0.3rem",
-    top: "0.75rem",
-  },
-}));
-
 export default function NovelTabs({ novel, value }) {
+  const router = useRouter();
+  const [currValue, setCurrValue] = React.useState(value);
+
+  function handleChange(event, value) {
+    setCurrValue(value);
+    router.push(`/truyen/${novel.id}/${value}`);
+  }
+
   return (
     <Box
       sx={{
@@ -52,41 +52,68 @@ export default function NovelTabs({ novel, value }) {
           )}
         </Typography>
       </Box>
-      <Tabs
-        value={value}
-        indicatorColor="primary"
-        // variant="scrollable"
-        // scrollButtons="auto"
-        // allowScrollButtonsMobile
-      >
-        <Link href={`/truyen/${novel.slug}`} passHref>
-          <Tab
-            label="Giới thiệu"
-            sx={{ color: value === 0 ? "primary.main" : "" }}
-          />
-        </Link>
-        <Link href={`/truyen/${novel.slug}/binh-luan`} passHref>
-          <StyledBadge badgeContent={21} color="primary">
-            <Tab
-              label="Bình Luận"
-              sx={{ color: value === 1 ? "primary.main" : "" }}
-            />
-          </StyledBadge>
-        </Link>
-        <Link href={`/truyen/${novel.slug}/de-cu`} passHref>
-          <StyledBadge badgeContent={20} color="primary">
-            <Tab
-              label="Đề Cử"
-              sx={{ color: value === 2 ? "primary.main" : "" }}
-            />
-          </StyledBadge>
-        </Link>
-        <Link href={`/truyen/${novel.slug}/danh-sach-chuong`} passHref>
-          <Tab
-            label="Danh Sách Chương"
-            sx={{ color: value === 3 ? "primary.main" : "" }}
-          />
-        </Link>
+      <Tabs value={currValue} onChange={handleChange}>
+        <Tab label="Giới thiệu" value={""} />
+        <Tab label="Danh sách chương" value={"danh-sach-chuong"} />
+        <Tab
+          label={
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                gap: 1,
+              }}
+            >
+              <Typography sx={{ fontSize: "0.9rem", fontWeight: 500 }}>
+                Bình luận
+              </Typography>
+              <Typography
+                sx={{
+                  backgroundColor: "primary.main",
+                  borderRadius: 1,
+                  color: "text.light",
+                  pl: 0.5,
+                  pr: 0.5,
+                  fontSize: "0.8rem",
+                  fontWeight: 500,
+                }}
+              >
+                21
+              </Typography>
+            </Box>
+          }
+          value={"binh-luan"}
+        />
+
+        <Tab
+          label={
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                gap: 1,
+              }}
+            >
+              <Typography sx={{ fontSize: "0.9rem", fontWeight: 500 }}>
+                Đề cử
+              </Typography>
+              <Typography
+                sx={{
+                  backgroundColor: "primary.main",
+                  borderRadius: 1,
+                  color: "text.light",
+                  pl: 0.5,
+                  pr: 0.5,
+                  fontSize: "0.8rem",
+                  fontWeight: 500,
+                }}
+              >
+                20
+              </Typography>
+            </Box>
+          }
+          value={"de-cu"}
+        />
       </Tabs>
       <IconButton>
         <FlagIcon />

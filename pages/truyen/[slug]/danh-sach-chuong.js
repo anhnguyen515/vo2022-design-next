@@ -22,13 +22,13 @@ export async function getServerSideProps(context) {
 export default function ChaptersPage({ novel }) {
   return (
     <>
-      <HeadPage title={`Danh Sách Chương - ${novel[0].title}`} />
+      <HeadPage title={`Danh Sách Chương - ${novel.title}`} />
       {/* header */}
       <Box
         sx={{
           backgroundImage: `
               linear-gradient(to bottom, rgba(61, 61, 61, 0.7), rgba(61, 61, 61, 0.7)), 
-              url(${novel[0].picture})
+              url(${novel.picture})
               `,
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -37,8 +37,8 @@ export default function ChaptersPage({ novel }) {
         }}
       >
         <Container maxWidth="2xl">
-          <Box sx={{ padding: 3 }}>
-            <Header novel={novel[0]} />
+          <Box sx={{ padding: { xs: 1, md: 3 } }}>
+            <Header novel={novel} />
           </Box>
         </Container>
       </Box>
@@ -46,8 +46,8 @@ export default function ChaptersPage({ novel }) {
       {/* body */}
       <Box>
         <Container maxWidth="2xl">
-          <Box sx={{ padding: 3 }}>
-            <NovelTabs novel={novel[0]} value={3} />
+          <Box sx={{ padding: { xs: 1, md: 3 } }}>
+            <NovelTabs novel={novel} value={"danh-sach-chuong"} />
             <br />
             <Typography variant="h1">Danh sách chương</Typography>
           </Box>

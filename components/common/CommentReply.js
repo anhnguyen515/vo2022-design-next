@@ -2,7 +2,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import { Avatar, Box, IconButton, Paper, Typography } from "@mui/material";
 import parse from "html-react-parser";
 import React from "react";
-import { timesFromNow } from "utility/common";
+import { timesFromNow } from "utility/utils";
 
 export default function CommentReply({ comment }) {
   return (
@@ -10,7 +10,7 @@ export default function CommentReply({ comment }) {
       <Paper
         elevation={0}
         sx={{
-          backgroundColor: "secondary.light",
+          backgroundColor: "text.light",
           display: "flex",
           gap: 2,
           padding: 1,

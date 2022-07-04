@@ -22,13 +22,13 @@ export async function getServerSideProps(context) {
 export default function RatingsPage({ novel }) {
   return (
     <>
-      <HeadPage title={`Đề Cử Truyện ${novel[0].title} - Vietnovel Origin`} />
+      <HeadPage title={`Đề Cử Truyện ${novel.title} - Vietnovel Origin`} />
       {/* header */}
       <Box
         sx={{
           backgroundImage: `
               linear-gradient(to bottom, rgba(61, 61, 61, 0.7), rgba(61, 61, 61, 0.7)), 
-              url(${novel[0].picture})
+              url(${novel.picture})
               `,
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -37,8 +37,8 @@ export default function RatingsPage({ novel }) {
         }}
       >
         <Container maxWidth="2xl">
-          <Box sx={{ padding: 3 }}>
-            <Header novel={novel[0]} />
+          <Box sx={{ padding: { xs: 1, md: 3 } }}>
+            <Header novel={novel} />
           </Box>
         </Container>
       </Box>
@@ -46,8 +46,8 @@ export default function RatingsPage({ novel }) {
       {/* body */}
       <Box>
         <Container maxWidth="2xl">
-          <Box sx={{ padding: 3 }}>
-            <NovelTabs novel={novel[0]} value={2} />
+          <Box sx={{ padding: { xs: 1, md: 3 } }}>
+            <NovelTabs novel={novel} value={"de-cu"} />
             <br />
             <Typography variant="h1">Đề cử</Typography>
           </Box>

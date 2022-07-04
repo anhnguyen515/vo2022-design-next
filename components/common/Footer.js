@@ -19,9 +19,9 @@ import React from "react";
 export default function Footer() {
   return (
     <>
-      <Box sx={{ backgroundColor: "secondary.main", color: "text.main" }}>
+      <Box sx={{ backgroundColor: "sub.main", color: "text.main" }}>
         <Container maxWidth="2xl">
-          <Box sx={{ padding: 3 }}>
+          <Box sx={{ padding: { xs: 1, md: 3 } }}>
             <Grid container spacing={2}>
               {/* về vietnovel origin */}
               <Grid
@@ -158,9 +158,9 @@ export default function Footer() {
       </Box>
 
       {/* thông tin về Vietnovel */}
-      <Box sx={{ backgroundColor: "secondary.dark", color: "text.main" }}>
+      <Box sx={{ backgroundColor: "sub.dark", color: "text.main" }}>
         <Container maxWidth="2xl">
-          <Box sx={{ padding: 3 }}>
+          <Box sx={{ padding: { xs: 1, md: 3 } }}>
             <Link href="/">
               <a>
                 <Image

@@ -22,7 +22,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-import { ageColor, novelStatus, numberFormat } from "utility/common";
+import { ageColor, novelStatus, numberFormat } from "utility/utils";
 import {
   faThumbsUp,
   faHeart,
@@ -60,7 +60,7 @@ export default function Header({ novel }) {
       <Box>
         <Breadcrumbs
           aria-label="breadcrumbs"
-          sx={{ mb: 2, "&>*": { color: "text.main" } }}
+          sx={{ mb: 2, mt: 2, "&>*": { color: "text.main" } }}
         >
           <Link href={`/`} passHref>
             <Typography
@@ -239,7 +239,7 @@ export default function Header({ novel }) {
                       {novel.tags.map((tag) => (
                         <Chip
                           key={tag.id}
-                          color="secondary"
+                          color="sub"
                           label={tag.name}
                           size="small"
                           onClick={() => router.push(`/the-loai/${tag.slug}`)}
@@ -280,6 +280,7 @@ export default function Header({ novel }) {
                   variant="contained"
                   size="large"
                   startIcon={<PlayArrowIcon />}
+                  onClick={() => router.push(`/truyen/${novel.id}/chuong/1`)}
                 >
                   Đọc từ đầu
                 </Button>

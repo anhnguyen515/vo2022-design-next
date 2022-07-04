@@ -32,7 +32,15 @@ export default function TemporaryDrawer() {
       }}
     >
       <React.Fragment key={"right"}>
-        <IconButton onClick={toggleDrawer("right", true)} color="secondary">
+        <IconButton
+          onClick={toggleDrawer("right", true)}
+          color="sub"
+          sx={{
+            "&:hover": {
+              color: "secondary.main",
+            },
+          }}
+        >
           <MenuIcon />
         </IconButton>
         <Drawer
@@ -55,7 +63,7 @@ export default function TemporaryDrawer() {
                   sx={{
                     ml: 1,
                     "&:hover": {
-                      color: "notification.main",
+                      color: "secondary.main",
                     },
                   }}
                 >

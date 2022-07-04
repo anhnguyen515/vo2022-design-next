@@ -2,13 +2,18 @@ import { Box, Paper, Typography } from "@mui/material";
 import RankingOrder from "components/common/RankingOrder";
 import Link from "next/link";
 import React from "react";
-import { numberFormat } from "utility/common";
+import { numberFormat } from "utility/utils";
 
 export default function TopFinished({ novels }) {
   return (
     <>
-      <Paper sx={{ padding: 2, backgroundColor: "secondary.light" }}>
-        <Typography variant="h6" gutterBottom textAlign="center">
+      <Paper elevation={0} sx={{ padding: 2, backgroundColor: "text.light" }}>
+        <Typography
+          variant="h6"
+          fontWeight={600}
+          gutterBottom
+          textAlign="center"
+        >
           Top Truyện Đã Hoàn Thành
         </Typography>
         {novels.slice(0, 8).map((novel, index) => (
@@ -44,7 +49,7 @@ export default function TopFinished({ novels }) {
                   whiteSpace: "nowrap",
                 }}
               >
-                <Link href={`/truyen/${novel.slug}`}>
+                <Link href={`/truyen/${novel.id}`}>
                   <a>{novel.title}</a>
                 </Link>
               </Typography>

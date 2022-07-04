@@ -11,14 +11,14 @@ import * as React from "react";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import StarIcon from "@mui/icons-material/Star";
-import { numberFormat } from "utility/common";
+import { numberFormat } from "utility/utils";
 
 export default function AlsoRead({ novel }) {
   const router = useRouter();
   return (
     <Card elevation={0} sx={{ display: "flex", borderRadius: 0 }}>
       <Box>
-        <Link href={`/truyen/${novel.slug}`}>
+        <Link href={`/truyen/${novel.id}`}>
           <a>
             <CardMedia
               component="img"
@@ -36,7 +36,7 @@ export default function AlsoRead({ novel }) {
       </Box>
       <Box>
         <Typography fontWeight={500}>
-          <Link href={`/truyen/${novel.slug}`}>
+          <Link href={`/truyen/${novel.id}`}>
             <a>{novel.title}</a>
           </Link>
         </Typography>
@@ -84,7 +84,7 @@ export default function AlsoRead({ novel }) {
               key={tag.id}
               label={tag.name}
               variant="outlined"
-              color="secondary"
+              color="sub"
               onClick={() => router.push(`/the-loai/${tag.slug}`)}
               sx={{ opacity: 0.7 }}
             />

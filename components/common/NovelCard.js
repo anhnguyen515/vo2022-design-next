@@ -16,7 +16,7 @@ export default function NovelCard({ novel, displayStatus }) {
   return (
     <Card elevation={0} sx={{ display: "flex", borderRadius: 0 }}>
       <Box>
-        <Link href={`/truyen/${novel.slug}`}>
+        <Link href={`/truyen/${novel.id}`}>
           <a>
             <CardMedia
               component="img"
@@ -33,8 +33,8 @@ export default function NovelCard({ novel, displayStatus }) {
         </Link>
       </Box>
       <Box>
-        <Typography variant="h6" fontSize="1.6rem" fontWeight={"bold"}>
-          <Link href={`/truyen/${novel.slug}`}>
+        <Typography variant="h6" fontSize="1.6rem" fontWeight={600}>
+          <Link href={`/truyen/${novel.id}`}>
             <a>{novel.title}</a>
           </Link>
         </Typography>
@@ -55,7 +55,7 @@ export default function NovelCard({ novel, displayStatus }) {
             <Chip
               key={tag.id}
               label={tag.name}
-              color="secondary"
+              color="sub"
               size="small"
               onClick={() => router.push(`/the-loai/${tag.slug}`)}
             />

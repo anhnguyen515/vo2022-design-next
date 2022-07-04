@@ -1570,5 +1570,64 @@
       "last_updated": "05/25/2022",
       "likes": [1, 2, 3, 4]
     }
+  ],
+  "chapters": [
+    {
+      "novelId": 1,
+      "chap_num": 1,
+      "title": "Quyển 1: Chương 1: Tam Thốn Thiên Đường",
+      "code": "87xc576a",
+      "content": "",
+      "content_md": "",
+      "content_safe": "<p>Buổi sáng ngày ấy tỉnh lại, giữa không gian sương mù thấm lạnh còn ngửi thấy được một hoa thơm thanh nhã. Thẩm Huyền Quân nghi hoặc, hình như đó là hoa lê vừa nở.</p><p>Trên ngọn núi hoang vu vắng lặng này sao có hoa lê được, hay là Tưởng Hoàng đã đốt hương mới giúp y định thần? Gần đây y cứ mơ thấy ác mộng ngủ không ngon.</p><p>Thẩm Huyền Quân đẩy mành trúc ra nhìn, ngạc nhiên, ngoài trời như đang có tuyết bay, từng cánh từng cánh hoa lê trong suốt thơm ngát lóng lánh sống động, nhảy múa. Trong lúc y còn đang ngơ ngác Vô Diện đã nhẹ giọng nói: \"Là Tưởng công tử trồng cho người đó.\"</p><p>Như sợ y không tin, Vô Diện bổ sung thêm: \"Đêm qua thuộc hạ thấy công tử mang đến rất nhiều cây lê, rễ cây được bao bọc kỹ trong túi đất, mang từ nơi xa đến. Đáng ra muốn trồng cây non nhưng sợ cây lớn không kịp ngày lành.\"</p><p>Thẩm Huyền Quân nhìn hoa lê bay đầy, đất trời như thay màu áo mới tươi mát thanh thuần không gì sánh được, hơi mỉm cười. Ngày lành mà Vô Diện nói là ngày thành hôn của y và Tưởng Hoàng. Bốn tháng nữa sau khi công thành, họ đã có thể chính thức ở cạnh nhau.</p><p>Y chờ ngày này đã lâu, trong lòng có chút bồi hồi.</p><p>\"Đệ ấy đang ở đâu?\"</p><p>\"Có chuyện gấp người trồng xong đã đi rồi.\"</p><p>Thẩm Huyền Quân gật đầu, chợt nghĩ đệ ấy đã vất vả rồi mình nên làm gì đó cho đệ ấy. Nghiêng đầu hỏi: \"Ngươi biết làm bánh bao không dạy cho ta đi.\"</p>",
+      "content_dict": "",
+      "status": "P",
+      "published_at": "07/04/2022",
+      "num_words": 1653,
+      "num_chars": 3645,
+      "num_views": 8041,
+      "num_likes": 147,
+      "updated_at": "07/04/2022",
+      "created_at": "07/04/2022",
+      "user": ""
+    },
+    {
+      "novelId": 1,
+      "chap_num": 2,
+      "title": "Quyển 1: Chương 2: Tam Thốn Thiên Đường (2)",
+      "code": "a76sd87as6dzx",
+      "content": "",
+      "content_md": "",
+      "content_safe": "<p>Buổi sáng ngày ấy tỉnh lại, giữa không gian sương mù thấm lạnh còn ngửi thấy được một hoa thơm thanh nhã. Thẩm Huyền Quân nghi hoặc, hình như đó là hoa lê vừa nở.</p>",
+      "content_dict": "",
+      "status": "P",
+      "published_at": "07/04/2022",
+      "num_words": 2653,
+      "num_chars": 2645,
+      "num_views": 6041,
+      "num_likes": 347,
+      "updated_at": "07/04/2022",
+      "created_at": "07/04/2022",
+      "user": ""
+    },
+    {
+      "novelId": 2,
+      "chap_num": 1,
+      "title": "Quyển 1: Chương 1: novelId: 2, chap_num: 1",
+      "code": "a76sd87as6dzx",
+      "content": "",
+      "content_md": "",
+      "content_safe": "<p>Buổi sáng ngày ấy tỉnh lại, giữa không gian sương mù thấm lạnh còn ngửi thấy được một hoa thơm thanh nhã. Thẩm Huyền Quân nghi hoặc, hình như đó là hoa lê vừa nở.</p>",
+      "content_dict": "",
+      "status": "P",
+      "published_at": "07/04/2022",
+      "num_words": 2653,
+      "num_chars": 2645,
+      "num_views": 6041,
+      "num_likes": 347,
+      "updated_at": "07/04/2022",
+      "created_at": "07/04/2022",
+      "user": ""
+    }
   ]
 }

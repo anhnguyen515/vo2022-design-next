@@ -2,7 +2,7 @@ import { faCrown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Typography } from "@mui/material";
 import React from "react";
-import { rankingColor, ratingColor } from "utility/common";
+import { rankingColor, ratingColor } from "utility/utils";
 
 export default function RatingScore({ score, width, height, fontSize }) {
   return (

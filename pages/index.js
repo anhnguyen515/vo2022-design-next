@@ -52,7 +52,7 @@ export default function Home({
     <>
       <HeadPage title="Vietnovel Origin - Truyện Sáng Tác Việt" />
       <Container maxWidth="2xl">
-        <Box sx={{ padding: 3 }}>
+        <Box sx={{ padding: { xs: 1, md: 3 } }}>
           {/* header */}
           <Box mb={10}>
             <Grid container spacing={3}>

@@ -7,7 +7,7 @@ import React from "react";
 function FeaturedCard({ novel }) {
   return (
     <Card elevation={0} sx={{ borderRadius: 0 }}>
-      <Link href={`/truyen/${novel.slug}`}>
+      <Link href={`/truyen/${novel.id}`}>
         <a>
           <CardMedia
             component="img"
@@ -26,7 +26,7 @@ function FeaturedCard({ novel }) {
         fontSize="1rem"
         sx={{ lineHeight: "1.2rem" }}
       >
-        <Link href={`/truyen/${novel.slug}`}>
+        <Link href={`/truyen/${novel.id}`}>
           <a>{novel.title}</a>
         </Link>
       </Typography>
@@ -52,8 +52,9 @@ export default function Featured({ novels }) {
         <Grid container spacing={3}>
           <Grid item xs={12} lg={4}>
             <Paper
+              elevation={0}
               sx={{
-                backgroundColor: "secondary.light",
+                backgroundColor: "sub.light",
               }}
             >
               <Carousel novels={novels.slice(0, 12)} />
