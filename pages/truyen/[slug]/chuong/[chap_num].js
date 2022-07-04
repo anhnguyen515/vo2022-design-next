@@ -1,7 +1,7 @@
 import { Box, Button, Container } from "@mui/material";
 import Header from "components/ChapterDetail/Header";
 import ReadingSection from "components/ChapterDetail/ReadingSection";
-import React from "react";
+import React, { useState } from "react";
 import { getNovelChapter } from "utility/apis";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
@@ -28,6 +28,7 @@ export async function getStaticProps(context) {
 }
 
 export default function Chapter({ chapter }) {
+  const [maxWidth, setMaxWidth] = useState(840);
   return (
     <>
       <Header chapter={chapter[0]} />
