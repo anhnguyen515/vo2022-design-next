@@ -77,7 +77,7 @@ export default function FeaturedCarousel({ novels }) {
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "center",
                   backgroundSize: "cover",
-                  borderRadius: 1,
+                  borderRadius: 0,
                   pt: 3,
                   pb: 3,
                 }}
@@ -87,7 +87,7 @@ export default function FeaturedCarousel({ novels }) {
                     sx={{
                       border: 1,
                       position: "relative",
-                      borderColor: "text.main",
+                      borderColor: "text.light",
                       cursor: "pointer",
                       margin: "auto",
                       width: {
@@ -104,14 +104,14 @@ export default function FeaturedCarousel({ novels }) {
                       alt={`Ảnh bìa của ${novel.title}`}
                       src={novel.picture}
                       layout="fill"
-                      style={{ borderRadius: "0.25rem" }}
+                      // style={{ borderRadius: "0.25rem" }}
                     />
                   </Box>
                 </Link>
               </Box>
               {/* contents container */}
               <Box mt={1}>
-                <Typography variant="h5" fontWeight={500} textAlign="center">
+                <Typography variant="h5" fontWeight={700} textAlign="center">
                   <Link href={`/truyen/${novel.id}`}>
                     <a>{novel.title}</a>
                   </Link>

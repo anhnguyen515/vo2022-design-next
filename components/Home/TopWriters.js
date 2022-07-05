@@ -8,7 +8,17 @@ import { numberFormat } from "utility/utils";
 function TopWritersCard({ author, rank }) {
   return (
     <>
-      <Box key={author.id} sx={{ display: "flex", gap: 1, mb: 1 }}>
+      <Box
+        key={author.id}
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          gap: 1,
+          mb: 1,
+          p: 1,
+          "&:hover": { backgroundColor: "primary.light" },
+        }}
+      >
         <Box>
           <RankingOrder order={rank} width="2.5rem" height="2.5rem" rem={1.2} />
         </Box>

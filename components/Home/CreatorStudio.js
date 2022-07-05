@@ -4,7 +4,10 @@ import React from "react";
 export default function CreatorStudio() {
   return (
     <>
-      <Paper elevation={0} sx={{ padding: 2, backgroundColor: "text.light" }}>
+      <Paper
+        elevation={0}
+        sx={{ borderRadius: 3, padding: 2, backgroundColor: "text.light" }}
+      >
         <Typography
           variant="h6"
           fontWeight={600}

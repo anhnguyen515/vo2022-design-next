@@ -69,17 +69,24 @@ export default function MyCarousel({ novels }) {
     >
       <Slider {...settings}>
         {novels.slice(0, 5).map((novel) => (
-          <Link key={novel.id} href={`/truyen/${novel.id}`}>
-            <a>
+          <Link key={novel.id} href={`/truyen/${novel.id}`} passHref>
+            <Box
+              sx={{
+                width: "100%",
+                position: "relative",
+                aspectRatio: "3/2",
+                borderRadius: "0.5rem",
+              }}
+            >
               <Image
                 alt={`Ảnh bìa của ${novel.title}`}
                 src={novel.picture}
-                width={10.5}
-                height={7}
-                layout="responsive"
+                // width={10.5}
+                // height={7}
+                layout="fill"
                 style={{ borderRadius: "0.5rem" }}
               />
-            </a>
+            </Box>
           </Link>
         ))}
       </Slider>

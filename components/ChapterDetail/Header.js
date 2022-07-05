@@ -1,4 +1,4 @@
-import { Box, Breadcrumbs, Typography } from "@mui/material";
+import { Box, Breadcrumbs, Container, Typography } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import Link from "next/link";
 import React from "react";
@@ -17,74 +17,78 @@ export default function Header({ chapter }) {
           backgroundSize: "cover",
           // height: "10rem",
           color: "text.light",
-
-          display: "flex",
-          // gap: 10,
-          "&>*": { flex: 1 },
         }}
       >
-        <Box>
-          <Breadcrumbs
-            separator={<NavigateNextIcon />}
-            aria-label="breadcrumb"
-            sx={{ color: "text.main" }}
-          >
-            <Link href="/" passHref>
-              <Typography
-                sx={{ cursor: "pointer", "&:hover": { color: "white" } }}
-              >
-                Trang chủ
-              </Typography>
-            </Link>
-            <Link href={`/truyen/${chapter.novel.id}`} passHref>
-              <Typography
-                sx={{ cursor: "pointer", "&:hover": { color: "white" } }}
-              >
-                {chapter.novel.title}
-              </Typography>
-            </Link>
-            <Typography color="text.light" fontWeight={700}>
-              Chương {chapter.chap_num}
-            </Typography>
-          </Breadcrumbs>
-          <Typography variant="h4" sx={{ mt: 3 }} gutterBottom>
-            {chapter.title}
-          </Typography>
-          <Typography variant="h6" gutterBottom>
-            Tác giả: {chapter.novel.author.name}
-          </Typography>
-          <Typography sx={{ display: { xs: "block", md: "none" } }}>
-            {numberFormat(chapter.num_chars)} chữ -{" "}
-            {numberFormat(chapter.num_views)} lượt đọc -{" "}
-            {numberFormat(chapter.num_likes)} lượt thích
-          </Typography>
-        </Box>
-        <Box
+        <Container
           sx={{
-            display: { xs: "none", md: "flex" },
-            alignItems: "center",
-            justifyContent: "space-evenly",
+            display: "flex",
+            // gap: 10,
+            "&>*": { flex: 1 },
           }}
         >
           <Box>
-            <Typography sx={parameter.name}>Thích</Typography>
-            <Typography sx={parameter.value}>
-              {numberFormat(chapter.num_likes)}
+            <Breadcrumbs
+              separator={<NavigateNextIcon />}
+              aria-label="breadcrumb"
+              sx={{ color: "text.main" }}
+            >
+              <Link href="/" passHref>
+                <Typography
+                  sx={{ cursor: "pointer", "&:hover": { color: "white" } }}
+                >
+                  Trang chủ
+                </Typography>
+              </Link>
+              <Link href={`/truyen/${chapter.novel.id}`} passHref>
+                <Typography
+                  sx={{ cursor: "pointer", "&:hover": { color: "white" } }}
+                >
+                  {chapter.novel.title}
+                </Typography>
+              </Link>
+              <Typography color="text.light" fontWeight={700}>
+                Chương {chapter.chap_num}
+              </Typography>
+            </Breadcrumbs>
+            <Typography variant="h4" sx={{ mt: 3 }} gutterBottom>
+              {chapter.title}
+            </Typography>
+            <Typography variant="h6" gutterBottom>
+              Tác giả: {chapter.novel.author.name}
+            </Typography>
+            <Typography sx={{ display: { xs: "block", md: "none" } }}>
+              {numberFormat(chapter.num_chars)} chữ -{" "}
+              {numberFormat(chapter.num_views)} lượt đọc -{" "}
+              {numberFormat(chapter.num_likes)} lượt thích
             </Typography>
           </Box>
-          <Box>
-            <Typography sx={parameter.name}>Chữ</Typography>
-            <Typography sx={parameter.value}>
-              {numberFormat(chapter.num_chars)}
-            </Typography>
+          <Box
+            sx={{
+              display: { xs: "none", md: "flex" },
+              alignItems: "center",
+              justifyContent: "space-evenly",
+            }}
+          >
+            <Box>
+              <Typography sx={parameter.name}>Thích</Typography>
+              <Typography sx={parameter.value}>
+                {numberFormat(chapter.num_likes)}
+              </Typography>
+            </Box>
+            <Box>
+              <Typography sx={parameter.name}>Chữ</Typography>
+              <Typography sx={parameter.value}>
+                {numberFormat(chapter.num_chars)}
+              </Typography>
+            </Box>
+            <Box>
+              <Typography sx={parameter.name}>Lượt đọc</Typography>
+              <Typography sx={parameter.value}>
+                {numberFormat(chapter.num_views)}
+              </Typography>
+            </Box>
           </Box>
-          <Box>
-            <Typography sx={parameter.name}>Lượt đọc</Typography>
-            <Typography sx={parameter.value}>
-              {numberFormat(chapter.num_views)}
-            </Typography>
-          </Box>
-        </Box>
+        </Container>
       </Box>
     </>
   );

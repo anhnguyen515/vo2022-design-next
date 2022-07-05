@@ -9,7 +9,15 @@ import { numberFormat } from "utility/utils";
 
 function MostReadCard({ novel }) {
   return (
-    <Card elevation={0} sx={{ display: "flex", borderRadius: 0, mb: 2 }}>
+    <Card
+      elevation={0}
+      sx={{
+        display: "flex",
+        borderRadius: 0,
+        mb: 2,
+        "&:hover": { backgroundColor: "primary.light" },
+      }}
+    >
       <Box>
         <Link href={`/truyen/${novel.id}`}>
           <a>

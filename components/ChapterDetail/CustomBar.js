@@ -1,13 +1,25 @@
-import { Box, IconButton } from "@mui/material";
-import AppBar from "@mui/material/AppBar";
-import { useEffect, useState } from "react";
 import FormatListNumberedIcon from "@mui/icons-material/FormatListNumbered";
 import MenuBookIcon from "@mui/icons-material/MenuBook";
-import SettingsIcon from "@mui/icons-material/Settings";
+import { Box, IconButton } from "@mui/material";
+import AppBar from "@mui/material/AppBar";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 import OptionsDrawer from "./OptionsDrawer";
 
-export default function CustomBar({ chapter }) {
+export default function CustomBar({
+  chapter,
+  backgroundColor,
+  paperColor,
+  maxWidth,
+  font,
+  fontSize,
+  handleChangeBackground,
+  handleChangePaperColor,
+  handleChangeFont,
+  handleChangeFontColor,
+  handleChangeFontSize,
+  handleChangeWidth,
+}) {
   const router = useRouter();
   const [scrollDown, setScrollDown] = useState(false);
 
@@ -69,7 +81,7 @@ export default function CustomBar({ chapter }) {
             sx={{
               "&:hover": {
                 color: "text.light",
-                backgroundColor: "primary.main",
+                backgroundColor: "sub.main",
               },
             }}
             onClick={() => router.push(`/truyen/${chapter.novel.id}`)}
@@ -79,7 +91,19 @@ export default function CustomBar({ chapter }) {
           <IconButton>
             <FormatListNumberedIcon />
           </IconButton>
-          <OptionsDrawer />
+          <OptionsDrawer
+            backgroundColor={backgroundColor}
+            paperColor={paperColor}
+            maxWidth={maxWidth}
+            font={font}
+            fontSize={fontSize}
+            handleChangeBackground={handleChangeBackground}
+            handleChangePaperColor={handleChangePaperColor}
+            handleChangeFont={handleChangeFont}
+            handleChangeFontColor={handleChangeFontColor}
+            handleChangeFontSize={handleChangeFontSize}
+            handleChangeWidth={handleChangeWidth}
+          />
         </Box>
       </AppBar>
     </>

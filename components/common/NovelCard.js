@@ -16,24 +16,22 @@ export default function NovelCard({ novel, displayStatus }) {
   return (
     <Card elevation={0} sx={{ display: "flex", borderRadius: 0 }}>
       <Box>
-        <Link href={`/truyen/${novel.id}`}>
-          <a>
-            <CardMedia
-              component="img"
-              sx={{
-                width: 100,
-                borderRadius: 1,
-                mr: 2,
-                cursor: "pointer",
-              }}
-              image={novel.picture}
-              alt={`ảnh bìa của ${novel.title}`}
-            />
-          </a>
+        <Link href={`/truyen/${novel.id}`} passHref>
+          <CardMedia
+            component="img"
+            sx={{
+              width: 100,
+              borderRadius: 3,
+              mr: 2,
+              cursor: "pointer",
+            }}
+            image={novel.picture}
+            alt={`ảnh bìa của ${novel.title}`}
+          />
         </Link>
       </Box>
       <Box>
-        <Typography variant="h6" fontSize="1.6rem" fontWeight={600}>
+        <Typography variant="h6" fontSize="1.6rem" fontWeight={700}>
           <Link href={`/truyen/${novel.id}`}>
             <a>{novel.title}</a>
           </Link>
@@ -58,6 +56,9 @@ export default function NovelCard({ novel, displayStatus }) {
               color="sub"
               size="small"
               onClick={() => router.push(`/the-loai/${tag.slug}`)}
+              sx={{
+                "&:hover": { backgroundColor: "text.light", color: "sub.main" },
+              }}
             />
           ))}
         </Box>

@@ -6,7 +6,7 @@ import React from "react";
 
 function FeaturedCard({ novel }) {
   return (
-    <Card elevation={0} sx={{ borderRadius: 0 }}>
+    <Card elevation={0} sx={{ borderRadius: 3 }}>
       <Link href={`/truyen/${novel.id}`}>
         <a>
           <CardMedia
@@ -14,7 +14,7 @@ function FeaturedCard({ novel }) {
             image={novel.picture}
             alt="green iguana"
             sx={{
-              borderRadius: 1,
+              borderRadius: 3,
               mb: 1,
             }}
           />
@@ -23,7 +23,7 @@ function FeaturedCard({ novel }) {
       <Typography
         gutterBottom
         variant="h6"
-        fontSize="1rem"
+        fontSize="1.2rem"
         sx={{ lineHeight: "1.2rem" }}
       >
         <Link href={`/truyen/${novel.id}`}>

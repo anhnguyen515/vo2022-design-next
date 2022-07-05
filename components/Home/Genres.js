@@ -31,10 +31,16 @@ function GenresCard({ genre, novels }) {
           </Box>
         </Box>
         <Divider />
-        <Grid container spacing={2} sx={{ padding: 1 }}>
+        <Grid container>
           {novels.slice(0, 5).map((novel) => (
             <Grid key={novel.id} item xs={12}>
-              <Box sx={{ display: "flex" }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  padding: 1,
+                  "&:hover": { backgroundColor: "primary.light" },
+                }}
+              >
                 <Box sx={{ overflow: "hidden", mr: 1 }}>
                   <Typography
                     fontWeight={600}

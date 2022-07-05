@@ -12,7 +12,15 @@ function RoyalRankingCard({ novel, rank }) {
     <Paper
       elevation={0}
       variant="outlined"
-      sx={{ padding: 2, position: "relative" }}
+      sx={{
+        borderRadius: 3,
+        padding: 2,
+        position: "relative",
+        transition: "all 0.2s",
+        "&:hover": {
+          transform: "scale(1.06)",
+        },
+      }}
     >
       <Card elevation={0} sx={{ borderRadius: 0 }}>
         <Link href={`/truyen/${novel.id}`}>
@@ -20,14 +28,15 @@ function RoyalRankingCard({ novel, rank }) {
             <CardMedia
               component="img"
               image={novel.picture}
-              alt="green iguana"
+              alt={`ảnh bìa của ${novel.title}`}
               sx={{
-                borderRadius: 1,
+                borderRadius: 3,
                 mb: 1,
-                height: {
-                  xs: 200,
-                  sm: "",
-                },
+
+                // height: {
+                //   xs: 200,
+                //   sm: "",
+                // },
               }}
             />
           </a>
@@ -45,6 +54,7 @@ function RoyalRankingCard({ novel, rank }) {
           gutterBottom
           variant="h6"
           fontSize="1.2rem"
+          fontWeight={700}
         >
           <Link href={`/truyen/${novel.id}`}>
             <a>{novel.title}</a>
@@ -91,7 +101,7 @@ export default function RoyalRanking({ novels }) {
       <CategoryLayout title="Royal Ranking">
         <Grid container spacing={3}>
           {novels.slice(0, 6).map((novel, index) => (
-            <Grid item key={novel.id} xs={12} sm={4} md={2}>
+            <Grid item key={novel.id} xs={6} sm={4} lg={2}>
               <RoyalRankingCard novel={novel} rank={index + 1} />
             </Grid>
           ))}

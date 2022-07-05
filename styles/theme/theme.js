@@ -27,13 +27,14 @@ export const lightTheme = createTheme({
 
   typography: {
     fontFamily: [
-      "Nunito",
+      "Quicksand",
       "-apple-system",
       "BlinkMacSystemFont",
       "Segoe UI",
       "Helvetica",
       "Arial",
       "sans-serif",
+      "serif",
       "Apple Color Emoji",
       "Segoe UI Emoji",
     ].join(", "),
@@ -105,6 +106,18 @@ export const lightTheme = createTheme({
       light: grey[100],
       main: grey[500],
       dark: grey[600],
+    },
+
+    readingBackground: {
+      light: grey[100],
+      main: "#DACFA1",
+      dark: "#1F212D",
+    },
+
+    readingPaper: {
+      light: "#fff",
+      main: "#F1E8C2",
+      dark: "#222731",
     },
 
     success: {
