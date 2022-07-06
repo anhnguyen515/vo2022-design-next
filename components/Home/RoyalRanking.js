@@ -101,7 +101,7 @@ function RoyalRankingCard({ novel, rank }) {
 export default function RoyalRanking({ novels }) {
   return (
     <>
-      <CategoryLayout title="Royal Ranking">
+      <CategoryLayout title="Kim Bảng">
         <Grid container spacing={3}>
           {novels.slice(0, 6).map((novel, index) => (
             <Grid item key={novel.id} xs={6} sm={4} lg={2}>

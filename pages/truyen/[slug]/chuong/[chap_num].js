@@ -44,7 +44,7 @@ export default function Chapter({ chapter }) {
   const [fontColor, setFontColor] = useState("sub.dark");
   const [fontSize, setFontSize] = useState(18);
 
-  function handleChangeWidth(event, newValue) {
+  function handleChangeWidth(newValue) {
     setMaxWidth(newValue);
     localStorage.setItem("max_width", JSON.stringify(newValue));
   }

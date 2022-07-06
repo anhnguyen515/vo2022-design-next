@@ -1,14 +1,6 @@
-import {
-  Avatar,
-  Box,
-  Button,
-  Container,
-  Paper,
-  Typography,
-} from "@mui/material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import FlagIcon from "@mui/icons-material/Flag";
-import React from "react";
+import { Avatar, Box, Button, Paper, Typography } from "@mui/material";
 import { numberFormat } from "utility/utils";
 
 export default function InfoSection({ chapter }) {
@@ -23,13 +15,13 @@ export default function InfoSection({ chapter }) {
           flexDirection: { xs: "column", md: "row" },
           alignItems: "center",
           gap: 2,
-          "&>*": { flex: 1 },
+          // "&>*": { flex: 1 },
           maxWidth: "60rem",
           padding: 3,
           mb: 2,
         }}
       >
-        <Box sx={{ display: " flex", alignItems: "center", gap: 1 }}>
+        <Box sx={{ display: " flex", alignItems: "center", gap: 1, flex: 1 }}>
           <Avatar
             alt=""
             src={chapter.novel.author.picture}
@@ -49,7 +41,7 @@ export default function InfoSection({ chapter }) {
             <Typography>{chapter.novel.author.ranking}</Typography>
           </Box>
         </Box>
-        <Box>
+        <Box sx={{ flex: 1 }}>
           <Typography variant="h6">{chapter.title}</Typography>
           <Box
             sx={{

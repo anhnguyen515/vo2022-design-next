@@ -5,6 +5,7 @@ import RemoveIcon from "@mui/icons-material/Remove";
 import SettingsIcon from "@mui/icons-material/Settings";
 import {
   Button,
+  ButtonGroup,
   Divider,
   FormControl,
   MenuItem,
@@ -32,6 +33,21 @@ export default function OptionsDrawer({
   handleChangeFontSize,
   handleChangeWidth,
 }) {
+  const widths = [640, 740, 840, 940, 1040];
+  const backgroundColors = [
+    "readingBackground.default",
+    "readingBackground.dark",
+    "readingBackground.yellow",
+    "readingBackground.blue",
+    "readingBackground.pink",
+  ];
+  const paperColors = [
+    "readingPaper.default",
+    "readingPaper.dark",
+    "readingPaper.yellow",
+    "readingPaper.blue",
+    "readingPaper.pink",
+  ];
   const [state, setState] = React.useState(false);
 
   const toggleDrawer = (anchor, open) => (event) => {
@@ -98,125 +114,28 @@ export default function OptionsDrawer({
               alignItems="center"
               justifyContent="center"
             >
-              <Box
-                onClick={() =>
-                  handleChangeBackground("readingBackground.default")
-                }
-                sx={{
-                  width: "2.5rem",
-                  height: "2.5rem",
-                  backgroundColor: "readingBackground.default",
-                  border: 1,
-                  borderColor:
-                    backgroundColor === "readingBackground.default"
-                      ? "success.main"
-                      : "text.main",
-                  borderRadius: "50%",
-                  cursor: "pointer",
+              {backgroundColors.map((color, index) => (
+                <Box
+                  key={index}
+                  onClick={() => handleChangeBackground(color)}
+                  sx={{
+                    width: "2.5rem",
+                    height: "2.5rem",
+                    backgroundColor: color,
+                    border: 1,
+                    borderColor:
+                      backgroundColor === color ? "success.main" : "text.main",
+                    borderRadius: "50%",
+                    cursor: "pointer",
 
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                {backgroundColor === "readingBackground.default" && (
-                  <CheckIcon color="success" />
-                )}
-              </Box>
-              <Box
-                onClick={() => handleChangeBackground("readingBackground.dark")}
-                sx={{
-                  width: "2.5rem",
-                  height: "2.5rem",
-                  backgroundColor: "readingBackground.dark",
-                  border: 1,
-                  borderColor:
-                    backgroundColor === "readingBackground.dark"
-                      ? "success.main"
-                      : "",
-                  borderRadius: "50%",
-                  cursor: "pointer",
-
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                {backgroundColor === "readingBackground.dark" && (
-                  <CheckIcon color="success" />
-                )}
-              </Box>
-              <Box
-                onClick={() =>
-                  handleChangeBackground("readingBackground.yellow")
-                }
-                sx={{
-                  width: "2.5rem",
-                  height: "2.5rem",
-                  backgroundColor: "readingBackground.yellow",
-                  border: 1,
-                  borderColor:
-                    backgroundColor === "readingBackground.yellow"
-                      ? "success.main"
-                      : "text.main",
-                  borderRadius: "50%",
-                  cursor: "pointer",
-
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                {backgroundColor === "readingBackground.yellow" && (
-                  <CheckIcon color="success" />
-                )}
-              </Box>
-              <Box
-                onClick={() => handleChangeBackground("readingBackground.blue")}
-                sx={{
-                  width: "2.5rem",
-                  height: "2.5rem",
-                  backgroundColor: "readingBackground.blue",
-                  border: 1,
-                  borderColor:
-                    backgroundColor === "readingBackground.blue"
-                      ? "success.main"
-                      : "text.main",
-                  borderRadius: "50%",
-                  cursor: "pointer",
-
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                {backgroundColor === "readingBackground.blue" && (
-                  <CheckIcon color="success" />
-                )}
-              </Box>
-              <Box
-                onClick={() => handleChangeBackground("readingBackground.pink")}
-                sx={{
-                  width: "2.5rem",
-                  height: "2.5rem",
-                  backgroundColor: "readingBackground.pink",
-                  border: 1,
-                  borderColor:
-                    backgroundColor === "readingBackground.pink"
-                      ? "success.main"
-                      : "text.main",
-                  borderRadius: "50%",
-                  cursor: "pointer",
-
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                {backgroundColor === "readingBackground.pink" && (
-                  <CheckIcon color="success" />
-                )}
-              </Box>
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  {backgroundColor === color && <CheckIcon color="success" />}
+                </Box>
+              ))}
             </Stack>
 
             {/* tùy chỉnh màu nền đọc */}
@@ -230,134 +149,33 @@ export default function OptionsDrawer({
               alignItems="center"
               justifyContent="center"
             >
-              <Box
-                onClick={() => {
-                  handleChangePaperColor("readingPaper.default");
-                  handleChangeFontColor("sub.dark");
-                }}
-                sx={{
-                  width: "2.5rem",
-                  height: "2.5rem",
-                  backgroundColor: "readingPaper.default",
-                  border: 1,
-                  borderColor:
-                    paperColor === "readingPaper.default"
-                      ? "success.main"
-                      : "text.main",
-                  borderRadius: "50%",
-                  cursor: "pointer",
+              {paperColors.map((color, index) => (
+                <Box
+                  key={index}
+                  onClick={() => {
+                    handleChangePaperColor(color);
+                    handleChangeFontColor(
+                      color === "readingPaper.dark" ? "text.light" : "sub.dark"
+                    );
+                  }}
+                  sx={{
+                    width: "2.5rem",
+                    height: "2.5rem",
+                    backgroundColor: color,
+                    border: 1,
+                    borderColor:
+                      paperColor === color ? "success.main" : "text.main",
+                    borderRadius: "50%",
+                    cursor: "pointer",
 
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                {paperColor === "readingPaper.default" && (
-                  <CheckIcon color="success" />
-                )}
-              </Box>
-              <Box
-                onClick={() => {
-                  handleChangePaperColor("readingPaper.dark");
-                  handleChangeFontColor("text.light");
-                }}
-                sx={{
-                  width: "2.5rem",
-                  height: "2.5rem",
-                  backgroundColor: "readingPaper.dark",
-                  border: 1,
-                  borderColor:
-                    paperColor === "readingPaper.dark" ? "success.main" : "",
-                  borderRadius: "50%",
-                  cursor: "pointer",
-
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                {paperColor === "readingPaper.dark" && (
-                  <CheckIcon color="success" />
-                )}
-              </Box>
-              <Box
-                onClick={() => {
-                  handleChangePaperColor("readingPaper.yellow");
-                  handleChangeFontColor("sub.dark");
-                }}
-                sx={{
-                  width: "2.5rem",
-                  height: "2.5rem",
-                  backgroundColor: "readingPaper.yellow",
-                  border: 1,
-                  borderColor:
-                    paperColor === "readingPaper.yellow"
-                      ? "success.main"
-                      : "text.main",
-                  borderRadius: "50%",
-                  cursor: "pointer",
-
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                {paperColor === "readingPaper.yellow" && (
-                  <CheckIcon color="success" />
-                )}
-              </Box>
-              <Box
-                onClick={() => {
-                  handleChangePaperColor("readingPaper.blue");
-                  handleChangeFontColor("sub.dark");
-                }}
-                sx={{
-                  width: "2.5rem",
-                  height: "2.5rem",
-                  backgroundColor: "readingPaper.blue",
-                  border: 1,
-                  borderColor:
-                    paperColor === "readingPaper.blue"
-                      ? "success.main"
-                      : "text.main",
-                  borderRadius: "50%",
-                  cursor: "pointer",
-
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                {paperColor === "readingPaper.blue" && (
-                  <CheckIcon color="success" />
-                )}
-              </Box>
-              <Box
-                onClick={() => {
-                  handleChangePaperColor("readingPaper.pink");
-                  handleChangeFontColor("sub.dark");
-                }}
-                sx={{
-                  width: "2.5rem",
-                  height: "2.5rem",
-                  backgroundColor: "readingPaper.pink",
-                  border: 1,
-                  borderColor:
-                    paperColor === "readingPaper.pink"
-                      ? "success.main"
-                      : "text.main",
-                  borderRadius: "50%",
-                  cursor: "pointer",
-
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                {paperColor === "readingPaper.pink" && (
-                  <CheckIcon color="success" />
-                )}
-              </Box>
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  {paperColor === color && <CheckIcon color="success" />}
+                </Box>
+              ))}
             </Stack>
 
             {/* tùy chỉnh màu chữ */}
@@ -369,8 +187,14 @@ export default function OptionsDrawer({
             <Typography variant="h5" fontWeight={500} gutterBottom>
               Khung đọc
             </Typography>
-            <Stack mb={5} spacing={2} direction="row" alignItems="center">
-              <Typography variant="caption">640</Typography>
+            <Stack
+              mb={5}
+              spacing={2}
+              direction="row"
+              alignItems="center"
+              justifyContent="center"
+            >
+              {/*<Typography variant="caption">640</Typography>
               <Slider
                 // size="small"
                 color="secondary"
@@ -382,7 +206,18 @@ export default function OptionsDrawer({
                 valueLabelDisplay="auto"
                 onChange={handleChangeWidth}
               />
-              <Typography variant="caption">1040</Typography>
+              <Typography variant="caption">1040</Typography>*/}
+              <ButtonGroup disableElevation>
+                {widths.map((width, index) => (
+                  <Button
+                    key={index}
+                    variant={maxWidth === width ? "contained" : "outlined"}
+                    onClick={() => handleChangeWidth(width)}
+                  >
+                    {width}
+                  </Button>
+                ))}
+              </ButtonGroup>
             </Stack>
 
             {/* tủy chỉnh font chữ */}

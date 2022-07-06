@@ -1,9 +1,5 @@
-import React from "react";
+import { Box, Paper } from "@mui/material";
 import parse from "html-react-parser";
-import { Box, Button, Container, Paper, Typography } from "@mui/material";
-import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
-import NavigateNextIcon from "@mui/icons-material/NavigateNext";
-import { useRouter } from "next/router";
 
 export default function ReadingSection({
   chapter,
@@ -14,10 +10,8 @@ export default function ReadingSection({
   fontColor,
   maxWidth,
 }) {
-  const router = useRouter();
-  const { slug } = router.query;
   return (
-    <>
+    <Box>
       <Box
         sx={{
           backgroundColor: backgroundColor,
@@ -43,6 +37,6 @@ export default function ReadingSection({
           {parse(chapter.content_safe)}
         </Paper>
       </Box>
-    </>
+    </Box>
   );
 }

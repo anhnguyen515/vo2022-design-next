@@ -1,4 +1,7 @@
-import FormatListNumberedIcon from "@mui/icons-material/FormatListNumbered";
+import BookmarkAddIcon from "@mui/icons-material/BookmarkAdd";
+import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import FavoriteIcon from "@mui/icons-material/Favorite";
 import MenuBookIcon from "@mui/icons-material/MenuBook";
 import { Box, IconButton, Tooltip } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
@@ -110,6 +113,34 @@ export default function CustomBar({
             handleChangeFontSize={handleChangeFontSize}
             handleChangeWidth={handleChangeWidth}
           />
+          <Tooltip title="Đánh dấu chương này" arrow>
+            <IconButton
+              sx={{
+                color: "primary.main",
+                "&:hover": {
+                  border: "none",
+                  color: "text.light",
+                  backgroundColor: "primary.main",
+                },
+              }}
+            >
+              <BookmarkBorderIcon />
+            </IconButton>
+          </Tooltip>
+          <Tooltip title="Ta Thích!" arrow>
+            <IconButton
+              sx={{
+                color: "secondary.main",
+                "&:hover": {
+                  border: "none",
+                  color: "text.light",
+                  backgroundColor: "secondary.main",
+                },
+              }}
+            >
+              <FavoriteBorderIcon />
+            </IconButton>
+          </Tooltip>
         </Box>
       </AppBar>
     </>

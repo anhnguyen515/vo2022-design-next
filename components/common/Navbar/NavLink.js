@@ -62,7 +62,7 @@ export default function NavLink() {
         }
       >
         <Link href="/royal-ranking">
-          <a style={linkStyle}>Royal Ranking</a>
+          <a style={linkStyle}>Kim Bảng</a>
         </Link>
       </Typography>
 
