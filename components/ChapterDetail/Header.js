@@ -30,23 +30,25 @@ export default function Header({ chapter }) {
             <Breadcrumbs
               separator={<NavigateNextIcon />}
               aria-label="breadcrumb"
-              sx={{ color: "text.main" }}
+              sx={{ color: "text.light" }}
             >
               <Link href="/" passHref>
                 <Typography
-                  sx={{ cursor: "pointer", "&:hover": { color: "white" } }}
+                  fontSize="1.1rem"
+                  sx={{ cursor: "pointer", "&:hover": { color: "text.main" } }}
                 >
                   Trang chủ
                 </Typography>
               </Link>
               <Link href={`/truyen/${chapter.novel.id}`} passHref>
                 <Typography
-                  sx={{ cursor: "pointer", "&:hover": { color: "white" } }}
+                  fontSize="1.1rem"
+                  sx={{ cursor: "pointer", "&:hover": { color: "text.main" } }}
                 >
                   {chapter.novel.title}
                 </Typography>
               </Link>
-              <Typography color="text.light" fontWeight={700}>
+              <Typography color="text.light" fontSize="1.1rem" fontWeight={700}>
                 Chương {chapter.chap_num}
               </Typography>
             </Breadcrumbs>

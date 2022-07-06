@@ -1,13 +1,12 @@
-import { Box, Button, Container } from "@mui/material";
-import Header from "components/ChapterDetail/Header";
-import ReadingSection from "components/ChapterDetail/ReadingSection";
-import React, { useEffect, useState } from "react";
-import { getNovelChapter } from "utility/apis";
-import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
-import InfoSection from "components/ChapterDetail/InfoSection";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import { Box, Button, Container } from "@mui/material";
 import CustomBar from "components/ChapterDetail/CustomBar";
-import { useRouter } from "next/router";
+import Header from "components/ChapterDetail/Header";
+import InfoSection from "components/ChapterDetail/InfoSection";
+import ReadingSection from "components/ChapterDetail/ReadingSection";
+import { useEffect, useState } from "react";
+import { getNovelChapter } from "utility/apis";
 
 export async function getStaticPaths() {
   return {

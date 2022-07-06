@@ -1,20 +1,22 @@
+import AddIcon from "@mui/icons-material/Add";
+import CheckIcon from "@mui/icons-material/Check";
+import CloseIcon from "@mui/icons-material/Close";
+import RemoveIcon from "@mui/icons-material/Remove";
 import SettingsIcon from "@mui/icons-material/Settings";
+import {
+  Button,
+  Divider,
+  FormControl,
+  MenuItem,
+  Select,
+  Stack,
+  Typography,
+} from "@mui/material";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
-import * as React from "react";
 import Slider from "@mui/material/Slider";
-import {
-  Stack,
-  Typography,
-  FormControl,
-  Select,
-  MenuItem,
-  Button,
-} from "@mui/material";
-import CheckIcon from "@mui/icons-material/Check";
-import RemoveIcon from "@mui/icons-material/Remove";
-import AddIcon from "@mui/icons-material/Add";
+import * as React from "react";
 
 export default function OptionsDrawer({
   backgroundColor,
@@ -57,6 +59,7 @@ export default function OptionsDrawer({
           PaperProps={{
             sx: {
               backgroundColor: "background.default",
+              minWidth: 350,
               padding: 1,
             },
           }}
@@ -64,9 +67,25 @@ export default function OptionsDrawer({
           open={state["right"]}
           onClose={toggleDrawer("right", false)}
         >
-          <Box sx={{ minWidth: 300, pl: 2, pr: 2 }}>
+          <Box sx={{ pl: 2, pr: 2 }}>
+            <Stack
+              direction="row"
+              alignItems="center"
+              justifyContent="space-between"
+            >
+              <Typography variant="h4" fontWeight={500} gutterBottom>
+                Cài Đặt
+              </Typography>
+              <IconButton
+                onClick={toggleDrawer("right", false)}
+                sx={{ "&:hover": { color: "primary.main" } }}
+              >
+                <CloseIcon />
+              </IconButton>
+            </Stack>
+            <Divider sx={{ mb: 2 }} />
             {/* tùy chỉnh màu giao diện đọc */}
-            <Typography variant="h5" fontWeight={600} gutterBottom>
+            <Typography variant="h5" fontWeight={500} gutterBottom>
               Giao diện
             </Typography>
             <Stack
@@ -150,7 +169,7 @@ export default function OptionsDrawer({
             </Stack>
 
             {/* tùy chỉnh màu nền đọc */}
-            <Typography variant="h5" fontWeight={600} gutterBottom>
+            <Typography variant="h5" fontWeight={500} gutterBottom>
               Nền đọc
             </Typography>
             <Stack
@@ -239,12 +258,12 @@ export default function OptionsDrawer({
             </Stack>
 
             {/* tùy chỉnh màu chữ */}
-            {/*<Typography variant="h5" fontWeight={600} gutterBottom>
+            {/*<Typography variant="h5" fontWeight={500} gutterBottom>
               Màu chữ
                 </Typography>*/}
 
             {/* độ rộng khung đọc */}
-            <Typography variant="h5" fontWeight={600} gutterBottom>
+            <Typography variant="h5" fontWeight={500} gutterBottom>
               Khung đọc
             </Typography>
             <Stack mb={5} spacing={2} direction="row" alignItems="center">
@@ -264,7 +283,7 @@ export default function OptionsDrawer({
             </Stack>
 
             {/* tủy chỉnh font chữ */}
-            <Typography variant="h5" fontWeight={600} gutterBottom>
+            <Typography variant="h5" fontWeight={500} gutterBottom>
               Font chữ
             </Typography>
             <Stack mb={5}>
@@ -289,7 +308,7 @@ export default function OptionsDrawer({
             </Stack>
 
             {/* tùy chỉnh cỡ chữ */}
-            <Typography variant="h5" fontWeight={600} gutterBottom>
+            <Typography variant="h5" fontWeight={500} gutterBottom>
               Cỡ chữ
             </Typography>
             <Stack

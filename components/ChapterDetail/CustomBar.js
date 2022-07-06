@@ -4,6 +4,7 @@ import { Box, IconButton } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import ChaptersDrawer from "./ChaptersDrawer";
 import OptionsDrawer from "./OptionsDrawer";
 
 export default function CustomBar({
@@ -88,9 +89,7 @@ export default function CustomBar({
           >
             <MenuBookIcon />
           </IconButton>
-          <IconButton>
-            <FormatListNumberedIcon />
-          </IconButton>
+          <ChaptersDrawer />
           <OptionsDrawer
             backgroundColor={backgroundColor}
             paperColor={paperColor}

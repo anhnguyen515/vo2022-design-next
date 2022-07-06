@@ -32,7 +32,7 @@ export default function NovelTabs({ novel, value }) {
         pl: 2,
         pr: 2,
         position: "sticky",
-        top: 70,
+        top: { xs: "5rem", md: "4rem" },
         zIndex: 900,
       }}
     >

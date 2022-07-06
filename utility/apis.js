@@ -5,3 +5,9 @@ export function getNovelChapter(novel_code, chap_num) {
     .get(`chapters?_expand=novel&novelId=${novel_code}&chap_num=${chap_num}`)
     .then((res) => res.data);
 }
+
+export function getAllNovelChapters(novel_code) {
+  return axiosClient
+    .get(`chapters?_expand=novel&novelId=${novel_code}`)
+    .then((res) => res.data);
+}
