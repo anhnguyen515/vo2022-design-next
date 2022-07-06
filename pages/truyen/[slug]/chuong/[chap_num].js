@@ -1,10 +1,11 @@
 import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
-import { Box, Button, Container } from "@mui/material";
+import { Box, Button, Container, Typography } from "@mui/material";
 import CustomBar from "components/ChapterDetail/CustomBar";
 import Header from "components/ChapterDetail/Header";
 import InfoSection from "components/ChapterDetail/InfoSection";
 import ReadingSection from "components/ChapterDetail/ReadingSection";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { getNovelChapter } from "utility/apis";
 
@@ -28,6 +29,10 @@ export async function getStaticProps(context) {
 }
 
 export default function Chapter({ chapter }) {
+  const router = useRouter();
+  const { slug } = router.query;
+
+  const [currChapter, setCurrChapter] = useState(chapter[0].chap_num);
   const [maxWidth, setMaxWidth] = useState(840);
   const [backgroundColor, setBackgroundColor] = useState(
     "readingBackground.light"
@@ -93,6 +98,8 @@ export default function Chapter({ chapter }) {
         maxWidth={maxWidth}
         font={font}
         fontSize={fontSize}
+        currChapter={currChapter}
+        setCurrChapter={setCurrChapter}
         handleChangeBackground={handleChangeBackground}
         handleChangePaperColor={handleChangePaperColor}
         handleChangeFont={handleChangeFont}
@@ -111,11 +118,26 @@ export default function Chapter({ chapter }) {
             gap: 2,
           }}
         >
-          <Button variant="contained" startIcon={<NavigateBeforeIcon />}>
-            Chương trước
+          <Button
+            variant="contained"
+            onClick={() => {
+              setCurrChapter(chapter[0].chap_num - 1);
+              router.push(`/truyen/${slug}/chuong/${chapter[0].chap_num - 1}`);
+            }}
+          >
+            <NavigateBeforeIcon />
           </Button>
-          <Button variant="contained" endIcon={<NavigateNextIcon />}>
-            Chương sau
+          <Typography fontSize="1.5rem" fontWeight={500} sx={{ ml: 2, mr: 2 }}>
+            Chương {chapter[0].chap_num}
+          </Typography>
+          <Button
+            variant="contained"
+            onClick={() => {
+              setCurrChapter(chapter[0].chap_num + 1);
+              router.push(`/truyen/${slug}/chuong/${chapter[0].chap_num + 1}`);
+            }}
+          >
+            <NavigateNextIcon />
           </Button>
         </Box>
       </Container>
@@ -139,11 +161,26 @@ export default function Chapter({ chapter }) {
             gap: 2,
           }}
         >
-          <Button variant="contained" startIcon={<NavigateBeforeIcon />}>
-            Chương trước
+          <Button
+            variant="contained"
+            onClick={() => {
+              setCurrChapter(chapter[0].chap_num - 1);
+              router.push(`/truyen/${slug}/chuong/${chapter[0].chap_num - 1}`);
+            }}
+          >
+            <NavigateBeforeIcon />
           </Button>
-          <Button variant="contained" endIcon={<NavigateNextIcon />}>
-            Chương sau
+          <Typography fontSize="1.5rem" fontWeight={500} sx={{ ml: 2, mr: 2 }}>
+            Chương {chapter[0].chap_num}
+          </Typography>
+          <Button
+            variant="contained"
+            onClick={() => {
+              setCurrChapter(chapter[0].chap_num + 1);
+              router.push(`/truyen/${slug}/chuong/${chapter[0].chap_num + 1}`);
+            }}
+          >
+            <NavigateNextIcon />
           </Button>
         </Box>
         <Box>

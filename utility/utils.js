@@ -1,4 +1,4 @@
-import { green, grey, orange, red } from "@mui/material/colors";
+import { amber, green, grey, orange, red, yellow } from "@mui/material/colors";
 import dayjs from "dayjs";
 import "dayjs/locale/vi";
 import relativeTime from "dayjs/plugin/relativeTime";
@@ -73,7 +73,7 @@ export function rankingColor(rank) {
     case 2:
       return orange[700];
     case 3:
-      return green["A700"];
+      return amber[600];
     default:
       return lightTheme.palette.primary.main;
   }

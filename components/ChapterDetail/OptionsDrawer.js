@@ -10,6 +10,7 @@ import {
   MenuItem,
   Select,
   Stack,
+  Tooltip,
   Typography,
 } from "@mui/material";
 import Box from "@mui/material/Box";
@@ -47,14 +48,16 @@ export default function OptionsDrawer({
   return (
     <Box>
       <React.Fragment>
-        <IconButton
-          onClick={toggleDrawer("right", true)}
-          sx={{
-            "&:hover": { color: "text.light", backgroundColor: "sub.main" },
-          }}
-        >
-          <SettingsIcon />
-        </IconButton>
+        <Tooltip title="Cài đặt" arrow>
+          <IconButton
+            onClick={toggleDrawer("right", true)}
+            sx={{
+              "&:hover": { color: "text.light", backgroundColor: "sub.main" },
+            }}
+          >
+            <SettingsIcon />
+          </IconButton>
+        </Tooltip>
         <Drawer
           PaperProps={{
             sx: {

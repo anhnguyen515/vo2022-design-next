@@ -1,6 +1,6 @@
 import FormatListNumberedIcon from "@mui/icons-material/FormatListNumbered";
 import MenuBookIcon from "@mui/icons-material/MenuBook";
-import { Box, IconButton } from "@mui/material";
+import { Box, IconButton, Tooltip } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
@@ -14,6 +14,8 @@ export default function CustomBar({
   maxWidth,
   font,
   fontSize,
+  currChapter,
+  setCurrChapter,
   handleChangeBackground,
   handleChangePaperColor,
   handleChangeFont,
@@ -78,18 +80,23 @@ export default function CustomBar({
             gap: 5,
           }}
         >
-          <IconButton
-            sx={{
-              "&:hover": {
-                color: "text.light",
-                backgroundColor: "sub.main",
-              },
-            }}
-            onClick={() => router.push(`/truyen/${chapter.novel.id}`)}
-          >
-            <MenuBookIcon />
-          </IconButton>
-          <ChaptersDrawer />
+          <Tooltip title="Trang truyện" arrow>
+            <IconButton
+              sx={{
+                "&:hover": {
+                  color: "text.light",
+                  backgroundColor: "sub.main",
+                },
+              }}
+              onClick={() => router.push(`/truyen/${chapter.novel.id}`)}
+            >
+              <MenuBookIcon />
+            </IconButton>
+          </Tooltip>
+          <ChaptersDrawer
+            currChapter={currChapter}
+            setCurrChapter={setCurrChapter}
+          />
           <OptionsDrawer
             backgroundColor={backgroundColor}
             paperColor={paperColor}
