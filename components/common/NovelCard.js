@@ -14,7 +14,15 @@ import * as React from "react";
 export default function NovelCard({ novel, displayStatus }) {
   const router = useRouter();
   return (
-    <Card elevation={0} sx={{ display: "flex", borderRadius: 0 }}>
+    <Card
+      elevation={0}
+      sx={{
+        display: "flex",
+        borderRadius: 0,
+        transition: "color 0.2s",
+        "&:hover": { color: "secondary.main" },
+      }}
+    >
       <Box>
         <Link href={`/truyen/${novel.id}`} passHref>
           <CardMedia
@@ -31,11 +39,20 @@ export default function NovelCard({ novel, displayStatus }) {
         </Link>
       </Box>
       <Box>
-        <Typography variant="h6" fontSize="1.6rem" fontWeight={700}>
-          <Link href={`/truyen/${novel.id}`}>
-            <a>{novel.title}</a>
-          </Link>
-        </Typography>
+        <Link href={`/truyen/${novel.id}`} passHref>
+          <Typography
+            variant="h6"
+            fontSize="1.6rem"
+            fontWeight={700}
+            sx={{
+              cursor: "pointer",
+              // transition: "all 0.2s",
+              // "&:hover": { color: "secondary.main" },
+            }}
+          >
+            {novel.title}
+          </Typography>
+        </Link>
         <Typography variant="body1" sx={{ position: "relative" }}>
           <Link href={`/tac-gia/${novel.author.slug}`}>
             <a>

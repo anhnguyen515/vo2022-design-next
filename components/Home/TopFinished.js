@@ -43,19 +43,23 @@ export default function TopFinished({ novels }) {
                 // whiteSpace: "nowrap",
               }}
             >
-              <Typography
-                variant="body1"
-                fontWeight={500}
-                sx={{
-                  overflow: "hidden",
-                  textOverflow: "ellipse",
-                  whiteSpace: "nowrap",
-                }}
-              >
-                <Link href={`/truyen/${novel.id}`}>
-                  <a>{novel.title}</a>
-                </Link>
-              </Typography>
+              <Link href={`/truyen/${novel.id}`} passHref>
+                <Typography
+                  variant="body1"
+                  fontWeight={500}
+                  sx={{
+                    cursor: "pointer",
+                    overflow: "hidden",
+                    textOverflow: "ellipse",
+                    whiteSpace: "nowrap",
+                    "&:hover": {
+                      fontWeight: 700,
+                    },
+                  }}
+                >
+                  {novel.title}
+                </Typography>
+              </Link>
               <Typography variant="caption">
                 {numberFormat(novel.num_views)} lượt xem
               </Typography>

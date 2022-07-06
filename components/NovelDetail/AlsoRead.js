@@ -16,7 +16,13 @@ import { numberFormat } from "utility/utils";
 export default function AlsoRead({ novel }) {
   const router = useRouter();
   return (
-    <Card elevation={0} sx={{ display: "flex", borderRadius: 0 }}>
+    <Card
+      elevation={0}
+      sx={{
+        display: "flex",
+        borderRadius: 0,
+      }}
+    >
       <Box>
         <Link href={`/truyen/${novel.id}`}>
           <a>
@@ -35,11 +41,15 @@ export default function AlsoRead({ novel }) {
         </Link>
       </Box>
       <Box>
-        <Typography fontWeight={500}>
-          <Link href={`/truyen/${novel.id}`}>
-            <a>{novel.title}</a>
-          </Link>
-        </Typography>
+        <Link href={`/truyen/${novel.id}`} passHref>
+          <Typography
+            variant="h6"
+            fontWeight={700}
+            sx={{ cursor: "pointer", "&:hover": { color: "secondary.main" } }}
+          >
+            {novel.title}
+          </Typography>
+        </Link>
         <Typography variant="body2" sx={{ position: "relative" }}>
           <Link href={`/tac-gia/${novel.author.slug}`}>
             <a>

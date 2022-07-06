@@ -5,18 +5,20 @@ import CustomBar from "components/ChapterDetail/CustomBar";
 import Header from "components/ChapterDetail/Header";
 import InfoSection from "components/ChapterDetail/InfoSection";
 import ReadingSection from "components/ChapterDetail/ReadingSection";
+import HeadPage from "components/common/HeadPage";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { getNovelChapter } from "utility/apis";
+import { OG_TITLE } from "utility/constants";
 
-export async function getStaticPaths() {
-  return {
-    paths: [],
-    fallback: "blocking",
-  };
-}
+// export async function getStaticPaths() {
+//   return {
+//     paths: [],
+//     fallback: "blocking",
+//   };
+// }
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const { slug, chap_num } = context.params;
   const chapter = await getNovelChapter(slug, chap_num);
 
@@ -24,7 +26,7 @@ export async function getStaticProps(context) {
     props: {
       chapter,
     },
-    revalidate: 3600,
+    // revalidate: 3600,
   };
 }
 
@@ -35,9 +37,9 @@ export default function Chapter({ chapter }) {
   const [currChapter, setCurrChapter] = useState(chapter[0].chap_num);
   const [maxWidth, setMaxWidth] = useState(840);
   const [backgroundColor, setBackgroundColor] = useState(
-    "readingBackground.light"
+    "readingBackground.default"
   );
-  const [paperColor, setPaperColor] = useState("readingPaper.light");
+  const [paperColor, setPaperColor] = useState("readingPaper.default");
   const [font, setFont] = useState("Quicksand");
   const [fontColor, setFontColor] = useState("sub.dark");
   const [fontSize, setFontSize] = useState(18);
@@ -90,6 +92,12 @@ export default function Chapter({ chapter }) {
 
   return (
     <>
+      {/* này là set title cho thẻ head */}
+      <HeadPage
+        title={`${chapter[0].title} - ${chapter[0].novel.title} - ${OG_TITLE}`}
+      />
+
+      {/* này là bắt đầu hiển thị nội dung trang */}
       <Header chapter={chapter[0]} />
       <CustomBar
         chapter={chapter[0]}

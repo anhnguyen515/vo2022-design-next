@@ -1,17 +1,19 @@
-import React from "react";
 import { CacheProvider } from "@emotion/react";
-import { ThemeProvider, CssBaseline } from "@mui/material";
+import { CssBaseline, ThemeProvider } from "@mui/material";
 
-import createEmotionCache from "utility/createEmotionCache";
+import { DefaultSeo } from "next-seo";
+import NextNprogress from "nextjs-progressbar";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 import { lightTheme } from "styles/theme/theme";
-import "../styles/globals.css";
+import { BRAND_NAME, OG_TITLE, SITE_BASE_URL } from "utility/constants";
+import createEmotionCache from "utility/createEmotionCache";
 import MainLayout from "../components/Layout/MainLayout";
+import "../styles/globals.css";
 
 {
   /* react-slick carousel */
 }
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 const clientSideEmotionCache = createEmotionCache();
 
@@ -23,6 +25,37 @@ const MyApp = (props) => {
       <ThemeProvider theme={lightTheme}>
         <CssBaseline />
         <MainLayout>
+          <DefaultSeo
+            title={BRAND_NAME}
+            openGraph={{
+              type: "website",
+              site_name: BRAND_NAME,
+              title: OG_TITLE,
+              url: SITE_BASE_URL,
+              images: [
+                {
+                  url: `${SITE_BASE_URL}/img/og-image.jpg`,
+                  width: 1200,
+                  height: 630,
+                  alt: BRAND_NAME,
+                },
+              ],
+            }}
+            twitter={{
+              cardType: "summary_large_image",
+            }}
+          />
+          <NextNprogress
+            nonce="my-nonce"
+            showOnShallow
+            color={lightTheme.palette.primary.main}
+            startPosition={0.3}
+            stopDelayMs={200}
+            height={4}
+            options={{
+              showSpinner: false,
+            }}
+          />
           <Component {...pageProps} />
         </MainLayout>
       </ThemeProvider>

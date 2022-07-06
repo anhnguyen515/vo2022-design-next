@@ -19,6 +19,9 @@ function RoyalRankingCard({ novel, rank }) {
         transition: "all 0.2s",
         "&:hover": {
           transform: "scale(1.06)",
+          "& > *": {
+            color: "secondary.main",
+          },
         },
       }}
     >

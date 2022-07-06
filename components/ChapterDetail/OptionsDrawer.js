@@ -100,15 +100,15 @@ export default function OptionsDrawer({
             >
               <Box
                 onClick={() =>
-                  handleChangeBackground("readingBackground.light")
+                  handleChangeBackground("readingBackground.default")
                 }
                 sx={{
                   width: "2.5rem",
                   height: "2.5rem",
-                  backgroundColor: "readingBackground.light",
+                  backgroundColor: "readingBackground.default",
                   border: 1,
                   borderColor:
-                    backgroundColor === "readingBackground.light"
+                    backgroundColor === "readingBackground.default"
                       ? "success.main"
                       : "text.main",
                   borderRadius: "50%",
@@ -119,7 +119,7 @@ export default function OptionsDrawer({
                   justifyContent: "center",
                 }}
               >
-                {backgroundColor === "readingBackground.light" && (
+                {backgroundColor === "readingBackground.default" && (
                   <CheckIcon color="success" />
                 )}
               </Box>
@@ -147,14 +147,16 @@ export default function OptionsDrawer({
                 )}
               </Box>
               <Box
-                onClick={() => handleChangeBackground("readingBackground.main")}
+                onClick={() =>
+                  handleChangeBackground("readingBackground.yellow")
+                }
                 sx={{
                   width: "2.5rem",
                   height: "2.5rem",
-                  backgroundColor: "readingBackground.main",
+                  backgroundColor: "readingBackground.yellow",
                   border: 1,
                   borderColor:
-                    backgroundColor === "readingBackground.main"
+                    backgroundColor === "readingBackground.yellow"
                       ? "success.main"
                       : "text.main",
                   borderRadius: "50%",
@@ -165,7 +167,53 @@ export default function OptionsDrawer({
                   justifyContent: "center",
                 }}
               >
-                {backgroundColor === "readingBackground.main" && (
+                {backgroundColor === "readingBackground.yellow" && (
+                  <CheckIcon color="success" />
+                )}
+              </Box>
+              <Box
+                onClick={() => handleChangeBackground("readingBackground.blue")}
+                sx={{
+                  width: "2.5rem",
+                  height: "2.5rem",
+                  backgroundColor: "readingBackground.blue",
+                  border: 1,
+                  borderColor:
+                    backgroundColor === "readingBackground.blue"
+                      ? "success.main"
+                      : "text.main",
+                  borderRadius: "50%",
+                  cursor: "pointer",
+
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                {backgroundColor === "readingBackground.blue" && (
+                  <CheckIcon color="success" />
+                )}
+              </Box>
+              <Box
+                onClick={() => handleChangeBackground("readingBackground.pink")}
+                sx={{
+                  width: "2.5rem",
+                  height: "2.5rem",
+                  backgroundColor: "readingBackground.pink",
+                  border: 1,
+                  borderColor:
+                    backgroundColor === "readingBackground.pink"
+                      ? "success.main"
+                      : "text.main",
+                  borderRadius: "50%",
+                  cursor: "pointer",
+
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                {backgroundColor === "readingBackground.pink" && (
                   <CheckIcon color="success" />
                 )}
               </Box>
@@ -184,16 +232,16 @@ export default function OptionsDrawer({
             >
               <Box
                 onClick={() => {
-                  handleChangePaperColor("readingPaper.light");
+                  handleChangePaperColor("readingPaper.default");
                   handleChangeFontColor("sub.dark");
                 }}
                 sx={{
                   width: "2.5rem",
                   height: "2.5rem",
-                  backgroundColor: "readingPaper.light",
+                  backgroundColor: "readingPaper.default",
                   border: 1,
                   borderColor:
-                    paperColor === "readingPaper.light"
+                    paperColor === "readingPaper.default"
                       ? "success.main"
                       : "text.main",
                   borderRadius: "50%",
@@ -204,7 +252,7 @@ export default function OptionsDrawer({
                   justifyContent: "center",
                 }}
               >
-                {paperColor === "readingPaper.light" && (
+                {paperColor === "readingPaper.default" && (
                   <CheckIcon color="success" />
                 )}
               </Box>
@@ -234,16 +282,16 @@ export default function OptionsDrawer({
               </Box>
               <Box
                 onClick={() => {
-                  handleChangePaperColor("readingPaper.main");
+                  handleChangePaperColor("readingPaper.yellow");
                   handleChangeFontColor("sub.dark");
                 }}
                 sx={{
                   width: "2.5rem",
                   height: "2.5rem",
-                  backgroundColor: "readingPaper.main",
+                  backgroundColor: "readingPaper.yellow",
                   border: 1,
                   borderColor:
-                    paperColor === "readingPaper.main"
+                    paperColor === "readingPaper.yellow"
                       ? "success.main"
                       : "text.main",
                   borderRadius: "50%",
@@ -254,7 +302,59 @@ export default function OptionsDrawer({
                   justifyContent: "center",
                 }}
               >
-                {paperColor === "readingPaper.main" && (
+                {paperColor === "readingPaper.yellow" && (
+                  <CheckIcon color="success" />
+                )}
+              </Box>
+              <Box
+                onClick={() => {
+                  handleChangePaperColor("readingPaper.blue");
+                  handleChangeFontColor("sub.dark");
+                }}
+                sx={{
+                  width: "2.5rem",
+                  height: "2.5rem",
+                  backgroundColor: "readingPaper.blue",
+                  border: 1,
+                  borderColor:
+                    paperColor === "readingPaper.blue"
+                      ? "success.main"
+                      : "text.main",
+                  borderRadius: "50%",
+                  cursor: "pointer",
+
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                {paperColor === "readingPaper.blue" && (
+                  <CheckIcon color="success" />
+                )}
+              </Box>
+              <Box
+                onClick={() => {
+                  handleChangePaperColor("readingPaper.pink");
+                  handleChangeFontColor("sub.dark");
+                }}
+                sx={{
+                  width: "2.5rem",
+                  height: "2.5rem",
+                  backgroundColor: "readingPaper.pink",
+                  border: 1,
+                  borderColor:
+                    paperColor === "readingPaper.pink"
+                      ? "success.main"
+                      : "text.main",
+                  borderRadius: "50%",
+                  cursor: "pointer",
+
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                {paperColor === "readingPaper.pink" && (
                   <CheckIcon color="success" />
                 )}
               </Box>

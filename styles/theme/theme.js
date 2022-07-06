@@ -109,15 +109,19 @@ export const lightTheme = createTheme({
     },
 
     readingBackground: {
-      light: grey[100],
-      main: "#DACFA1",
+      default: grey[100],
       dark: "#1F212D",
+      yellow: "#DACFA1",
+      blue: blue[200],
+      pink: pink[200],
     },
 
     readingPaper: {
-      light: "#fff",
-      main: "#F1E8C2",
+      default: "#fff",
       dark: "#222731",
+      yellow: "#F1E8C2",
+      blue: blue[100],
+      pink: pink[100],
     },
 
     success: {

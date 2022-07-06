@@ -8,9 +8,7 @@ import axiosClient from "utility/axiosConfig";
 export async function getServerSideProps(context) {
   const { slug } = context.params;
 
-  const novel = await axiosClient
-    .get(`novels?slug=${slug}`)
-    .then((res) => res.data);
+  const novel = await axiosClient.get(`novels/${slug}`).then((res) => res.data);
 
   return {
     props: {
