@@ -27,6 +27,8 @@ const MyApp = (props) => {
         <MainLayout>
           <DefaultSeo
             title={BRAND_NAME}
+            canonical={SITE_BASE_URL}
+            description={`Nền tảng đọc truyện sáng tác Việt, khơi nguồn cảm hứng sáng tác truyện bất tận cho tác giả với những công cụ mạnh mẽ giúp tác giả Việt thỏa sức sáng tạo nội dung.`}
             openGraph={{
               type: "website",
               site_name: BRAND_NAME,

@@ -56,18 +56,14 @@ export default function NavLink() {
       }}
     >
       <Typography
-        variant="h6"
-        sx={
-          router.asPath.includes("/royal-ranking") ? activeStyle : generalStyle
-        }
+        sx={router.asPath.includes("/kim-bang") ? activeStyle : generalStyle}
       >
-        <Link href="/royal-ranking">
+        <Link href="/kim-bang">
           <a style={linkStyle}>Kim Bảng</a>
         </Link>
       </Typography>
 
       <Typography
-        variant="h6"
         sx={
           router.asPath.includes("/truyen-sang-tac-moi-ra-mat")
             ? activeStyle
@@ -81,9 +77,20 @@ export default function NavLink() {
         </StyledBadge>
       </Typography>
 
+      <Typography
+        sx={
+          router.asPath.includes("/truyen-hoan-thanh")
+            ? activeStyle
+            : generalStyle
+        }
+      >
+        <Link href="/truyen-hoan-thanh">
+          <a style={linkStyle}>Truyện hoàn thành</a>
+        </Link>
+      </Typography>
+
       <NavGenreDropdown>
         <Typography
-          variant="h6"
           sx={router.asPath.includes("/the-loai") ? activeStyle : generalStyle}
         >
           <span
@@ -99,7 +106,6 @@ export default function NavLink() {
       </NavGenreDropdown>
 
       <Typography
-        variant="h6"
         sx={router.asPath.includes("/forum") ? activeStyle : generalStyle}
       >
         <StyledBadge badgeContent={1} color="secondary">
@@ -110,7 +116,6 @@ export default function NavLink() {
       </Typography>
 
       <Typography
-        variant="h6"
         sx={router.asPath.includes("/support") ? activeStyle : generalStyle}
       >
         <Link href="/support">

@@ -41,7 +41,7 @@ export default function NovelCard({ novel, displayStatus }) {
       <Box>
         <Link href={`/truyen/${novel.id}`} passHref>
           <Typography
-            variant="h6"
+            variant="h3"
             fontSize="1.6rem"
             fontWeight={700}
             sx={{

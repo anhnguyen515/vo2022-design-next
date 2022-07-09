@@ -33,6 +33,7 @@ export default function ReadingSection({
             transition: "all 0.5s",
             "&>*": {
               mb: 3,
+              "&:last-of-type": { mb: 0 },
             },
           }}
         >

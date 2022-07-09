@@ -12,7 +12,8 @@ export default function TopFinished({ novels }) {
         sx={{ borderRadius: 3, padding: 2, backgroundColor: "text.light" }}
       >
         <Typography
-          variant="h6"
+          variant="h2"
+          fontSize="1.2rem"
           fontWeight={600}
           gutterBottom
           textAlign="center"
@@ -21,7 +22,7 @@ export default function TopFinished({ novels }) {
         </Typography>
         {novels.slice(0, 8).map((novel, index) => (
           <Box
-            key={novel.id}
+            key={index}
             sx={{
               display: "flex",
               gap: 1,
@@ -45,7 +46,8 @@ export default function TopFinished({ novels }) {
             >
               <Link href={`/truyen/${novel.id}`} passHref>
                 <Typography
-                  variant="body1"
+                  variant="h3"
+                  fontSize="1rem"
                   fontWeight={500}
                   sx={{
                     cursor: "pointer",

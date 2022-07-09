@@ -6,7 +6,6 @@ export default function HeadPage({ title }) {
     <>
       <Head>
         <title>{title}</title>
-        <meta name="description" content="Vietnovel Origin" />
         <link rel="icon" href="/favicon-32x32.png" />
       </Head>
     </>

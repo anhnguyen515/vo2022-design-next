@@ -1,4 +1,4 @@
-import { Box, Container, Grid } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import HeadPage from "components/common/HeadPage";
 import BigScreenCarousel from "components/Home/BigScreenCarousel";
 import CreatorStudio from "components/Home/CreatorStudio";
@@ -14,21 +14,21 @@ import TopWriters from "components/Home/TopWriters";
 import axiosClient from "utility/axiosConfig";
 
 export async function getServerSideProps() {
-  const genres = await axiosClient.get("genres").then((res) => res.data);
+  const genres = await axiosClient.get("/genres").then((res) => res.data);
 
   const novels = await axiosClient
-    .get("novels?_sort=views&_order=desc")
+    .get("/novels?_sort=views&_order=desc")
     .then((res) => res.data);
 
   const finishedNovels = await axiosClient
-    .get("novels?novel_status=F")
+    .get("/novels?novel_status=F")
     .then((res) => res.data);
 
   const newUpdates = await axiosClient
-    .get("novels?novel_status=C")
+    .get("/novels?novel_status=C")
     .then((res) => res.data);
 
-  const authors = await axiosClient.get("authors").then((res) => res.data);
+  const authors = await axiosClient.get("/authors").then((res) => res.data);
 
   return {
     props: {
@@ -51,6 +51,9 @@ export default function Home({
   return (
     <>
       <HeadPage title="Vietnovel Origin - Truyện Sáng Tác Việt" />
+      <Typography variant="h1" sx={{ display: "none" }}>
+        Đăng Truyện Sáng Tác Việt
+      </Typography>
       <Container maxWidth="2xl">
         <Box sx={{ padding: { xs: 1, md: 3 } }}>
           {/* header */}

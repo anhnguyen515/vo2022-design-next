@@ -7,7 +7,8 @@ export default function CategoryTitle({ children }) {
     <>
       <Typography
         className="category--title"
-        variant="h5"
+        variant="h2"
+        fontSize="1.6rem"
         fontWeight={700}
         sx={{
           display: "inline-block",
@@ -19,6 +20,15 @@ export default function CategoryTitle({ children }) {
           lineHeight: "2.4rem",
           width: "auto",
           position: "relative",
+          transition: "all 0.2s",
+          cursor: "pointer",
+          "&:hover": {
+            color: "primary.main",
+            backgroundColor: "primary.light",
+            ":after": {
+              backgroundColor: "primary.light",
+            },
+          },
           "&::before": {
             content: '""',
             position: "absolute",
@@ -40,6 +50,7 @@ export default function CategoryTitle({ children }) {
             lineHeight: "2.4rem",
             backgroundColor: "primary.main",
             transform: "skewX(-15deg)",
+            transition: "all 0.2s",
             zIndex: -1,
           },
         }}

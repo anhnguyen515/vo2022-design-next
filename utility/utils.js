@@ -4,6 +4,7 @@ import "dayjs/locale/vi";
 import relativeTime from "dayjs/plugin/relativeTime";
 import updateLocale from "dayjs/plugin/updateLocale";
 import { lightTheme } from "styles/theme/theme";
+import { DJANGO_BASE_URL } from "utility/constants";
 
 // ----- VN date config -----
 dayjs.extend(updateLocale);
@@ -107,5 +108,12 @@ export function novelStatus(status) {
       return "Hoàn thành";
     case "D":
       return "Chưa hoàn thành";
+  }
+}
+
+export function getFullImageUrl(url) {
+  if (url) {
+    if (url.includes(DJANGO_BASE_URL)) return url;
+    else return `${DJANGO_BASE_URL}${url}`;
   }
 }

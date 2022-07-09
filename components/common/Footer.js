@@ -173,7 +173,12 @@ export default function Footer() {
             </Link>
             <Grid container spacing={3}>
               <Grid item xs={12} lg={8}>
-                <Typography variant="h6" color="text.light" gutterBottom>
+                <Typography
+                  variant="h3"
+                  fontSize="1.3rem"
+                  color="text.light"
+                  gutterBottom
+                >
                   Vienovel Origin - Khởi Nguồn Tiểu Thuyết Việt
                 </Typography>
                 <Typography>
@@ -371,7 +376,8 @@ export default function Footer() {
 }
 
 const headingProps = {
-  variant: "h6",
+  variant: "h2",
+  fontSize: "1.2rem",
   fontWeight: "bold",
   textTransform: "uppercase",
   sx: {

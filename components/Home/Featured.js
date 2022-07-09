@@ -22,8 +22,9 @@ function FeaturedCard({ novel }) {
       </Link>
       <Typography
         gutterBottom
-        variant="h6"
+        variant="h3"
         fontSize="1.2rem"
+        fontWeight={700}
         sx={{ lineHeight: "1.2rem" }}
       >
         <Link href={`/truyen/${novel.id}`}>
@@ -31,8 +32,6 @@ function FeaturedCard({ novel }) {
         </Link>
       </Typography>
       <Typography
-        variant="subtitle2"
-        fontWeight="normal"
         color="text.secondary"
         gutterBottom
         sx={{ lineHeight: "1.1rem" }}

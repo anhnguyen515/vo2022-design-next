@@ -8,10 +8,13 @@ import Link from "next/link";
 import * as React from "react";
 
 function RoyalRankingCard({ novel, rank }) {
+  const [hover, setHover] = React.useState(true);
   return (
     <Paper
       elevation={0}
       variant="outlined"
+      onMouseEnter={() => setHover(false)}
+      onMouseLeave={() => setHover(true)}
       sx={{
         borderRadius: 3,
         padding: 2,
@@ -55,7 +58,7 @@ function RoyalRankingCard({ novel, rank }) {
             minHeight: "3rem",
           }}
           gutterBottom
-          variant="h6"
+          variant="h3"
           fontSize="1.2rem"
           fontWeight={700}
         >
@@ -64,7 +67,6 @@ function RoyalRankingCard({ novel, rank }) {
           </Link>
         </Typography>
         <Typography
-          variant="subtitle1"
           color="text.secondary"
           sx={{
             overflow: "hidden",
@@ -77,11 +79,7 @@ function RoyalRankingCard({ novel, rank }) {
             <a>{novel.author.name}</a>
           </Link>
         </Typography>
-        <Typography
-          variant="subtitle2"
-          textAlign="center"
-          color="text.secondary"
-        >
+        <Typography fontSize=".9rem" textAlign="center" color="text.secondary">
           {novel.num_chapters} chương
         </Typography>
         <Box sx={{ position: "absolute", top: 4, left: 4 }}>
@@ -90,7 +88,7 @@ function RoyalRankingCard({ novel, rank }) {
             width="3rem"
             height="3rem"
             rem={1.5}
-            royalRanking
+            royalRanking={hover}
           />
         </Box>
       </Card>

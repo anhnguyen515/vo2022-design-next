@@ -117,10 +117,10 @@ export default function BigScreenCarousel({ novels }) {
                 </Link>
               </Box>
               <Box sx={{ color: "text.light", pl: 2, pr: 2 }}>
-                <Typography variant="h4" fontWeight={500}>
+                <Typography fontSize="2rem" fontWeight={500}>
                   {novel.title}
                 </Typography>
-                <Typography variant="h6" gutterBottom>
+                <Typography gutterBottom>
                   <FontAwesomeIcon
                     icon={faPenNib}
                     width={18}

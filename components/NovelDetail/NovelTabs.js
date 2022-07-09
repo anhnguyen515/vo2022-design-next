@@ -43,7 +43,7 @@ export default function NovelTabs({ novel, value }) {
           sx={{ width: "3.5rem", height: "3.5rem" }}
         />
         <Typography
-          variant="h6"
+          variant="h5"
           sx={{ display: "flex", alignItems: "center", gap: 1 }}
         >
           {novel.author.name}{" "}

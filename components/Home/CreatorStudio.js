@@ -9,7 +9,8 @@ export default function CreatorStudio() {
         sx={{ borderRadius: 3, padding: 2, backgroundColor: "text.light" }}
       >
         <Typography
-          variant="h6"
+          variant="h2"
+          fontSize="1.2rem"
           fontWeight={600}
           textAlign="center"
           gutterBottom

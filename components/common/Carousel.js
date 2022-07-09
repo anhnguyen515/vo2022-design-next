@@ -111,7 +111,12 @@ export default function FeaturedCarousel({ novels }) {
               </Box>
               {/* contents container */}
               <Box mt={1}>
-                <Typography variant="h5" fontWeight={700} textAlign="center">
+                <Typography
+                  variant="h3"
+                  fontSize="1.5rem"
+                  fontWeight={700}
+                  textAlign="center"
+                >
                   <Link href={`/truyen/${novel.id}`}>
                     <a>{novel.title}</a>
                   </Link>

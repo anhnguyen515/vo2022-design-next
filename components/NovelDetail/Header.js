@@ -138,11 +138,11 @@ export default function Header({ novel }) {
                 mb={1}
                 sx={{ display: "flex", alignItems: "center", gap: 1 }}
               >
-                <Typography variant="h4" fontWeight="bold">
+                <Typography variant="h1" fontSize="2.2rem" fontWeight="bold">
                   {novel.title}
                 </Typography>
                 <IconButton
-                  color={bookmark ? "success" : "text"}
+                  color={bookmark ? "secondary" : "text"}
                   onClick={() => setBookmark((prev) => !prev)}
                 >
                   {bookmark ? (
