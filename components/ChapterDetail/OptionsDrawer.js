@@ -33,12 +33,13 @@ export default function OptionsDrawer({
   handleChangeFontSize,
   handleChangeWidth,
 }) {
-  const widths = [640, 740, 840, 940, 1040];
+  const widths = [320, 425, 640, 768, 896, 1080];
   const backgroundColors = [
     "readingBackground.default",
     "readingBackground.dark",
     "readingBackground.yellow",
     "readingBackground.blue",
+    "readingBackground.teal",
     "readingBackground.pink",
   ];
   const paperColors = [
@@ -46,6 +47,7 @@ export default function OptionsDrawer({
     "readingPaper.dark",
     "readingPaper.yellow",
     "readingPaper.blue",
+    "readingPaper.teal",
     "readingPaper.pink",
   ];
   const [state, setState] = React.useState(false);

@@ -17,6 +17,7 @@ export default function ReadingSection({
           backgroundColor: backgroundColor,
           display: " flex",
           justifyContent: "center",
+          transition: "all 0.5s",
         }}
       >
         <Paper
@@ -29,6 +30,7 @@ export default function ReadingSection({
             color: fontColor,
             fontFamily: font,
             fontSize: fontSize,
+            transition: "all 0.5s",
             "&>*": {
               mb: 3,
             },

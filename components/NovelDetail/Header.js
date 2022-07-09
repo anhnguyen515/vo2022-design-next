@@ -1,12 +1,19 @@
+import {
+  faFaceLaughBeam,
+  faFaceSadCry,
+  faHeart,
+  faThumbsUp,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import AbcIcon from "@mui/icons-material/Abc";
-import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
-import HomeIcon from "@mui/icons-material/Home";
-import ThumbUpIcon from "@mui/icons-material/ThumbUp";
-import VisibilityIcon from "@mui/icons-material/Visibility";
-import StarIcon from "@mui/icons-material/Star";
 import BookmarkAddIcon from "@mui/icons-material/BookmarkAdd";
 import BookmarkAddedIcon from "@mui/icons-material/BookmarkAdded";
+import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
+import StarIcon from "@mui/icons-material/Star";
+import ThumbUpIcon from "@mui/icons-material/ThumbUp";
+import VisibilityIcon from "@mui/icons-material/Visibility";
 import {
   Box,
   Breadcrumbs,
@@ -21,15 +28,8 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React, { useState } from "react";
+import { useState } from "react";
 import { ageColor, novelStatus, numberFormat } from "utility/utils";
-import {
-  faThumbsUp,
-  faHeart,
-  faFaceLaughBeam,
-  faFaceSadCry,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Header({ novel }) {
   const [bookmark, setBookmark] = useState(false);
@@ -59,25 +59,23 @@ export default function Header({ novel }) {
       {/* breadcrumbs */}
       <Box>
         <Breadcrumbs
+          separator={<NavigateNextIcon />}
           aria-label="breadcrumbs"
-          sx={{ mb: 2, mt: 2, "&>*": { color: "text.main" } }}
+          sx={{ mb: 2, mt: 2, "&>*": { color: "text.light" } }}
         >
           <Link href={`/`} passHref>
             <Typography
               sx={{
-                display: "flex",
-                alignItems: "center",
-                gap: 1,
                 cursor: "pointer",
                 "&:hover": {
-                  color: "text.light",
+                  color: "text.main",
                 },
               }}
             >
-              <HomeIcon /> Trang chủ
+              Trang chủ
             </Typography>
           </Link>
-          <Typography fontWeight={500} color="text.light">
+          <Typography fontWeight={700} color="text.light">
             {novel.title}
           </Typography>
         </Breadcrumbs>

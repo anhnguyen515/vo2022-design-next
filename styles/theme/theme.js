@@ -113,6 +113,7 @@ export const lightTheme = createTheme({
       dark: "#1F212D",
       yellow: "#DACFA1",
       blue: blue[200],
+      teal: teal[200],
       pink: pink[200],
     },
 
@@ -121,6 +122,7 @@ export const lightTheme = createTheme({
       dark: "#222731",
       yellow: "#F1E8C2",
       blue: blue[100],
+      teal: teal[100],
       pink: pink[100],
     },
 
