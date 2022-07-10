@@ -68,6 +68,7 @@ function RoyalRankingCard({ novel, rank }) {
         </Typography>
         <Typography
           color="text.secondary"
+          fontWeight={500}
           sx={{
             overflow: "hidden",
             whiteSpace: "nowrap",

@@ -1,6 +1,7 @@
 import { CacheProvider } from "@emotion/react";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 
+import { motion, AnimatePresence } from "framer-motion";
 import { DefaultSeo } from "next-seo";
 import NextNprogress from "nextjs-progressbar";
 import "slick-carousel/slick/slick-theme.css";
@@ -18,7 +19,18 @@ import "../styles/globals.css";
 const clientSideEmotionCache = createEmotionCache();
 
 const MyApp = (props) => {
-  const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
+  const {
+    Component,
+    emotionCache = clientSideEmotionCache,
+    pageProps,
+    router,
+  } = props;
+
+  const variants = {
+    hidden: { opacity: 0 },
+    enter: { opacity: 1 },
+    exit: { opacity: 0 },
+  };
 
   return (
     <CacheProvider value={emotionCache}>
@@ -50,7 +62,7 @@ const MyApp = (props) => {
           <NextNprogress
             nonce="my-nonce"
             showOnShallow
-            color={lightTheme.palette.primary.main}
+            color={lightTheme.palette.secondary.main}
             startPosition={0.3}
             stopDelayMs={200}
             height={4}
@@ -58,7 +70,24 @@ const MyApp = (props) => {
               showSpinner: false,
             }}
           />
-          <Component {...pageProps} />
+          <AnimatePresence
+            exitBeforeEnter
+            initial={false}
+            onExitComplete={() =>
+              window.scrollTo({ top: 0, behavior: "smooth" })
+            }
+          >
+            <motion.div
+              key={router.route}
+              variants={variants}
+              initial="hidden"
+              animate="enter"
+              exit="exit"
+              transition={{ type: "linear" }}
+            >
+              <Component {...pageProps} />
+            </motion.div>
+          </AnimatePresence>
         </MainLayout>
       </ThemeProvider>
     </CacheProvider>

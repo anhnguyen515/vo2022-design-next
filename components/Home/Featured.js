@@ -33,6 +33,7 @@ function FeaturedCard({ novel }) {
       </Typography>
       <Typography
         color="text.secondary"
+        fontWeight={500}
         gutterBottom
         sx={{ lineHeight: "1.1rem" }}
       >

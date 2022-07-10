@@ -8,7 +8,7 @@ export default function CategoryTitle({ children }) {
       <Typography
         className="category--title"
         variant="h2"
-        fontSize="1.6rem"
+        fontSize="1.5rem"
         fontWeight={700}
         sx={{
           display: "inline-block",

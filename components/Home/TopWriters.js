@@ -30,6 +30,7 @@ function TopWritersCard({ author, rank }) {
           }}
         >
           <Typography
+            variant="h3"
             fontSize="1.1rem"
             fontWeight={600}
             sx={{

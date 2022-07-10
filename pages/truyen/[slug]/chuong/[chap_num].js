@@ -35,7 +35,7 @@ export default function Chapter({ chapter }) {
   const { slug } = router.query;
 
   const [currChapter, setCurrChapter] = useState(chapter[0].chap_num);
-  const [maxWidth, setMaxWidth] = useState(840);
+  const [maxWidth, setMaxWidth] = useState(896);
   const [backgroundColor, setBackgroundColor] = useState(
     "readingBackground.default"
   );

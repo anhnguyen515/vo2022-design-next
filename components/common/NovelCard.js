@@ -53,7 +53,7 @@ export default function NovelCard({ novel, displayStatus }) {
             {novel.title}
           </Typography>
         </Link>
-        <Typography variant="body1" sx={{ position: "relative" }}>
+        <Typography fontWeight={500} sx={{ position: "relative" }}>
           <Link href={`/tac-gia/${novel.author.slug}`}>
             <a>
               <FontAwesomeIcon

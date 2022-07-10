@@ -12,7 +12,10 @@ export default function RoyalRankingHeader() {
           padding: 3,
           pt: 10,
           pb: 10,
-          textAlign: "center",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
         <Typography
@@ -20,7 +23,7 @@ export default function RoyalRankingHeader() {
           component={motion.div}
           fontWeight={500}
           color="warning.light"
-          animate={{ y: [-100, 0], opacity: [0, 1] }}
+          animate={{ y: [-100, 0] }}
           transition={{ delay: 0.2 }}
         >
           Danh sách truyện
@@ -28,7 +31,7 @@ export default function RoyalRankingHeader() {
         <Typography
           variant="h3"
           component={motion.div}
-          animate={{ y: [-100, 0], opacity: [0, 1] }}
+          animate={{ y: [-100, 0] }}
           transition={{ delay: 0.1 }}
           fontWeight={700}
           gutterBottom
@@ -38,7 +41,7 @@ export default function RoyalRankingHeader() {
         <Typography
           variant="h6"
           component={motion.div}
-          animate={{ y: [-100, 0], opacity: [0, 1] }}
+          animate={{ y: [-100, 0] }}
           fontWeight={500}
         >
           Kim Bảng là bảng xếp hạng truyện sáng tác Việt hay nhất tại Vietnovel
