@@ -30,6 +30,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import { ageColor, novelStatus, numberFormat } from "utility/utils";
+import { motion } from "framer-motion";
 
 export default function Header({ novel }) {
   const [bookmark, setBookmark] = useState(false);
@@ -51,6 +52,36 @@ export default function Header({ novel }) {
       item: true,
       xs: 8,
       md: 9,
+    },
+  };
+
+  const fadeInRight = {
+    initial: {
+      x: 100,
+      opacity: 0,
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.6,
+        ease: [0.6, -0.05, 0.01, 0.99],
+      },
+    },
+  };
+
+  const fadeInUp = {
+    initial: {
+      y: 100,
+      opacity: 0,
+    },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.6,
+        ease: [0.6, -0.05, 0.01, 0.99],
+      },
     },
   };
 
@@ -86,7 +117,12 @@ export default function Header({ novel }) {
         <Grid container columnSpacing={5}>
           {/* thumbnail */}
           <Grid item xs={0} md={3} xl={2}>
-            <Box>
+            <Box
+              component={motion.div}
+              variants={fadeInRight}
+              initial="initial"
+              animate="animate"
+            >
               <Image
                 alt={`ảnh bìa của ${novel.title}`}
                 src={novel.picture}
@@ -103,7 +139,15 @@ export default function Header({ novel }) {
           {/* chi tiết */}
           <Grid container item xs={12} md={9} xl={10}>
             {/* danh hiệu */}
-            <Grid item xs={12} md={8}>
+            <Grid
+              item
+              xs={12}
+              md={8}
+              component={motion.div}
+              variants={fadeInUp}
+              initial="initial"
+              animate="animate"
+            >
               <Box
                 sx={{
                   display: "flex",

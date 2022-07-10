@@ -69,7 +69,8 @@ export default function CustomBar({
         color="background"
         position="sticky"
         sx={{
-          top: scrollDown ? -100 : { xs: "5rem", md: "4.1rem" },
+          height: "3.5rem",
+          top: scrollDown ? "-3.6rem" : "3.6rem",
           transition: "top 0.5s",
           zIndex: 1,
         }}
