@@ -72,10 +72,10 @@ export default function MyCarousel({ novels }) {
           <Link key={novel.id} href={`/truyen/${novel.id}`} passHref>
             <Box
               sx={{
-                width: "100%",
-                position: "relative",
                 aspectRatio: "3/2",
-                borderRadius: "0.5rem",
+                cursor: "pointer",
+                position: "relative",
+                width: "100%",
               }}
             >
               <Image

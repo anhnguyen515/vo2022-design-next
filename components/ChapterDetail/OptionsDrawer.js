@@ -77,6 +77,11 @@ export default function OptionsDrawer({
           </IconButton>
         </Tooltip>
         <Drawer
+          sx={{
+            "& .MuiBackdrop-root": {
+              backgroundColor: "transparent",
+            },
+          }}
           PaperProps={{
             sx: {
               backgroundColor: "background.default",

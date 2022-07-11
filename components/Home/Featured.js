@@ -1,25 +1,37 @@
-import { Card, CardMedia, Grid, Paper, Typography } from "@mui/material";
+import { Box, Card, CardMedia, Grid, Paper, Typography } from "@mui/material";
 import Carousel from "components/common/Carousel";
 import CategoryLayout from "components/Layout/CategoryLayout";
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
 
 function FeaturedCard({ novel }) {
   return (
-    <Card elevation={0} sx={{ borderRadius: 3 }}>
-      <Link href={`/truyen/${novel.id}`}>
-        <a>
-          <CardMedia
-            component="img"
-            image={novel.picture}
-            alt="green iguana"
-            sx={{
-              borderRadius: 3,
-              mb: 1,
-            }}
-          />
-        </a>
-      </Link>
+    <Card elevation={0} sx={{ borderRadius: 1 }}>
+      <Box
+        sx={{
+          mb: 1,
+          overflow: "hidden",
+          borderRadius: 1,
+        }}
+      >
+        <Link href={`/truyen/${novel.id}`} passHref>
+          <Box
+            component={motion.div}
+            whileHover={{ scale: 1.12, cursor: "pointer" }}
+          >
+            <CardMedia
+              component="img"
+              image={novel.picture}
+              alt={novel.title}
+              sx={{
+                borderRadius: 1,
+                overflow: "hidden",
+              }}
+            />
+          </Box>
+        </Link>
+      </Box>
       <Typography
         gutterBottom
         variant="h3"
@@ -51,14 +63,14 @@ export default function Featured({ novels }) {
       <CategoryLayout title="Truyện Nổi Bật">
         <Grid container spacing={3}>
           <Grid item xs={12} lg={4}>
-            <Paper
-              elevation={0}
+            <Box
               sx={{
-                backgroundColor: "sub.light",
+                backgroundColor: "text.light",
+                borderRadius: 1,
               }}
             >
               <Carousel novels={novels.slice(0, 12)} />
-            </Paper>
+            </Box>
           </Grid>
           <Grid container item xs={12} lg={8} spacing={3}>
             {novels.slice(0, 12).map((novel) => (

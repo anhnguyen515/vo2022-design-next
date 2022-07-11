@@ -77,7 +77,9 @@ export default function FeaturedCarousel({ novels }) {
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "center",
                   backgroundSize: "cover",
-                  borderRadius: 0,
+                  borderRadius: 1,
+                  borderBottomRightRadius: 0,
+                  borderBottomLeftRadius: 0,
                   pt: 3,
                   pb: 3,
                 }}

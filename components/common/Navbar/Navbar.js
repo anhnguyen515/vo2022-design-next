@@ -22,8 +22,8 @@ export default function Navbar() {
                 <Image
                   src="/origin-logo-black.svg"
                   alt="Vietnovel logo"
-                  width={120}
-                  height={60}
+                  width={100}
+                  height={50}
                   layout="fixed"
                 />
               </a>

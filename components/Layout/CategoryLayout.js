@@ -6,8 +6,7 @@ export default function CategoryLayout({ title, children }) {
   return (
     <Box>
       <CategoryTitle>{title}</CategoryTitle>
-      <Divider sx={{ mt: 2, mb: 2 }} />
-      {children}
+      <Box mt={3}>{children}</Box>
     </Box>
   );
 }

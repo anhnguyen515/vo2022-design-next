@@ -1,5 +1,9 @@
 import axiosClient from "./axiosConfig";
 
+export function getRoyalRanking() {
+  return axiosClient.get(`/novels`).then((res) => res.data);
+}
+
 export function getNovelChapter(novel_code, chap_num) {
   return axiosClient
     .get(`/chapters?_expand=novel&novelId=${novel_code}&chap_num=${chap_num}`)

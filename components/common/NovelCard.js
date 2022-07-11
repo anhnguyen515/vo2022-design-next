@@ -1,4 +1,4 @@
-import { faPenNib } from "@fortawesome/free-solid-svg-icons";
+import { faPenToSquare } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CheckIcon from "@mui/icons-material/Check";
 import WatchLaterIcon from "@mui/icons-material/WatchLater";
@@ -8,11 +8,8 @@ import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import * as React from "react";
 
 export default function NovelCard({ novel, displayStatus }) {
-  const router = useRouter();
   return (
     <Card
       elevation={0}
@@ -20,18 +17,20 @@ export default function NovelCard({ novel, displayStatus }) {
         display: "flex",
         borderRadius: 0,
         transition: "color 0.2s",
-        "&:hover": { color: "secondary.main" },
       }}
     >
-      <Box>
+      <Box sx={{ mr: 2, overflow: "hidden", borderRadius: 1 }}>
         <Link href={`/truyen/${novel.id}`} passHref>
           <CardMedia
             component="img"
             sx={{
-              width: 100,
-              borderRadius: 3,
-              mr: 2,
+              width: "5rem",
+              borderRadius: 1,
               cursor: "pointer",
+              transition: "all 0.2s",
+              "&:hover": {
+                transform: "scale(1.12)",
+              },
             }}
             image={novel.picture}
             alt={`ảnh bìa của ${novel.title}`}
@@ -44,6 +43,7 @@ export default function NovelCard({ novel, displayStatus }) {
             variant="h3"
             fontSize="1.6rem"
             fontWeight={700}
+            gutterBottom
             sx={{
               cursor: "pointer",
               // transition: "all 0.2s",
@@ -53,11 +53,11 @@ export default function NovelCard({ novel, displayStatus }) {
             {novel.title}
           </Typography>
         </Link>
-        <Typography fontWeight={500} sx={{ position: "relative" }}>
+        <Typography fontWeight={500} gutterBottom sx={{ position: "relative" }}>
           <Link href={`/tac-gia/${novel.author.slug}`}>
             <a>
               <FontAwesomeIcon
-                icon={faPenNib}
+                icon={faPenToSquare}
                 width={16}
                 style={{ position: "relative", marginRight: "0.5rem", top: 2 }}
               />
@@ -65,7 +65,7 @@ export default function NovelCard({ novel, displayStatus }) {
             </a>
           </Link>
         </Typography>
-        <Box sx={{ display: "flex", gap: 1, mt: 1, flexWrap: "wrap" }}>
+        {/* <Box sx={{ display: "flex", gap: 1, mt: 1, flexWrap: "wrap" }}>
           {novel.tags.map((tag) => (
             <Chip
               key={tag.id}
@@ -78,7 +78,7 @@ export default function NovelCard({ novel, displayStatus }) {
               }}
             />
           ))}
-        </Box>
+        </Box> */}
         {displayStatus && (
           <Box>
             {novel.novel_status === "F" ? (
@@ -87,14 +87,14 @@ export default function NovelCard({ novel, displayStatus }) {
                   color="notification"
                   variant="outlined"
                   label={`${novel.num_chapters} Chương`}
-                  sx={{ fontWeight: "bold" }}
+                  sx={{ fontWeight: 500 }}
                 />
                 <Chip
                   icon={<CheckIcon />}
                   color="notification"
                   variant="outlined"
                   label={"Hoàn Thành"}
-                  sx={{ fontWeight: "bold" }}
+                  sx={{ fontWeight: 500 }}
                 />
               </Box>
             ) : (

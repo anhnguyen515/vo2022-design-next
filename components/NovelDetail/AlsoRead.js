@@ -1,4 +1,4 @@
-import { faPenNib } from "@fortawesome/free-solid-svg-icons";
+import { faPenToSquare } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Chip } from "@mui/material";
 import Box from "@mui/material/Box";
@@ -29,7 +29,7 @@ export default function AlsoRead({ novel }) {
             <CardMedia
               component="img"
               sx={{
-                width: 100,
+                width: "5rem",
                 borderRadius: 1,
                 mr: 2,
                 cursor: "pointer",
@@ -54,7 +54,7 @@ export default function AlsoRead({ novel }) {
           <Link href={`/tac-gia/${novel.author.slug}`}>
             <a>
               <FontAwesomeIcon
-                icon={faPenNib}
+                icon={faPenToSquare}
                 width={14}
                 style={{ position: "relative", marginRight: "0.5rem", top: 2 }}
               />
@@ -93,6 +93,7 @@ export default function AlsoRead({ novel }) {
             <Chip
               key={tag.id}
               label={tag.name}
+              size="small"
               variant="outlined"
               color="sub"
               onClick={() => router.push(`/the-loai/${tag.slug}`)}

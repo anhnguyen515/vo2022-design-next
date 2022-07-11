@@ -9,7 +9,7 @@ export default function NewUpdates({ novels }) {
       <CategoryLayout title="Truyện Mới Cập Nhật">
         <Grid container spacing={3}>
           {novels.slice(0, 16).map((novel) => (
-            <Grid key={novel.id} item xs={12} md={6} lg={4}>
+            <Grid key={novel.id} item xs={12} sm={6} lg={4} xl={3}>
               <NovelCard novel={novel} displayStatus />
             </Grid>
           ))}

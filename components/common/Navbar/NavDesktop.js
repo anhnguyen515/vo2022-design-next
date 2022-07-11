@@ -1,4 +1,4 @@
-import MoreVertIcon from "@mui/icons-material/MoreVert";
+import MenuIcon from "@mui/icons-material/Menu";
 import { Box, IconButton } from "@mui/material";
 import * as React from "react";
 import NavAuth from "./NavAuth";
@@ -29,7 +29,7 @@ export default function NavDesktop() {
             },
           }}
         >
-          <MoreVertIcon />
+          <MenuIcon />
         </IconButton>
       </NavMenuDropdown>
     </Box>

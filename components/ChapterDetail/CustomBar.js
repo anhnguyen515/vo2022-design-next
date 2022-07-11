@@ -69,14 +69,14 @@ export default function CustomBar({
         color="background"
         position="sticky"
         sx={{
-          height: "3.5rem",
-          top: scrollDown ? "-3.6rem" : "3.6rem",
+          top: scrollDown ? "-4rem" : "4rem",
           transition: "top 0.5s",
           zIndex: 1,
         }}
       >
         <Box
           sx={{
+            height: "3.5rem",
             padding: 1,
             display: "flex",
             alignItems: "center",

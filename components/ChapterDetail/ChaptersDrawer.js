@@ -56,6 +56,11 @@ export default function ChaptersDrawer({ currChapter, setCurrChapter }) {
           </IconButton>
         </Tooltip>
         <Drawer
+          sx={{
+            "& .MuiBackdrop-root": {
+              backgroundColor: "transparent",
+            },
+          }}
           PaperProps={{
             sx: {
               backgroundColor: "background.default",

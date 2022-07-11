@@ -135,7 +135,7 @@ export default function Chapter({ chapter }) {
           >
             <NavigateBeforeIcon />
           </Button>
-          <Typography fontSize="1.5rem" fontWeight={500} sx={{ ml: 2, mr: 2 }}>
+          <Typography fontSize="1.5rem" sx={{ ml: 2, mr: 2 }}>
             Chương {chapter[0].chap_num}
           </Typography>
           <Button
@@ -178,7 +178,7 @@ export default function Chapter({ chapter }) {
           >
             <NavigateBeforeIcon />
           </Button>
-          <Typography fontSize="1.5rem" fontWeight={500} sx={{ ml: 2, mr: 2 }}>
+          <Typography fontSize="1.5rem" sx={{ ml: 2, mr: 2 }}>
             Chương {chapter[0].chap_num}
           </Typography>
           <Button

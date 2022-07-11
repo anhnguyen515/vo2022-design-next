@@ -8,45 +8,35 @@ import Link from "next/link";
 import * as React from "react";
 
 function RoyalRankingCard({ novel, rank }) {
-  const [hover, setHover] = React.useState(true);
+  const [hover, setHover] = React.useState(false);
   return (
     <Paper
       elevation={0}
       variant="outlined"
-      onMouseEnter={() => setHover(false)}
-      onMouseLeave={() => setHover(true)}
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
       sx={{
-        borderRadius: 3,
+        borderRadius: 1,
         padding: 2,
         position: "relative",
-        transition: "all 0.2s",
-        "&:hover": {
-          transform: "scale(1.06)",
-          "& > *": {
-            color: "secondary.main",
-          },
-        },
       }}
     >
       <Card elevation={0} sx={{ borderRadius: 0 }}>
-        <Link href={`/truyen/${novel.id}`}>
-          <a>
+        <Box sx={{ mb: 1, overflow: "hidden", borderRadius: 1 }}>
+          <Link href={`/truyen/${novel.id}`} passHref>
             <CardMedia
               component="img"
               image={novel.picture}
               alt={`ảnh bìa của ${novel.title}`}
               sx={{
-                borderRadius: 3,
-                mb: 1,
-
-                // height: {
-                //   xs: 200,
-                //   sm: "",
-                // },
+                borderRadius: 1,
+                cursor: "pointer",
+                transition: "all 0.2s",
+                transform: hover ? "scale(1.12)" : "",
               }}
             />
-          </a>
-        </Link>
+          </Link>
+        </Box>
         <Typography
           sx={{
             display: "-webkit-box",
@@ -89,7 +79,7 @@ function RoyalRankingCard({ novel, rank }) {
             width="3rem"
             height="3rem"
             rem={1.5}
-            royalRanking={hover}
+            royalRanking={!hover}
           />
         </Box>
       </Card>

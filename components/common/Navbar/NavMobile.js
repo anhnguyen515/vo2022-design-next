@@ -1,5 +1,5 @@
 import MenuIcon from "@mui/icons-material/Menu";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
+import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 import { Box, Divider, Drawer, IconButton } from "@mui/material";
 import * as React from "react";
 import NavAuth from "./NavAuth";
@@ -41,7 +41,7 @@ export default function TemporaryDrawer() {
             },
           }}
         >
-          <MenuIcon />
+          <MenuOpenIcon />
         </IconButton>
         <Drawer
           PaperProps={{
@@ -67,7 +67,7 @@ export default function TemporaryDrawer() {
                     },
                   }}
                 >
-                  <MoreVertIcon />
+                  <MenuIcon />
                 </IconButton>
               </NavMenuDropdown>
             </Box>

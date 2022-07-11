@@ -9,7 +9,7 @@ export default function TopFinished({ novels }) {
     <>
       <Paper
         elevation={0}
-        sx={{ borderRadius: 3, padding: 2, backgroundColor: "text.light" }}
+        sx={{ borderRadius: 1, padding: 2, backgroundColor: "text.light" }}
       >
         <Typography
           variant="h2"
@@ -17,6 +17,7 @@ export default function TopFinished({ novels }) {
           fontWeight={600}
           gutterBottom
           textAlign="center"
+          sx={{ mb: 2 }}
         >
           Top Truyện Đã Hoàn Thành
         </Typography>
