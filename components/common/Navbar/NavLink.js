@@ -56,7 +56,11 @@ export default function NavLink() {
       }}
     >
       <Typography
-        sx={router.asPath.includes("/kim-bang") ? activeStyle : generalStyle}
+        sx={
+          router.asPath.includes("/kim-bang/?page=1")
+            ? activeStyle
+            : generalStyle
+        }
       >
         <Link href="/kim-bang">
           <a style={linkStyle}>Kim Bảng</a>

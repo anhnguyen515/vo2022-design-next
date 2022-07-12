@@ -147,7 +147,9 @@ export default function Header({ novel }) {
                 }}
               >
                 <Chip
-                  color={novel.top_stripe.includes("1") ? "error" : "form"}
+                  color={
+                    novel.top_stripe === "Top 1 Kim Bảng" ? "error" : "form"
+                  }
                   icon={<EmojiEventsIcon />}
                   label={novel.top_stripe}
                   sx={{

@@ -1,12 +1,11 @@
-import { Box, Divider, Grid, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import CategoryTitle from "components/common/CategoryTitle";
-import React from "react";
 
-export default function CategoryLayout({ title, children }) {
+export default function CategoryLayout({ title, children, href }) {
   return (
     <Box>
-      <CategoryTitle>{title}</CategoryTitle>
-      <Box mt={3}>{children}</Box>
+      <CategoryTitle href={href}>{title}</CategoryTitle>
+      <Box mt={4}>{children}</Box>
     </Box>
   );
 }

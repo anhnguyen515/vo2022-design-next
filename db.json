@@ -264,7 +264,7 @@
       "num_views": 70120,
       "num_chapters": 213,
       "num_words": 515000,
-      "top_stripe": "Top 1 Royal Ranking"
+      "top_stripe": "Top 1 Kim Bảng"
     },
     {
       "id": 2,
@@ -341,7 +341,7 @@
       "num_views": 70120,
       "num_chapters": 213,
       "num_words": 515000,
-      "top_stripe": "Top 2 Royal Ranking"
+      "top_stripe": "Top 2 Kim Bảng"
     },
     {
       "id": 3,
@@ -418,7 +418,7 @@
       "num_views": 70120,
       "num_chapters": 213,
       "num_words": 515000,
-      "top_stripe": "Top 3 Royal Ranking"
+      "top_stripe": "Top 3 Kim Bảng"
     },
     {
       "id": 4,
@@ -490,7 +490,7 @@
       "num_views": 70120,
       "num_chapters": 213,
       "num_words": 515000,
-      "top_stripe": "Top 4 Royal Ranking"
+      "top_stripe": "Top 4 Kim Bảng"
     },
     {
       "id": 5,
@@ -562,7 +562,7 @@
       "num_views": 70120,
       "num_chapters": 213,
       "num_words": 515000,
-      "top_stripe": "Top 5 Royal Ranking"
+      "top_stripe": "Top 5 Kim Bảng"
     },
     {
       "id": 6,
@@ -633,7 +633,7 @@
       "num_views": 70120,
       "num_chapters": 213,
       "num_words": 515000,
-      "top_stripe": "Top 6 Royal Ranking"
+      "top_stripe": "Top 6 Kim Bảng"
     },
     {
       "id": 7,
@@ -704,7 +704,7 @@
       "num_views": 70120,
       "num_chapters": 213,
       "num_words": 515000,
-      "top_stripe": "Top 7 Royal Ranking"
+      "top_stripe": "Top 7 Kim Bảng"
     }
   ],
   "novel-tags": [
@@ -987,7 +987,7 @@
         "num_views": 70120,
         "num_chapters": 213,
         "num_words": 515000,
-        "top_stripe": "Top 2 Royal Ranking"
+        "top_stripe": "Top 2 Kim Bảng"
       },
       "parent": null,
       "chap_num": 1,
@@ -1083,7 +1083,7 @@
         "num_views": 70120,
         "num_chapters": 213,
         "num_words": 515000,
-        "top_stripe": "Top 2 Royal Ranking"
+        "top_stripe": "Top 2 Kim Bảng"
       },
       "parent": {
         "id": 1,
@@ -1167,7 +1167,7 @@
           "num_views": 70120,
           "num_chapters": 213,
           "num_words": 515000,
-          "top_stripe": "Top 2 Royal Ranking"
+          "top_stripe": "Top 2 Kim Bảng"
         },
         "parent": null,
         "chap_num": 1,
@@ -1269,7 +1269,7 @@
         "num_views": 70120,
         "num_chapters": 213,
         "num_words": 515000,
-        "top_stripe": "Top 1 Royal Ranking"
+        "top_stripe": "Top 1 Kim Bảng"
       },
       "parent": null,
       "chap_num": 15,
@@ -1365,7 +1365,7 @@
         "num_views": 70120,
         "num_chapters": 213,
         "num_words": 515000,
-        "top_stripe": "Top 2 Royal Ranking"
+        "top_stripe": "Top 2 Kim Bảng"
       },
       "parent": {
         "id": 1,
@@ -1449,7 +1449,7 @@
           "num_views": 70120,
           "num_chapters": 213,
           "num_words": 515000,
-          "top_stripe": "Top 2 Royal Ranking"
+          "top_stripe": "Top 2 Kim Bảng"
         },
         "parent": null,
         "chap_num": 1,
@@ -1556,7 +1556,7 @@
         "num_views": 70120,
         "num_chapters": 213,
         "num_words": 515000,
-        "top_stripe": "Top 2 Royal Ranking"
+        "top_stripe": "Top 2 Kim Bảng"
       },
       "parent": null,
       "chap_num": 3,

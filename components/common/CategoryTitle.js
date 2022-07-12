@@ -1,8 +1,10 @@
 import { Typography } from "@mui/material";
 import { orange } from "@mui/material/colors";
+import { useRouter } from "next/router";
 import React from "react";
 
-export default function CategoryTitle({ children }) {
+export default function CategoryTitle({ children, href }) {
+  const router = useRouter();
   return (
     <>
       <Typography
@@ -10,6 +12,10 @@ export default function CategoryTitle({ children }) {
         variant="h2"
         fontSize="1.5rem"
         fontWeight={700}
+        onClick={() => {
+          if (href) router.push(href);
+          else return;
+        }}
         sx={{
           display: "inline-block",
           backgroundColor: "primary.main",

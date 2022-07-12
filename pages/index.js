@@ -77,7 +77,7 @@ export default function Home({
             </Grid>
           </Box>
 
-          {/* royal ranking */}
+          {/* Kim Bảng */}
           <Box mb={10}>
             <RoyalRanking novels={novels} />
           </Box>
